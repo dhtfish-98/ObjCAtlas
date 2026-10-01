@@ -1,0 +1,19 @@
+name: ObjCAtlas contracts
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: nygard/class-dump
+          ref: 2c82b4ff12b2ea5d1ac23e49281d496997370841
+          path: .upstream
+      - run: python3 verification/atlas_contract.py --upstream .upstream --output contract.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: atlas-contract-report
+          path: contract.json

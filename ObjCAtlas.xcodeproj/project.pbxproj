@@ -1,0 +1,1513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		01B02D2E13A5B5D50047BC53 /* all */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 01B02D2F13A5B5D50047BC53 /* Build configuration list for PBXAggregateTarget "all" */;
+			buildPhases = (
+			);
+			dependencies = (
+				0106C8221412D07C00B29890 /* PBXTargetDependency */,
+				01B02D3313A5B5E20047BC53 /* PBXTargetDependency */,
+				01B02D3513A5B5E20047BC53 /* PBXTargetDependency */,
+				01B02D3913A5B5E20047BC53 /* PBXTargetDependency */,
+			);
+			name = all;
+			productName = all;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0132DD4521816C0A009CE078 /* atlas_CDLCBuildVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 0132DD4321816C09009CE078 /* atlas_CDLCBuildVersion.h */; };
+		0132DD4621816C0A009CE078 /* atlas_CDLCBuildVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0132DD4421816C09009CE078 /* atlas_CDLCBuildVersion.m */; };
+		013D1F1913A5AEA100BF0A67 /* atlas_CDTopoSortNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB830F13A591D8003EDE60 /* atlas_CDTopoSortNode.m */; };
+		013D1F1A13A5AEA100BF0A67 /* atlas_NSArray_CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB828813A591A5003EDE60 /* atlas_NSArray_CDExtensions.m */; };
+		013D1F1B13A5AEA100BF0A67 /* atlas_NSData_CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB828A13A591A5003EDE60 /* atlas_NSData_CDExtensions.m */; };
+		013D1F1C13A5AEA100BF0A67 /* atlas_NSError_CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB828C13A591A5003EDE60 /* atlas_NSError_CDExtensions.m */; };
+		013D1F1D13A5AEA100BF0A67 /* atlas_NSScanner_CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB828E13A591A5003EDE60 /* atlas_NSScanner_CDExtensions.m */; };
+		013D1F1E13A5AEA100BF0A67 /* atlas_NSString_CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB829013A591A5003EDE60 /* atlas_NSString_CDExtensions.m */; };
+		013D1F1F13A5AEA100BF0A67 /* atlas_CDDataCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82A013A591D7003EDE60 /* atlas_CDDataCursor.m */; };
+		013D1F2013A5AEA100BF0A67 /* atlas_CDMachOFileDataCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82DE13A591D8003EDE60 /* atlas_CDMachOFileDataCursor.m */; };
+		013D1F2113A5AEA100BF0A67 /* atlas_CDLCDyldInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82AA13A591D7003EDE60 /* atlas_CDLCDyldInfo.m */; };
+		013D1F2213A5AEA100BF0A67 /* atlas_CDLCDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82AC13A591D7003EDE60 /* atlas_CDLCDylib.m */; };
+		013D1F2313A5AEA100BF0A67 /* atlas_CDLCDylinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82AE13A591D7003EDE60 /* atlas_CDLCDylinker.m */; };
+		013D1F2413A5AEA100BF0A67 /* atlas_CDLCDynamicSymbolTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82B013A591D7003EDE60 /* atlas_CDLCDynamicSymbolTable.m */; };
+		013D1F2513A5AEA100BF0A67 /* atlas_CDLCEncryptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82B213A591D7003EDE60 /* atlas_CDLCEncryptionInfo.m */; };
+		013D1F2613A5AEA100BF0A67 /* atlas_CDLCLinkeditData.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82B413A591D7003EDE60 /* atlas_CDLCLinkeditData.m */; };
+		013D1F2713A5AEA100BF0A67 /* atlas_CDLCPrebindChecksum.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82B613A591D7003EDE60 /* atlas_CDLCPrebindChecksum.m */; };
+		013D1F2813A5AEA100BF0A67 /* atlas_CDLCPreboundDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82B813A591D7003EDE60 /* atlas_CDLCPreboundDylib.m */; };
+		013D1F2913A5AEA100BF0A67 /* atlas_CDLCRoutines32.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82BA13A591D8003EDE60 /* atlas_CDLCRoutines32.m */; };
+		013D1F2A13A5AEA100BF0A67 /* atlas_CDLCRoutines64.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82BC13A591D8003EDE60 /* atlas_CDLCRoutines64.m */; };
+		013D1F2B13A5AEA100BF0A67 /* atlas_CDLCRunPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82BE13A591D8003EDE60 /* atlas_CDLCRunPath.m */; };
+		013D1F2C13A5AEA100BF0A67 /* atlas_CDLCSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82C013A591D8003EDE60 /* atlas_CDLCSegment.m */; };
+		013D1F2F13A5AEA100BF0A67 /* atlas_CDLCSubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82C613A591D8003EDE60 /* atlas_CDLCSubClient.m */; };
+		013D1F3013A5AEA100BF0A67 /* atlas_CDLCSubFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82C813A591D8003EDE60 /* atlas_CDLCSubFramework.m */; };
+		013D1F3113A5AEA100BF0A67 /* atlas_CDLCSubLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82CA13A591D8003EDE60 /* atlas_CDLCSubLibrary.m */; };
+		013D1F3213A5AEA100BF0A67 /* atlas_CDLCSubUmbrella.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82CC13A591D8003EDE60 /* atlas_CDLCSubUmbrella.m */; };
+		013D1F3313A5AEA100BF0A67 /* atlas_CDLCSymbolTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82CE13A591D8003EDE60 /* atlas_CDLCSymbolTable.m */; };
+		013D1F3413A5AEA100BF0A67 /* atlas_CDLCTwoLevelHints.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82D013A591D8003EDE60 /* atlas_CDLCTwoLevelHints.m */; };
+		013D1F3513A5AEA100BF0A67 /* atlas_CDLCUnixThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82D213A591D8003EDE60 /* atlas_CDLCUnixThread.m */; };
+		013D1F3613A5AEA100BF0A67 /* atlas_CDLCUnknown.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82D413A591D8003EDE60 /* atlas_CDLCUnknown.m */; };
+		013D1F3713A5AEA100BF0A67 /* atlas_CDLCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82D613A591D8003EDE60 /* atlas_CDLCUUID.m */; };
+		013D1F3813A5AEA100BF0A67 /* atlas_CDLCVersionMinimum.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82D813A591D8003EDE60 /* atlas_CDLCVersionMinimum.m */; };
+		013D1F3913A5AEA100BF0A67 /* atlas_CDLoadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82DA13A591D8003EDE60 /* atlas_CDLoadCommand.m */; };
+		013D1F3A13A5AEA100BF0A67 /* atlas_CDFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82A613A591D7003EDE60 /* atlas_CDFile.m */; };
+		013D1F3B13A5AEA100BF0A67 /* atlas_CDFatFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82A413A591D7003EDE60 /* atlas_CDFatFile.m */; };
+		013D1F3C13A5AEA100BF0A67 /* atlas_CDFatArch.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82A213A591D7003EDE60 /* atlas_CDFatArch.m */; };
+		013D1F3D13A5AEA100BF0A67 /* atlas_CDMachOFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82DC13A591D8003EDE60 /* atlas_CDMachOFile.m */; };
+		013D1F3E13A5AEA100BF0A67 /* atlas_CDSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82FE13A591D8003EDE60 /* atlas_CDSection.m */; };
+		013D1F4113A5AEA100BF0A67 /* atlas_CDSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB830813A591D8003EDE60 /* atlas_CDSymbol.m */; };
+		013D1F4213A5AEA100BF0A67 /* atlas_CDRelocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82FA13A591D8003EDE60 /* atlas_CDRelocationInfo.m */; };
+		013D1F4313A5AEA100BF0A67 /* atlas_CDObjectiveCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82E813A591D8003EDE60 /* atlas_CDObjectiveCProcessor.m */; };
+		013D1F4413A5AEA100BF0A67 /* atlas_CDObjectiveC1Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82E413A591D8003EDE60 /* atlas_CDObjectiveC1Processor.m */; };
+		013D1F4513A5AEA100BF0A67 /* atlas_CDObjectiveC2Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82E613A591D8003EDE60 /* atlas_CDObjectiveC2Processor.m */; };
+		013D1F4613A5AEA100BF0A67 /* atlas_CDVisitorPropertyState.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB832013A591D8003EDE60 /* atlas_CDVisitorPropertyState.m */; };
+		013D1F4713A5AEA100BF0A67 /* atlas_CDOCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82EA13A591D8003EDE60 /* atlas_CDOCCategory.m */; };
+		013D1F4813A5AEA100BF0A67 /* atlas_CDOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82EC13A591D8003EDE60 /* atlas_CDOCClass.m */; };
+		013D1F4913A5AEA100BF0A67 /* atlas_CDOCInstanceVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82EE13A591D8003EDE60 /* atlas_CDOCInstanceVariable.m */; };
+		013D1F4A13A5AEA100BF0A67 /* atlas_CDOCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82F013A591D8003EDE60 /* atlas_CDOCMethod.m */; };
+		013D1F4B13A5AEA100BF0A67 /* atlas_CDOCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82F213A591D8003EDE60 /* atlas_CDOCModule.m */; };
+		013D1F4C13A5AEA100BF0A67 /* atlas_CDOCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82F413A591D8003EDE60 /* atlas_CDOCProperty.m */; };
+		013D1F4D13A5AEA100BF0A67 /* atlas_CDOCProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82F613A591D8003EDE60 /* atlas_CDOCProtocol.m */; };
+		013D1F4E13A5AEA100BF0A67 /* atlas_CDOCSymtab.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82F813A591D8003EDE60 /* atlas_CDOCSymtab.m */; };
+		013D1F4F13A5AEA100BF0A67 /* atlas_CDBalanceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB829813A591D7003EDE60 /* atlas_CDBalanceFormatter.m */; };
+		013D1F5013A5AEA100BF0A67 /* atlas_CDMethodType.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82E013A591D8003EDE60 /* atlas_CDMethodType.m */; };
+		013D1F5113A5AEA100BF0A67 /* atlas_CDType.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB831113A591D8003EDE60 /* atlas_CDType.m */; };
+		013D1F5213A5AEA100BF0A67 /* atlas_CDTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB831513A591D8003EDE60 /* atlas_CDTypeFormatter.m */; };
+		013D1F5313A5AEA100BF0A67 /* atlas_CDTypeLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB831713A591D8003EDE60 /* atlas_CDTypeLexer.m */; };
+		013D1F5413A5AEA100BF0A67 /* atlas_CDTypeName.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB831913A591D8003EDE60 /* atlas_CDTypeName.m */; };
+		013D1F5513A5AEA100BF0A67 /* atlas_CDTypeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB831B13A591D8003EDE60 /* atlas_CDTypeParser.m */; };
+		013D1F5613A5AF1E00BF0A67 /* libObjCAtlasCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */; };
+		013D1F5813A5AF4C00BF0A67 /* atlas_deprotect.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D1F0913A5A11100BF0A67 /* atlas_deprotect.m */; };
+		013D1F5A13A5AF6500BF0A67 /* libObjCAtlasCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */; };
+		0165B8B91827137D00CC647F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0165B8B71827137D00CC647F /* InfoPlist.strings */; };
+		0165B8C31827182000CC647F /* atlas_TestCDNameForCPUType.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E484E1604DF3700722F8D /* atlas_TestCDNameForCPUType.m */; };
+		0165B8C41827184700CC647F /* libObjCAtlasCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */; };
+		0165B8D81827198900CC647F /* atlas_TestBlockSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8C71827198900CC647F /* atlas_TestBlockSignature.m */; };
+		0165B8D91827198900CC647F /* atlas_TestCDArchFromName.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8C91827198900CC647F /* atlas_TestCDArchFromName.m */; };
+		0165B8DA1827198900CC647F /* atlas_TestCDArchUses64BitABI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8CB1827198900CC647F /* atlas_TestCDArchUses64BitABI.m */; };
+		0165B8DB1827198900CC647F /* atlas_TestFatFile_armv7_v7s.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8CD1827198900CC647F /* atlas_TestFatFile_armv7_v7s.m */; };
+		0165B8DC1827198900CC647F /* atlas_TestFatFile_Intel32_64_lib64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8CF1827198900CC647F /* atlas_TestFatFile_Intel32_64_lib64.m */; };
+		0165B8DD1827198900CC647F /* atlas_TestFatFile_Intel32_64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8D11827198900CC647F /* atlas_TestFatFile_Intel32_64.m */; };
+		0165B8DE1827198900CC647F /* atlas_TestFatFile_Intel64_32.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8D31827198900CC647F /* atlas_TestFatFile_Intel64_32.m */; };
+		0165B8DF1827198900CC647F /* atlas_TestThinFile_Intel64_lib64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8D51827198900CC647F /* atlas_TestThinFile_Intel64_lib64.m */; };
+		0165B8E01827198900CC647F /* atlas_TestThinFile_Intel64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165B8D71827198900CC647F /* atlas_TestThinFile_Intel64.m */; };
+		0168C98713E4AB3200926EC3 /* atlas_CDLCFunctionStarts.h in Headers */ = {isa = PBXBuildFile; fileRef = 0168C98513E4AB3200926EC3 /* atlas_CDLCFunctionStarts.h */; };
+		0168C98813E4AB3200926EC3 /* atlas_CDLCFunctionStarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0168C98613E4AB3200926EC3 /* atlas_CDLCFunctionStarts.m */; };
+		0179B9E614F2025E00EC98F7 /* atlas_CDLCMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0179B9E414F2025E00EC98F7 /* atlas_CDLCMain.h */; };
+		0179B9E714F2025E00EC98F7 /* atlas_CDLCMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0179B9E514F2025E00EC98F7 /* atlas_CDLCMain.m */; };
+		0179B9EB14F204AA00EC98F7 /* atlas_CDLCSourceVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 0179B9E914F204AA00EC98F7 /* atlas_CDLCSourceVersion.h */; };
+		0179B9EC14F204AA00EC98F7 /* atlas_CDLCSourceVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0179B9EA14F204AA00EC98F7 /* atlas_CDLCSourceVersion.m */; };
+		0179B9F714F20E9800EC98F7 /* atlas_CDLCDataInCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0179B9F514F20E9800EC98F7 /* atlas_CDLCDataInCode.h */; };
+		0179B9F814F20E9800EC98F7 /* atlas_CDLCDataInCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0179B9F614F20E9800EC98F7 /* atlas_CDLCDataInCode.m */; };
+		018BFD4214F65DB600190F07 /* atlas_CDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 018BFD4114F65DB600190F07 /* atlas_CDExtensions.h */; };
+		0194945C1673F8F400A29005 /* atlas_CDProtocolUniquer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0194945A1673F8F100A29005 /* atlas_CDProtocolUniquer.h */; };
+		0194945D1673F8F400A29005 /* atlas_CDProtocolUniquer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0194945B1673F8F200A29005 /* atlas_CDProtocolUniquer.m */; };
+		01B02D0E13A5B0FB0047BC53 /* atlas_formatType.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B02D0D13A5B0FB0047BC53 /* atlas_formatType.m */; };
+		01B02D1113A5B1460047BC53 /* atlas_class_dump.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B02D1013A5B1460047BC53 /* atlas_class_dump.m */; };
+		01B02D1313A5B1CE0047BC53 /* libObjCAtlasCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */; };
+		01B02D2013A5B4D70047BC53 /* atlas_CDClassDump.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB829A13A591D7003EDE60 /* atlas_CDClassDump.m */; };
+		01B02D2113A5B4D70047BC53 /* atlas_CDStructureTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB830613A591D8003EDE60 /* atlas_CDStructureTable.m */; };
+		01B02D2213A5B4D70047BC53 /* atlas_CDTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB831313A591D8003EDE60 /* atlas_CDTypeController.m */; };
+		01B02D2313A5B4D70047BC53 /* atlas_CDStructureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB830413A591D8003EDE60 /* atlas_CDStructureInfo.m */; };
+		01B02D2513A5B4D70047BC53 /* atlas_CDClassDumpVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB829C13A591D7003EDE60 /* atlas_CDClassDumpVisitor.m */; };
+		01B02D2613A5B4D70047BC53 /* atlas_CDFindMethodVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82A813A591D7003EDE60 /* atlas_CDFindMethodVisitor.m */; };
+		01B02D2713A5B4D70047BC53 /* atlas_CDVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB831E13A591D8003EDE60 /* atlas_CDVisitor.m */; };
+		01B02D2813A5B4D70047BC53 /* atlas_CDClassFrameworkVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB829E13A591D7003EDE60 /* atlas_CDClassFrameworkVisitor.m */; };
+		01B02D2913A5B4D70047BC53 /* atlas_CDMultiFileVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82E213A591D8003EDE60 /* atlas_CDMultiFileVisitor.m */; };
+		01B02D2A13A5B4D70047BC53 /* atlas_CDTextClassDumpVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB830C13A591D8003EDE60 /* atlas_CDTextClassDumpVisitor.m */; };
+		01B02D2B13A5B4D70047BC53 /* atlas_CDSearchPathState.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB82FC13A591D8003EDE60 /* atlas_CDSearchPathState.m */; };
+		01FB2151222A86C40012A5D3 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FB214F222A86C40012A5D3 /* blowfish.h */; };
+		01FB2152222A86C40012A5D3 /* blowfish.c in Sources */ = {isa = PBXBuildFile; fileRef = 01FB2150222A86C40012A5D3 /* blowfish.c */; };
+		0D288C10187BC2EE0026E2A0 /* atlas_CDOCClassReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D288C0E187BC2EE0026E2A0 /* atlas_CDOCClassReference.h */; };
+		0D288C11187BC2EE0026E2A0 /* atlas_CDOCClassReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D288C0F187BC2EE0026E2A0 /* atlas_CDOCClassReference.m */; };
+		C270B5C616C54AD6006CA75D /* atlas_ULEB128.m in Sources */ = {isa = PBXBuildFile; fileRef = C270B5C516C54AD5006CA75D /* atlas_ULEB128.m */; };
+		C270B5C816C54B0C006CA75D /* atlas_ULEB128.h in Headers */ = {isa = PBXBuildFile; fileRef = C270B5C716C54B0A006CA75D /* atlas_ULEB128.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0106C81D1412D05F00B29890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013D1F1013A5AE5A00BF0A67;
+			remoteInfo = ObjCAtlasCore;
+		};
+		0106C81F1412D07000B29890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013D1F1013A5AE5A00BF0A67;
+			remoteInfo = ObjCAtlasCore;
+		};
+		0106C8211412D07C00B29890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013D1F1013A5AE5A00BF0A67;
+			remoteInfo = ObjCAtlasCore;
+		};
+		0158A8151412DED0003FEB91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013D1F1013A5AE5A00BF0A67;
+			remoteInfo = ObjCAtlasCore;
+		};
+		0165B8BD1827137D00CC647F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B02D2E13A5B5D50047BC53;
+			remoteInfo = all;
+		};
+		01B02D3213A5B5E20047BC53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EB825E13A590D9003EDE60;
+			remoteInfo = "ObjCAtlas";
+		};
+		01B02D3413A5B5E20047BC53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013D1EFA13A5A0F100BF0A67;
+			remoteInfo = deprotect;
+		};
+		01B02D3813A5B5E20047BC53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EB825613A590D9003EDE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B02CFE13A5B0DC0047BC53;
+			remoteInfo = formatType;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		013D1EF913A5A0F100BF0A67 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		01B02CFD13A5B0DC0047BC53 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		01EB825D13A590D9003EDE60 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		011E484E1604DF3700722F8D /* atlas_TestCDNameForCPUType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = atlas_TestCDNameForCPUType.m; sourceTree = "<group>"; };
+		0132DD4321816C09009CE078 /* atlas_CDLCBuildVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCBuildVersion.h; path = Core/atlas_CDLCBuildVersion.h; sourceTree = "<group>"; };
+		0132DD4421816C09009CE078 /* atlas_CDLCBuildVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCBuildVersion.m; path = Core/atlas_CDLCBuildVersion.m; sourceTree = "<group>"; };
+		0133F1771EE784DA0086686F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		013D1EFB13A5A0F100BF0A67 /* deprotect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = deprotect; sourceTree = BUILT_PRODUCTS_DIR; };
+		013D1F0913A5A11100BF0A67 /* atlas_deprotect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_deprotect.m; sourceTree = SOURCE_ROOT; };
+		013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjCAtlasCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0165B8B11827137D00CC647F /* ObjCAtlasChecks.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCAtlasChecks.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0165B8B61827137D00CC647F /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		0165B8B81827137D00CC647F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0165B8BC1827137D00CC647F /* atlas_UnitTests_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "atlas_UnitTests_Prefix.pch"; sourceTree = "<group>"; };
+		0165B8C71827198900CC647F /* atlas_TestBlockSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestBlockSignature.m; sourceTree = "<group>"; };
+		0165B8C91827198900CC647F /* atlas_TestCDArchFromName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestCDArchFromName.m; sourceTree = "<group>"; };
+		0165B8CB1827198900CC647F /* atlas_TestCDArchUses64BitABI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestCDArchUses64BitABI.m; sourceTree = "<group>"; };
+		0165B8CD1827198900CC647F /* atlas_TestFatFile_armv7_v7s.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestFatFile_armv7_v7s.m; sourceTree = "<group>"; };
+		0165B8CF1827198900CC647F /* atlas_TestFatFile_Intel32_64_lib64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestFatFile_Intel32_64_lib64.m; sourceTree = "<group>"; };
+		0165B8D11827198900CC647F /* atlas_TestFatFile_Intel32_64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestFatFile_Intel32_64.m; sourceTree = "<group>"; };
+		0165B8D31827198900CC647F /* atlas_TestFatFile_Intel64_32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestFatFile_Intel64_32.m; sourceTree = "<group>"; };
+		0165B8D51827198900CC647F /* atlas_TestThinFile_Intel64_lib64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestThinFile_Intel64_lib64.m; sourceTree = "<group>"; };
+		0165B8D71827198900CC647F /* atlas_TestThinFile_Intel64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_TestThinFile_Intel64.m; sourceTree = "<group>"; };
+		0168C98513E4AB3200926EC3 /* atlas_CDLCFunctionStarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCFunctionStarts.h; path = Core/atlas_CDLCFunctionStarts.h; sourceTree = "<group>"; };
+		0168C98613E4AB3200926EC3 /* atlas_CDLCFunctionStarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCFunctionStarts.m; path = Core/atlas_CDLCFunctionStarts.m; sourceTree = "<group>"; };
+		0179B9E414F2025E00EC98F7 /* atlas_CDLCMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCMain.h; path = Core/atlas_CDLCMain.h; sourceTree = "<group>"; };
+		0179B9E514F2025E00EC98F7 /* atlas_CDLCMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCMain.m; path = Core/atlas_CDLCMain.m; sourceTree = "<group>"; };
+		0179B9E914F204AA00EC98F7 /* atlas_CDLCSourceVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCSourceVersion.h; path = Core/atlas_CDLCSourceVersion.h; sourceTree = "<group>"; };
+		0179B9EA14F204AA00EC98F7 /* atlas_CDLCSourceVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCSourceVersion.m; path = Core/atlas_CDLCSourceVersion.m; sourceTree = "<group>"; };
+		0179B9F514F20E9800EC98F7 /* atlas_CDLCDataInCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCDataInCode.h; path = Core/atlas_CDLCDataInCode.h; sourceTree = "<group>"; };
+		0179B9F614F20E9800EC98F7 /* atlas_CDLCDataInCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCDataInCode.m; path = Core/atlas_CDLCDataInCode.m; sourceTree = "<group>"; };
+		018BFD4114F65DB600190F07 /* atlas_CDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDExtensions.h; path = Core/atlas_CDExtensions.h; sourceTree = "<group>"; };
+		0194945A1673F8F100A29005 /* atlas_CDProtocolUniquer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDProtocolUniquer.h; path = Core/atlas_CDProtocolUniquer.h; sourceTree = "<group>"; };
+		0194945B1673F8F200A29005 /* atlas_CDProtocolUniquer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDProtocolUniquer.m; path = Core/atlas_CDProtocolUniquer.m; sourceTree = "<group>"; };
+		01B02CFF13A5B0DC0047BC53 /* formatType */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = formatType; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B02D0D13A5B0FB0047BC53 /* atlas_formatType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_formatType.m; sourceTree = SOURCE_ROOT; };
+		01B02D0F13A5B1220047BC53 /* atlas_formatType_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "atlas_formatType_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		01B02D1013A5B1460047BC53 /* atlas_class_dump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "atlas_class_dump.m"; sourceTree = SOURCE_ROOT; };
+		01B02D1213A5B16E0047BC53 /* atlas_deprotect_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "atlas_deprotect_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		01B02D1B13A5B2A40047BC53 /* atlas_class_dump_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "atlas_class_dump_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		01B02D4913A5B9090047BC53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		01EB825F13A590D9003EDE60 /* ObjCAtlas */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ObjCAtlas"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EB828213A5916D003EDE60 /* atlas_MachObjC_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "atlas_MachObjC_Prefix.pch"; sourceTree = "<group>"; };
+		01EB828713A591A5003EDE60 /* atlas_NSArray_CDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "atlas_NSArray_CDExtensions.h"; path = "Core/atlas_NSArray_CDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		01EB828813A591A5003EDE60 /* atlas_NSArray_CDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "atlas_NSArray_CDExtensions.m"; path = "Core/atlas_NSArray_CDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		01EB828913A591A5003EDE60 /* atlas_NSData_CDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "atlas_NSData_CDExtensions.h"; path = "Core/atlas_NSData_CDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		01EB828A13A591A5003EDE60 /* atlas_NSData_CDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "atlas_NSData_CDExtensions.m"; path = "Core/atlas_NSData_CDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		01EB828B13A591A5003EDE60 /* atlas_NSError_CDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "atlas_NSError_CDExtensions.h"; path = "Core/atlas_NSError_CDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		01EB828C13A591A5003EDE60 /* atlas_NSError_CDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "atlas_NSError_CDExtensions.m"; path = "Core/atlas_NSError_CDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		01EB828D13A591A5003EDE60 /* atlas_NSScanner_CDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "atlas_NSScanner_CDExtensions.h"; path = "Core/atlas_NSScanner_CDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		01EB828E13A591A5003EDE60 /* atlas_NSScanner_CDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "atlas_NSScanner_CDExtensions.m"; path = "Core/atlas_NSScanner_CDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		01EB828F13A591A5003EDE60 /* atlas_NSString_CDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "atlas_NSString_CDExtensions.h"; path = "Core/atlas_NSString_CDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		01EB829013A591A5003EDE60 /* atlas_NSString_CDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "atlas_NSString_CDExtensions.m"; path = "Core/atlas_NSString_CDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		01EB829613A591D7003EDE60 /* atlas_cd_objc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_cd_objc2.h; path = Core/atlas_cd_objc2.h; sourceTree = SOURCE_ROOT; };
+		01EB829713A591D7003EDE60 /* atlas_CDBalanceFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDBalanceFormatter.h; path = Core/atlas_CDBalanceFormatter.h; sourceTree = SOURCE_ROOT; };
+		01EB829813A591D7003EDE60 /* atlas_CDBalanceFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDBalanceFormatter.m; path = Core/atlas_CDBalanceFormatter.m; sourceTree = SOURCE_ROOT; };
+		01EB829913A591D7003EDE60 /* atlas_CDClassDump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDClassDump.h; path = Core/atlas_CDClassDump.h; sourceTree = SOURCE_ROOT; };
+		01EB829A13A591D7003EDE60 /* atlas_CDClassDump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDClassDump.m; path = Core/atlas_CDClassDump.m; sourceTree = SOURCE_ROOT; };
+		01EB829B13A591D7003EDE60 /* atlas_CDClassDumpVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDClassDumpVisitor.h; path = Core/atlas_CDClassDumpVisitor.h; sourceTree = SOURCE_ROOT; };
+		01EB829C13A591D7003EDE60 /* atlas_CDClassDumpVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDClassDumpVisitor.m; path = Core/atlas_CDClassDumpVisitor.m; sourceTree = SOURCE_ROOT; };
+		01EB829D13A591D7003EDE60 /* atlas_CDClassFrameworkVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDClassFrameworkVisitor.h; path = Core/atlas_CDClassFrameworkVisitor.h; sourceTree = SOURCE_ROOT; };
+		01EB829E13A591D7003EDE60 /* atlas_CDClassFrameworkVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDClassFrameworkVisitor.m; path = Core/atlas_CDClassFrameworkVisitor.m; sourceTree = SOURCE_ROOT; };
+		01EB829F13A591D7003EDE60 /* atlas_CDDataCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDDataCursor.h; path = Core/atlas_CDDataCursor.h; sourceTree = SOURCE_ROOT; };
+		01EB82A013A591D7003EDE60 /* atlas_CDDataCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDDataCursor.m; path = Core/atlas_CDDataCursor.m; sourceTree = SOURCE_ROOT; };
+		01EB82A113A591D7003EDE60 /* atlas_CDFatArch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDFatArch.h; path = Core/atlas_CDFatArch.h; sourceTree = SOURCE_ROOT; };
+		01EB82A213A591D7003EDE60 /* atlas_CDFatArch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDFatArch.m; path = Core/atlas_CDFatArch.m; sourceTree = SOURCE_ROOT; };
+		01EB82A313A591D7003EDE60 /* atlas_CDFatFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDFatFile.h; path = Core/atlas_CDFatFile.h; sourceTree = SOURCE_ROOT; };
+		01EB82A413A591D7003EDE60 /* atlas_CDFatFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDFatFile.m; path = Core/atlas_CDFatFile.m; sourceTree = SOURCE_ROOT; };
+		01EB82A513A591D7003EDE60 /* atlas_CDFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDFile.h; path = Core/atlas_CDFile.h; sourceTree = SOURCE_ROOT; };
+		01EB82A613A591D7003EDE60 /* atlas_CDFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDFile.m; path = Core/atlas_CDFile.m; sourceTree = SOURCE_ROOT; };
+		01EB82A713A591D7003EDE60 /* atlas_CDFindMethodVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDFindMethodVisitor.h; path = Core/atlas_CDFindMethodVisitor.h; sourceTree = SOURCE_ROOT; };
+		01EB82A813A591D7003EDE60 /* atlas_CDFindMethodVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDFindMethodVisitor.m; path = Core/atlas_CDFindMethodVisitor.m; sourceTree = SOURCE_ROOT; };
+		01EB82A913A591D7003EDE60 /* atlas_CDLCDyldInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCDyldInfo.h; path = Core/atlas_CDLCDyldInfo.h; sourceTree = SOURCE_ROOT; };
+		01EB82AA13A591D7003EDE60 /* atlas_CDLCDyldInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCDyldInfo.m; path = Core/atlas_CDLCDyldInfo.m; sourceTree = SOURCE_ROOT; };
+		01EB82AB13A591D7003EDE60 /* atlas_CDLCDylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCDylib.h; path = Core/atlas_CDLCDylib.h; sourceTree = SOURCE_ROOT; };
+		01EB82AC13A591D7003EDE60 /* atlas_CDLCDylib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCDylib.m; path = Core/atlas_CDLCDylib.m; sourceTree = SOURCE_ROOT; };
+		01EB82AD13A591D7003EDE60 /* atlas_CDLCDylinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCDylinker.h; path = Core/atlas_CDLCDylinker.h; sourceTree = SOURCE_ROOT; };
+		01EB82AE13A591D7003EDE60 /* atlas_CDLCDylinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCDylinker.m; path = Core/atlas_CDLCDylinker.m; sourceTree = SOURCE_ROOT; };
+		01EB82AF13A591D7003EDE60 /* atlas_CDLCDynamicSymbolTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCDynamicSymbolTable.h; path = Core/atlas_CDLCDynamicSymbolTable.h; sourceTree = SOURCE_ROOT; };
+		01EB82B013A591D7003EDE60 /* atlas_CDLCDynamicSymbolTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCDynamicSymbolTable.m; path = Core/atlas_CDLCDynamicSymbolTable.m; sourceTree = SOURCE_ROOT; };
+		01EB82B113A591D7003EDE60 /* atlas_CDLCEncryptionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCEncryptionInfo.h; path = Core/atlas_CDLCEncryptionInfo.h; sourceTree = SOURCE_ROOT; };
+		01EB82B213A591D7003EDE60 /* atlas_CDLCEncryptionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCEncryptionInfo.m; path = Core/atlas_CDLCEncryptionInfo.m; sourceTree = SOURCE_ROOT; };
+		01EB82B313A591D7003EDE60 /* atlas_CDLCLinkeditData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCLinkeditData.h; path = Core/atlas_CDLCLinkeditData.h; sourceTree = SOURCE_ROOT; };
+		01EB82B413A591D7003EDE60 /* atlas_CDLCLinkeditData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCLinkeditData.m; path = Core/atlas_CDLCLinkeditData.m; sourceTree = SOURCE_ROOT; };
+		01EB82B513A591D7003EDE60 /* atlas_CDLCPrebindChecksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCPrebindChecksum.h; path = Core/atlas_CDLCPrebindChecksum.h; sourceTree = SOURCE_ROOT; };
+		01EB82B613A591D7003EDE60 /* atlas_CDLCPrebindChecksum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCPrebindChecksum.m; path = Core/atlas_CDLCPrebindChecksum.m; sourceTree = SOURCE_ROOT; };
+		01EB82B713A591D7003EDE60 /* atlas_CDLCPreboundDylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCPreboundDylib.h; path = Core/atlas_CDLCPreboundDylib.h; sourceTree = SOURCE_ROOT; };
+		01EB82B813A591D7003EDE60 /* atlas_CDLCPreboundDylib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCPreboundDylib.m; path = Core/atlas_CDLCPreboundDylib.m; sourceTree = SOURCE_ROOT; };
+		01EB82B913A591D7003EDE60 /* atlas_CDLCRoutines32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCRoutines32.h; path = Core/atlas_CDLCRoutines32.h; sourceTree = SOURCE_ROOT; };
+		01EB82BA13A591D8003EDE60 /* atlas_CDLCRoutines32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCRoutines32.m; path = Core/atlas_CDLCRoutines32.m; sourceTree = SOURCE_ROOT; };
+		01EB82BB13A591D8003EDE60 /* atlas_CDLCRoutines64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCRoutines64.h; path = Core/atlas_CDLCRoutines64.h; sourceTree = SOURCE_ROOT; };
+		01EB82BC13A591D8003EDE60 /* atlas_CDLCRoutines64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCRoutines64.m; path = Core/atlas_CDLCRoutines64.m; sourceTree = SOURCE_ROOT; };
+		01EB82BD13A591D8003EDE60 /* atlas_CDLCRunPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCRunPath.h; path = Core/atlas_CDLCRunPath.h; sourceTree = SOURCE_ROOT; };
+		01EB82BE13A591D8003EDE60 /* atlas_CDLCRunPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCRunPath.m; path = Core/atlas_CDLCRunPath.m; sourceTree = SOURCE_ROOT; };
+		01EB82BF13A591D8003EDE60 /* atlas_CDLCSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCSegment.h; path = Core/atlas_CDLCSegment.h; sourceTree = SOURCE_ROOT; };
+		01EB82C013A591D8003EDE60 /* atlas_CDLCSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCSegment.m; path = Core/atlas_CDLCSegment.m; sourceTree = SOURCE_ROOT; };
+		01EB82C513A591D8003EDE60 /* atlas_CDLCSubClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCSubClient.h; path = Core/atlas_CDLCSubClient.h; sourceTree = SOURCE_ROOT; };
+		01EB82C613A591D8003EDE60 /* atlas_CDLCSubClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCSubClient.m; path = Core/atlas_CDLCSubClient.m; sourceTree = SOURCE_ROOT; };
+		01EB82C713A591D8003EDE60 /* atlas_CDLCSubFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCSubFramework.h; path = Core/atlas_CDLCSubFramework.h; sourceTree = SOURCE_ROOT; };
+		01EB82C813A591D8003EDE60 /* atlas_CDLCSubFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCSubFramework.m; path = Core/atlas_CDLCSubFramework.m; sourceTree = SOURCE_ROOT; };
+		01EB82C913A591D8003EDE60 /* atlas_CDLCSubLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCSubLibrary.h; path = Core/atlas_CDLCSubLibrary.h; sourceTree = SOURCE_ROOT; };
+		01EB82CA13A591D8003EDE60 /* atlas_CDLCSubLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCSubLibrary.m; path = Core/atlas_CDLCSubLibrary.m; sourceTree = SOURCE_ROOT; };
+		01EB82CB13A591D8003EDE60 /* atlas_CDLCSubUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCSubUmbrella.h; path = Core/atlas_CDLCSubUmbrella.h; sourceTree = SOURCE_ROOT; };
+		01EB82CC13A591D8003EDE60 /* atlas_CDLCSubUmbrella.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCSubUmbrella.m; path = Core/atlas_CDLCSubUmbrella.m; sourceTree = SOURCE_ROOT; };
+		01EB82CD13A591D8003EDE60 /* atlas_CDLCSymbolTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCSymbolTable.h; path = Core/atlas_CDLCSymbolTable.h; sourceTree = SOURCE_ROOT; };
+		01EB82CE13A591D8003EDE60 /* atlas_CDLCSymbolTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCSymbolTable.m; path = Core/atlas_CDLCSymbolTable.m; sourceTree = SOURCE_ROOT; };
+		01EB82CF13A591D8003EDE60 /* atlas_CDLCTwoLevelHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCTwoLevelHints.h; path = Core/atlas_CDLCTwoLevelHints.h; sourceTree = SOURCE_ROOT; };
+		01EB82D013A591D8003EDE60 /* atlas_CDLCTwoLevelHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCTwoLevelHints.m; path = Core/atlas_CDLCTwoLevelHints.m; sourceTree = SOURCE_ROOT; };
+		01EB82D113A591D8003EDE60 /* atlas_CDLCUnixThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCUnixThread.h; path = Core/atlas_CDLCUnixThread.h; sourceTree = SOURCE_ROOT; };
+		01EB82D213A591D8003EDE60 /* atlas_CDLCUnixThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCUnixThread.m; path = Core/atlas_CDLCUnixThread.m; sourceTree = SOURCE_ROOT; };
+		01EB82D313A591D8003EDE60 /* atlas_CDLCUnknown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCUnknown.h; path = Core/atlas_CDLCUnknown.h; sourceTree = SOURCE_ROOT; };
+		01EB82D413A591D8003EDE60 /* atlas_CDLCUnknown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCUnknown.m; path = Core/atlas_CDLCUnknown.m; sourceTree = SOURCE_ROOT; };
+		01EB82D513A591D8003EDE60 /* atlas_CDLCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCUUID.h; path = Core/atlas_CDLCUUID.h; sourceTree = SOURCE_ROOT; };
+		01EB82D613A591D8003EDE60 /* atlas_CDLCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCUUID.m; path = Core/atlas_CDLCUUID.m; sourceTree = SOURCE_ROOT; };
+		01EB82D713A591D8003EDE60 /* atlas_CDLCVersionMinimum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCVersionMinimum.h; path = Core/atlas_CDLCVersionMinimum.h; sourceTree = SOURCE_ROOT; };
+		01EB82D813A591D8003EDE60 /* atlas_CDLCVersionMinimum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCVersionMinimum.m; path = Core/atlas_CDLCVersionMinimum.m; sourceTree = SOURCE_ROOT; };
+		01EB82D913A591D8003EDE60 /* atlas_CDLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLoadCommand.h; path = Core/atlas_CDLoadCommand.h; sourceTree = SOURCE_ROOT; };
+		01EB82DA13A591D8003EDE60 /* atlas_CDLoadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLoadCommand.m; path = Core/atlas_CDLoadCommand.m; sourceTree = SOURCE_ROOT; };
+		01EB82DB13A591D8003EDE60 /* atlas_CDMachOFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDMachOFile.h; path = Core/atlas_CDMachOFile.h; sourceTree = SOURCE_ROOT; };
+		01EB82DC13A591D8003EDE60 /* atlas_CDMachOFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDMachOFile.m; path = Core/atlas_CDMachOFile.m; sourceTree = SOURCE_ROOT; };
+		01EB82DD13A591D8003EDE60 /* atlas_CDMachOFileDataCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDMachOFileDataCursor.h; path = Core/atlas_CDMachOFileDataCursor.h; sourceTree = SOURCE_ROOT; };
+		01EB82DE13A591D8003EDE60 /* atlas_CDMachOFileDataCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDMachOFileDataCursor.m; path = Core/atlas_CDMachOFileDataCursor.m; sourceTree = SOURCE_ROOT; };
+		01EB82DF13A591D8003EDE60 /* atlas_CDMethodType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDMethodType.h; path = Core/atlas_CDMethodType.h; sourceTree = SOURCE_ROOT; };
+		01EB82E013A591D8003EDE60 /* atlas_CDMethodType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDMethodType.m; path = Core/atlas_CDMethodType.m; sourceTree = SOURCE_ROOT; };
+		01EB82E113A591D8003EDE60 /* atlas_CDMultiFileVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDMultiFileVisitor.h; path = Core/atlas_CDMultiFileVisitor.h; sourceTree = SOURCE_ROOT; };
+		01EB82E213A591D8003EDE60 /* atlas_CDMultiFileVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDMultiFileVisitor.m; path = Core/atlas_CDMultiFileVisitor.m; sourceTree = SOURCE_ROOT; };
+		01EB82E313A591D8003EDE60 /* atlas_CDObjectiveC1Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDObjectiveC1Processor.h; path = Core/atlas_CDObjectiveC1Processor.h; sourceTree = SOURCE_ROOT; };
+		01EB82E413A591D8003EDE60 /* atlas_CDObjectiveC1Processor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDObjectiveC1Processor.m; path = Core/atlas_CDObjectiveC1Processor.m; sourceTree = SOURCE_ROOT; };
+		01EB82E513A591D8003EDE60 /* atlas_CDObjectiveC2Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDObjectiveC2Processor.h; path = Core/atlas_CDObjectiveC2Processor.h; sourceTree = SOURCE_ROOT; };
+		01EB82E613A591D8003EDE60 /* atlas_CDObjectiveC2Processor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDObjectiveC2Processor.m; path = Core/atlas_CDObjectiveC2Processor.m; sourceTree = SOURCE_ROOT; };
+		01EB82E713A591D8003EDE60 /* atlas_CDObjectiveCProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDObjectiveCProcessor.h; path = Core/atlas_CDObjectiveCProcessor.h; sourceTree = SOURCE_ROOT; };
+		01EB82E813A591D8003EDE60 /* atlas_CDObjectiveCProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDObjectiveCProcessor.m; path = Core/atlas_CDObjectiveCProcessor.m; sourceTree = SOURCE_ROOT; };
+		01EB82E913A591D8003EDE60 /* atlas_CDOCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCCategory.h; path = Core/atlas_CDOCCategory.h; sourceTree = SOURCE_ROOT; };
+		01EB82EA13A591D8003EDE60 /* atlas_CDOCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCCategory.m; path = Core/atlas_CDOCCategory.m; sourceTree = SOURCE_ROOT; };
+		01EB82EB13A591D8003EDE60 /* atlas_CDOCClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCClass.h; path = Core/atlas_CDOCClass.h; sourceTree = SOURCE_ROOT; };
+		01EB82EC13A591D8003EDE60 /* atlas_CDOCClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCClass.m; path = Core/atlas_CDOCClass.m; sourceTree = SOURCE_ROOT; };
+		01EB82ED13A591D8003EDE60 /* atlas_CDOCInstanceVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCInstanceVariable.h; path = Core/atlas_CDOCInstanceVariable.h; sourceTree = SOURCE_ROOT; };
+		01EB82EE13A591D8003EDE60 /* atlas_CDOCInstanceVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCInstanceVariable.m; path = Core/atlas_CDOCInstanceVariable.m; sourceTree = SOURCE_ROOT; };
+		01EB82EF13A591D8003EDE60 /* atlas_CDOCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCMethod.h; path = Core/atlas_CDOCMethod.h; sourceTree = SOURCE_ROOT; };
+		01EB82F013A591D8003EDE60 /* atlas_CDOCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCMethod.m; path = Core/atlas_CDOCMethod.m; sourceTree = SOURCE_ROOT; };
+		01EB82F113A591D8003EDE60 /* atlas_CDOCModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCModule.h; path = Core/atlas_CDOCModule.h; sourceTree = SOURCE_ROOT; };
+		01EB82F213A591D8003EDE60 /* atlas_CDOCModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCModule.m; path = Core/atlas_CDOCModule.m; sourceTree = SOURCE_ROOT; };
+		01EB82F313A591D8003EDE60 /* atlas_CDOCProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCProperty.h; path = Core/atlas_CDOCProperty.h; sourceTree = SOURCE_ROOT; };
+		01EB82F413A591D8003EDE60 /* atlas_CDOCProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCProperty.m; path = Core/atlas_CDOCProperty.m; sourceTree = SOURCE_ROOT; };
+		01EB82F513A591D8003EDE60 /* atlas_CDOCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCProtocol.h; path = Core/atlas_CDOCProtocol.h; sourceTree = SOURCE_ROOT; };
+		01EB82F613A591D8003EDE60 /* atlas_CDOCProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCProtocol.m; path = Core/atlas_CDOCProtocol.m; sourceTree = SOURCE_ROOT; };
+		01EB82F713A591D8003EDE60 /* atlas_CDOCSymtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCSymtab.h; path = Core/atlas_CDOCSymtab.h; sourceTree = SOURCE_ROOT; };
+		01EB82F813A591D8003EDE60 /* atlas_CDOCSymtab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCSymtab.m; path = Core/atlas_CDOCSymtab.m; sourceTree = SOURCE_ROOT; };
+		01EB82F913A591D8003EDE60 /* atlas_CDRelocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDRelocationInfo.h; path = Core/atlas_CDRelocationInfo.h; sourceTree = SOURCE_ROOT; };
+		01EB82FA13A591D8003EDE60 /* atlas_CDRelocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDRelocationInfo.m; path = Core/atlas_CDRelocationInfo.m; sourceTree = SOURCE_ROOT; };
+		01EB82FB13A591D8003EDE60 /* atlas_CDSearchPathState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDSearchPathState.h; path = Core/atlas_CDSearchPathState.h; sourceTree = SOURCE_ROOT; };
+		01EB82FC13A591D8003EDE60 /* atlas_CDSearchPathState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDSearchPathState.m; path = Core/atlas_CDSearchPathState.m; sourceTree = SOURCE_ROOT; };
+		01EB82FD13A591D8003EDE60 /* atlas_CDSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDSection.h; path = Core/atlas_CDSection.h; sourceTree = SOURCE_ROOT; };
+		01EB82FE13A591D8003EDE60 /* atlas_CDSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDSection.m; path = Core/atlas_CDSection.m; sourceTree = SOURCE_ROOT; };
+		01EB830313A591D8003EDE60 /* atlas_CDStructureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDStructureInfo.h; path = Core/atlas_CDStructureInfo.h; sourceTree = SOURCE_ROOT; };
+		01EB830413A591D8003EDE60 /* atlas_CDStructureInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDStructureInfo.m; path = Core/atlas_CDStructureInfo.m; sourceTree = SOURCE_ROOT; };
+		01EB830513A591D8003EDE60 /* atlas_CDStructureTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDStructureTable.h; path = Core/atlas_CDStructureTable.h; sourceTree = SOURCE_ROOT; };
+		01EB830613A591D8003EDE60 /* atlas_CDStructureTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDStructureTable.m; path = Core/atlas_CDStructureTable.m; sourceTree = SOURCE_ROOT; };
+		01EB830713A591D8003EDE60 /* atlas_CDSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDSymbol.h; path = Core/atlas_CDSymbol.h; sourceTree = SOURCE_ROOT; };
+		01EB830813A591D8003EDE60 /* atlas_CDSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDSymbol.m; path = Core/atlas_CDSymbol.m; sourceTree = SOURCE_ROOT; };
+		01EB830B13A591D8003EDE60 /* atlas_CDTextClassDumpVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTextClassDumpVisitor.h; path = Core/atlas_CDTextClassDumpVisitor.h; sourceTree = SOURCE_ROOT; };
+		01EB830C13A591D8003EDE60 /* atlas_CDTextClassDumpVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDTextClassDumpVisitor.m; path = Core/atlas_CDTextClassDumpVisitor.m; sourceTree = SOURCE_ROOT; };
+		01EB830D13A591D8003EDE60 /* atlas_CDTopologicalSortProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTopologicalSortProtocol.h; path = Core/atlas_CDTopologicalSortProtocol.h; sourceTree = SOURCE_ROOT; };
+		01EB830E13A591D8003EDE60 /* atlas_CDTopoSortNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTopoSortNode.h; path = Core/atlas_CDTopoSortNode.h; sourceTree = SOURCE_ROOT; };
+		01EB830F13A591D8003EDE60 /* atlas_CDTopoSortNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDTopoSortNode.m; path = Core/atlas_CDTopoSortNode.m; sourceTree = SOURCE_ROOT; };
+		01EB831013A591D8003EDE60 /* atlas_CDType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDType.h; path = Core/atlas_CDType.h; sourceTree = SOURCE_ROOT; };
+		01EB831113A591D8003EDE60 /* atlas_CDType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDType.m; path = Core/atlas_CDType.m; sourceTree = SOURCE_ROOT; };
+		01EB831213A591D8003EDE60 /* atlas_CDTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTypeController.h; path = Core/atlas_CDTypeController.h; sourceTree = SOURCE_ROOT; };
+		01EB831313A591D8003EDE60 /* atlas_CDTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDTypeController.m; path = Core/atlas_CDTypeController.m; sourceTree = SOURCE_ROOT; };
+		01EB831413A591D8003EDE60 /* atlas_CDTypeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTypeFormatter.h; path = Core/atlas_CDTypeFormatter.h; sourceTree = SOURCE_ROOT; };
+		01EB831513A591D8003EDE60 /* atlas_CDTypeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDTypeFormatter.m; path = Core/atlas_CDTypeFormatter.m; sourceTree = SOURCE_ROOT; };
+		01EB831613A591D8003EDE60 /* atlas_CDTypeLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTypeLexer.h; path = Core/atlas_CDTypeLexer.h; sourceTree = SOURCE_ROOT; };
+		01EB831713A591D8003EDE60 /* atlas_CDTypeLexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDTypeLexer.m; path = Core/atlas_CDTypeLexer.m; sourceTree = SOURCE_ROOT; };
+		01EB831813A591D8003EDE60 /* atlas_CDTypeName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTypeName.h; path = Core/atlas_CDTypeName.h; sourceTree = SOURCE_ROOT; };
+		01EB831913A591D8003EDE60 /* atlas_CDTypeName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDTypeName.m; path = Core/atlas_CDTypeName.m; sourceTree = SOURCE_ROOT; };
+		01EB831A13A591D8003EDE60 /* atlas_CDTypeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDTypeParser.h; path = Core/atlas_CDTypeParser.h; sourceTree = SOURCE_ROOT; };
+		01EB831B13A591D8003EDE60 /* atlas_CDTypeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDTypeParser.m; path = Core/atlas_CDTypeParser.m; sourceTree = SOURCE_ROOT; };
+		01EB831D13A591D8003EDE60 /* atlas_CDVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDVisitor.h; path = Core/atlas_CDVisitor.h; sourceTree = SOURCE_ROOT; };
+		01EB831E13A591D8003EDE60 /* atlas_CDVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDVisitor.m; path = Core/atlas_CDVisitor.m; sourceTree = SOURCE_ROOT; };
+		01EB831F13A591D8003EDE60 /* atlas_CDVisitorPropertyState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDVisitorPropertyState.h; path = Core/atlas_CDVisitorPropertyState.h; sourceTree = SOURCE_ROOT; };
+		01EB832013A591D8003EDE60 /* atlas_CDVisitorPropertyState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDVisitorPropertyState.m; path = Core/atlas_CDVisitorPropertyState.m; sourceTree = SOURCE_ROOT; };
+		01FB214F222A86C40012A5D3 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = ThirdParty/blowfish.h; sourceTree = "<group>"; };
+		01FB2150222A86C40012A5D3 /* blowfish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = blowfish.c; path = ThirdParty/blowfish.c; sourceTree = "<group>"; };
+		0D288C0E187BC2EE0026E2A0 /* atlas_CDOCClassReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDOCClassReference.h; path = Core/atlas_CDOCClassReference.h; sourceTree = "<group>"; };
+		0D288C0F187BC2EE0026E2A0 /* atlas_CDOCClassReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDOCClassReference.m; path = Core/atlas_CDOCClassReference.m; sourceTree = "<group>"; };
+		C270B5C516C54AD5006CA75D /* atlas_ULEB128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_ULEB128.m; path = Core/atlas_ULEB128.m; sourceTree = "<group>"; };
+		C270B5C716C54B0A006CA75D /* atlas_ULEB128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_ULEB128.h; path = Core/atlas_ULEB128.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013D1EF813A5A0F100BF0A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013D1F5613A5AF1E00BF0A67 /* libObjCAtlasCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013D1F0E13A5AE5A00BF0A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0165B8AE1827137D00CC647F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0165B8C41827184700CC647F /* libObjCAtlasCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B02CFC13A5B0DC0047BC53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B02D1313A5B1CE0047BC53 /* libObjCAtlasCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EB825C13A590D9003EDE60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013D1F5A13A5AF6500BF0A67 /* libObjCAtlasCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011F1D6214F8EB9F00CF8AE2 /* Structure / Union handling */ = {
+			isa = PBXGroup;
+			children = (
+				01EB830513A591D8003EDE60 /* atlas_CDStructureTable.h */,
+				01EB830613A591D8003EDE60 /* atlas_CDStructureTable.m */,
+				01EB831213A591D8003EDE60 /* atlas_CDTypeController.h */,
+				01EB831313A591D8003EDE60 /* atlas_CDTypeController.m */,
+				01EB830313A591D8003EDE60 /* atlas_CDStructureInfo.h */,
+				01EB830413A591D8003EDE60 /* atlas_CDStructureInfo.m */,
+			);
+			name = "Structure / Union handling";
+			sourceTree = "<group>";
+		};
+		0134F49914FA7F2C001E34DF /* Multi-file generation */ = {
+			isa = PBXGroup;
+			children = (
+				01EB82E113A591D8003EDE60 /* atlas_CDMultiFileVisitor.h */,
+				01EB82E213A591D8003EDE60 /* atlas_CDMultiFileVisitor.m */,
+				01EB829D13A591D7003EDE60 /* atlas_CDClassFrameworkVisitor.h */,
+				01EB829E13A591D7003EDE60 /* atlas_CDClassFrameworkVisitor.m */,
+			);
+			name = "Multi-file generation";
+			sourceTree = "<group>";
+		};
+		013D1EFE13A5A0F100BF0A67 /* deprotect */ = {
+			isa = PBXGroup;
+			children = (
+				01B02D1213A5B16E0047BC53 /* atlas_deprotect_Prefix.pch */,
+				013D1F0913A5A11100BF0A67 /* atlas_deprotect.m */,
+			);
+			indentWidth = 4;
+			name = deprotect;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		0165B8B41827137D00CC647F /* ObjCAtlasChecks */ = {
+			isa = PBXGroup;
+			children = (
+				0165B8C71827198900CC647F /* atlas_TestBlockSignature.m */,
+				011E484E1604DF3700722F8D /* atlas_TestCDNameForCPUType.m */,
+				0165B8C91827198900CC647F /* atlas_TestCDArchFromName.m */,
+				0165B8CB1827198900CC647F /* atlas_TestCDArchUses64BitABI.m */,
+				0165B8CD1827198900CC647F /* atlas_TestFatFile_armv7_v7s.m */,
+				0165B8CF1827198900CC647F /* atlas_TestFatFile_Intel32_64_lib64.m */,
+				0165B8D11827198900CC647F /* atlas_TestFatFile_Intel32_64.m */,
+				0165B8D31827198900CC647F /* atlas_TestFatFile_Intel64_32.m */,
+				0165B8D51827198900CC647F /* atlas_TestThinFile_Intel64_lib64.m */,
+				0165B8D71827198900CC647F /* atlas_TestThinFile_Intel64.m */,
+				0165B8B51827137D00CC647F /* Supporting Files */,
+			);
+			path = Checks;
+			sourceTree = "<group>";
+		};
+		0165B8B51827137D00CC647F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0165B8B61827137D00CC647F /* UnitTests-Info.plist */,
+				0165B8B71827137D00CC647F /* InfoPlist.strings */,
+				0165B8BC1827137D00CC647F /* atlas_UnitTests_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01984AC013AA9EA900EABFF6 /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				01EB829B13A591D7003EDE60 /* atlas_CDClassDumpVisitor.h */,
+				01EB829C13A591D7003EDE60 /* atlas_CDClassDumpVisitor.m */,
+				01EB82A713A591D7003EDE60 /* atlas_CDFindMethodVisitor.h */,
+				01EB82A813A591D7003EDE60 /* atlas_CDFindMethodVisitor.m */,
+				01EB831D13A591D8003EDE60 /* atlas_CDVisitor.h */,
+				01EB831E13A591D8003EDE60 /* atlas_CDVisitor.m */,
+				0134F49914FA7F2C001E34DF /* Multi-file generation */,
+				01EB830B13A591D8003EDE60 /* atlas_CDTextClassDumpVisitor.h */,
+				01EB830C13A591D8003EDE60 /* atlas_CDTextClassDumpVisitor.m */,
+			);
+			name = Visitors;
+			sourceTree = "<group>";
+		};
+		01AFB28E13E6365800896CC7 /* Cursor */ = {
+			isa = PBXGroup;
+			children = (
+				01EB829F13A591D7003EDE60 /* atlas_CDDataCursor.h */,
+				01EB82A013A591D7003EDE60 /* atlas_CDDataCursor.m */,
+				01EB82DD13A591D8003EDE60 /* atlas_CDMachOFileDataCursor.h */,
+				01EB82DE13A591D8003EDE60 /* atlas_CDMachOFileDataCursor.m */,
+			);
+			name = Cursor;
+			sourceTree = "<group>";
+		};
+		01B02D0213A5B0DC0047BC53 /* formatType */ = {
+			isa = PBXGroup;
+			children = (
+				01B02D0F13A5B1220047BC53 /* atlas_formatType_Prefix.pch */,
+				01B02D0D13A5B0FB0047BC53 /* atlas_formatType.m */,
+			);
+			indentWidth = 4;
+			name = formatType;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		01EB825413A590D9003EDE60 = {
+			isa = PBXGroup;
+			children = (
+				01EB828013A5916D003EDE60 /* ObjCAtlasCore */,
+				01EB826513A590D9003EDE60 /* ObjCAtlas */,
+				013D1EFE13A5A0F100BF0A67 /* deprotect */,
+				01B02D0213A5B0DC0047BC53 /* formatType */,
+				0165B8B41827137D00CC647F /* ObjCAtlasChecks */,
+				01EB826013A590D9003EDE60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01EB826013A590D9003EDE60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01EB825F13A590D9003EDE60 /* ObjCAtlas */,
+				013D1EFB13A5A0F100BF0A67 /* deprotect */,
+				013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */,
+				01B02CFF13A5B0DC0047BC53 /* formatType */,
+				0165B8B11827137D00CC647F /* ObjCAtlasChecks.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01EB826513A590D9003EDE60 /* ObjCAtlas */ = {
+			isa = PBXGroup;
+			children = (
+				01B02D1B13A5B2A40047BC53 /* atlas_class_dump_Prefix.pch */,
+				01B02D4913A5B9090047BC53 /* Info.plist */,
+				0133F1771EE784DA0086686F /* README.md */,
+				01EB829913A591D7003EDE60 /* atlas_CDClassDump.h */,
+				01EB829A13A591D7003EDE60 /* atlas_CDClassDump.m */,
+				011F1D6214F8EB9F00CF8AE2 /* Structure / Union handling */,
+				01984AC013AA9EA900EABFF6 /* Visitors */,
+				01EB82FB13A591D8003EDE60 /* atlas_CDSearchPathState.h */,
+				01EB82FC13A591D8003EDE60 /* atlas_CDSearchPathState.m */,
+				01B02D1013A5B1460047BC53 /* atlas_class_dump.m */,
+			);
+			indentWidth = 4;
+			name = "ObjCAtlas";
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		01EB828013A5916D003EDE60 /* ObjCAtlasCore */ = {
+			isa = PBXGroup;
+			children = (
+				01EB828213A5916D003EDE60 /* atlas_MachObjC_Prefix.pch */,
+				01EB836513A59202003EDE60 /* Extensions */,
+				01AFB28E13E6365800896CC7 /* Cursor */,
+				01EB836713A592A2003EDE60 /* Load Commands */,
+				01EB836613A59227003EDE60 /* Mach-O */,
+				01EB836913A593C7003EDE60 /* Objective-C */,
+				01EB836A13A59414003EDE60 /* Type Parsing/Lexing */,
+				01FB214E222A86950012A5D3 /* Third Party */,
+			);
+			indentWidth = 4;
+			name = ObjCAtlasCore;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		01EB836513A59202003EDE60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				018BFD4114F65DB600190F07 /* atlas_CDExtensions.h */,
+				01EB830D13A591D8003EDE60 /* atlas_CDTopologicalSortProtocol.h */,
+				01EB830E13A591D8003EDE60 /* atlas_CDTopoSortNode.h */,
+				01EB830F13A591D8003EDE60 /* atlas_CDTopoSortNode.m */,
+				01EB828713A591A5003EDE60 /* atlas_NSArray_CDExtensions.h */,
+				01EB828813A591A5003EDE60 /* atlas_NSArray_CDExtensions.m */,
+				01EB828913A591A5003EDE60 /* atlas_NSData_CDExtensions.h */,
+				01EB828A13A591A5003EDE60 /* atlas_NSData_CDExtensions.m */,
+				01EB828B13A591A5003EDE60 /* atlas_NSError_CDExtensions.h */,
+				01EB828C13A591A5003EDE60 /* atlas_NSError_CDExtensions.m */,
+				01EB828D13A591A5003EDE60 /* atlas_NSScanner_CDExtensions.h */,
+				01EB828E13A591A5003EDE60 /* atlas_NSScanner_CDExtensions.m */,
+				01EB828F13A591A5003EDE60 /* atlas_NSString_CDExtensions.h */,
+				01EB829013A591A5003EDE60 /* atlas_NSString_CDExtensions.m */,
+				C270B5C716C54B0A006CA75D /* atlas_ULEB128.h */,
+				C270B5C516C54AD5006CA75D /* atlas_ULEB128.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		01EB836613A59227003EDE60 /* Mach-O */ = {
+			isa = PBXGroup;
+			children = (
+				01EB82A513A591D7003EDE60 /* atlas_CDFile.h */,
+				01EB82A613A591D7003EDE60 /* atlas_CDFile.m */,
+				01EB82A313A591D7003EDE60 /* atlas_CDFatFile.h */,
+				01EB82A413A591D7003EDE60 /* atlas_CDFatFile.m */,
+				01EB82A113A591D7003EDE60 /* atlas_CDFatArch.h */,
+				01EB82A213A591D7003EDE60 /* atlas_CDFatArch.m */,
+				01EB82DB13A591D8003EDE60 /* atlas_CDMachOFile.h */,
+				01EB82DC13A591D8003EDE60 /* atlas_CDMachOFile.m */,
+				01EB82FD13A591D8003EDE60 /* atlas_CDSection.h */,
+				01EB82FE13A591D8003EDE60 /* atlas_CDSection.m */,
+				01EB830713A591D8003EDE60 /* atlas_CDSymbol.h */,
+				01EB830813A591D8003EDE60 /* atlas_CDSymbol.m */,
+				01EB82F913A591D8003EDE60 /* atlas_CDRelocationInfo.h */,
+				01EB82FA13A591D8003EDE60 /* atlas_CDRelocationInfo.m */,
+				0194945A1673F8F100A29005 /* atlas_CDProtocolUniquer.h */,
+				0194945B1673F8F200A29005 /* atlas_CDProtocolUniquer.m */,
+				01EB82E713A591D8003EDE60 /* atlas_CDObjectiveCProcessor.h */,
+				01EB82E813A591D8003EDE60 /* atlas_CDObjectiveCProcessor.m */,
+				01EB82E313A591D8003EDE60 /* atlas_CDObjectiveC1Processor.h */,
+				01EB82E413A591D8003EDE60 /* atlas_CDObjectiveC1Processor.m */,
+				01EB829613A591D7003EDE60 /* atlas_cd_objc2.h */,
+				01EB82E513A591D8003EDE60 /* atlas_CDObjectiveC2Processor.h */,
+				01EB82E613A591D8003EDE60 /* atlas_CDObjectiveC2Processor.m */,
+			);
+			name = "Mach-O";
+			sourceTree = "<group>";
+		};
+		01EB836713A592A2003EDE60 /* Load Commands */ = {
+			isa = PBXGroup;
+			children = (
+				01EB82A913A591D7003EDE60 /* atlas_CDLCDyldInfo.h */,
+				01EB82AA13A591D7003EDE60 /* atlas_CDLCDyldInfo.m */,
+				01EB82AB13A591D7003EDE60 /* atlas_CDLCDylib.h */,
+				01EB82AC13A591D7003EDE60 /* atlas_CDLCDylib.m */,
+				01EB82AD13A591D7003EDE60 /* atlas_CDLCDylinker.h */,
+				01EB82AE13A591D7003EDE60 /* atlas_CDLCDylinker.m */,
+				01EB82AF13A591D7003EDE60 /* atlas_CDLCDynamicSymbolTable.h */,
+				01EB82B013A591D7003EDE60 /* atlas_CDLCDynamicSymbolTable.m */,
+				01EB82B113A591D7003EDE60 /* atlas_CDLCEncryptionInfo.h */,
+				01EB82B213A591D7003EDE60 /* atlas_CDLCEncryptionInfo.m */,
+				0168C98513E4AB3200926EC3 /* atlas_CDLCFunctionStarts.h */,
+				0168C98613E4AB3200926EC3 /* atlas_CDLCFunctionStarts.m */,
+				01EB82B313A591D7003EDE60 /* atlas_CDLCLinkeditData.h */,
+				01EB82B413A591D7003EDE60 /* atlas_CDLCLinkeditData.m */,
+				01EB82B513A591D7003EDE60 /* atlas_CDLCPrebindChecksum.h */,
+				01EB82B613A591D7003EDE60 /* atlas_CDLCPrebindChecksum.m */,
+				01EB82B713A591D7003EDE60 /* atlas_CDLCPreboundDylib.h */,
+				01EB82B813A591D7003EDE60 /* atlas_CDLCPreboundDylib.m */,
+				01EB82B913A591D7003EDE60 /* atlas_CDLCRoutines32.h */,
+				01EB82BA13A591D8003EDE60 /* atlas_CDLCRoutines32.m */,
+				01EB82BB13A591D8003EDE60 /* atlas_CDLCRoutines64.h */,
+				01EB82BC13A591D8003EDE60 /* atlas_CDLCRoutines64.m */,
+				01EB82BD13A591D8003EDE60 /* atlas_CDLCRunPath.h */,
+				01EB82BE13A591D8003EDE60 /* atlas_CDLCRunPath.m */,
+				01EB82BF13A591D8003EDE60 /* atlas_CDLCSegment.h */,
+				01EB82C013A591D8003EDE60 /* atlas_CDLCSegment.m */,
+				01EB82C513A591D8003EDE60 /* atlas_CDLCSubClient.h */,
+				01EB82C613A591D8003EDE60 /* atlas_CDLCSubClient.m */,
+				01EB82C713A591D8003EDE60 /* atlas_CDLCSubFramework.h */,
+				01EB82C813A591D8003EDE60 /* atlas_CDLCSubFramework.m */,
+				01EB82C913A591D8003EDE60 /* atlas_CDLCSubLibrary.h */,
+				01EB82CA13A591D8003EDE60 /* atlas_CDLCSubLibrary.m */,
+				01EB82CB13A591D8003EDE60 /* atlas_CDLCSubUmbrella.h */,
+				01EB82CC13A591D8003EDE60 /* atlas_CDLCSubUmbrella.m */,
+				01EB82CD13A591D8003EDE60 /* atlas_CDLCSymbolTable.h */,
+				01EB82CE13A591D8003EDE60 /* atlas_CDLCSymbolTable.m */,
+				01EB82CF13A591D8003EDE60 /* atlas_CDLCTwoLevelHints.h */,
+				01EB82D013A591D8003EDE60 /* atlas_CDLCTwoLevelHints.m */,
+				01EB82D113A591D8003EDE60 /* atlas_CDLCUnixThread.h */,
+				01EB82D213A591D8003EDE60 /* atlas_CDLCUnixThread.m */,
+				01EB82D313A591D8003EDE60 /* atlas_CDLCUnknown.h */,
+				01EB82D413A591D8003EDE60 /* atlas_CDLCUnknown.m */,
+				01EB82D513A591D8003EDE60 /* atlas_CDLCUUID.h */,
+				01EB82D613A591D8003EDE60 /* atlas_CDLCUUID.m */,
+				01EB82D713A591D8003EDE60 /* atlas_CDLCVersionMinimum.h */,
+				01EB82D813A591D8003EDE60 /* atlas_CDLCVersionMinimum.m */,
+				01EB82D913A591D8003EDE60 /* atlas_CDLoadCommand.h */,
+				01EB82DA13A591D8003EDE60 /* atlas_CDLoadCommand.m */,
+				0179B9E414F2025E00EC98F7 /* atlas_CDLCMain.h */,
+				0179B9E514F2025E00EC98F7 /* atlas_CDLCMain.m */,
+				0179B9F514F20E9800EC98F7 /* atlas_CDLCDataInCode.h */,
+				0179B9F614F20E9800EC98F7 /* atlas_CDLCDataInCode.m */,
+				0179B9E914F204AA00EC98F7 /* atlas_CDLCSourceVersion.h */,
+				0179B9EA14F204AA00EC98F7 /* atlas_CDLCSourceVersion.m */,
+				0132DD4321816C09009CE078 /* atlas_CDLCBuildVersion.h */,
+				0132DD4421816C09009CE078 /* atlas_CDLCBuildVersion.m */,
+			);
+			name = "Load Commands";
+			sourceTree = "<group>";
+		};
+		01EB836913A593C7003EDE60 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				0D288C0E187BC2EE0026E2A0 /* atlas_CDOCClassReference.h */,
+				0D288C0F187BC2EE0026E2A0 /* atlas_CDOCClassReference.m */,
+				01EB831F13A591D8003EDE60 /* atlas_CDVisitorPropertyState.h */,
+				01EB832013A591D8003EDE60 /* atlas_CDVisitorPropertyState.m */,
+				01EB82E913A591D8003EDE60 /* atlas_CDOCCategory.h */,
+				01EB82EA13A591D8003EDE60 /* atlas_CDOCCategory.m */,
+				01EB82EB13A591D8003EDE60 /* atlas_CDOCClass.h */,
+				01EB82EC13A591D8003EDE60 /* atlas_CDOCClass.m */,
+				01EB82ED13A591D8003EDE60 /* atlas_CDOCInstanceVariable.h */,
+				01EB82EE13A591D8003EDE60 /* atlas_CDOCInstanceVariable.m */,
+				01EB82EF13A591D8003EDE60 /* atlas_CDOCMethod.h */,
+				01EB82F013A591D8003EDE60 /* atlas_CDOCMethod.m */,
+				01EB82F113A591D8003EDE60 /* atlas_CDOCModule.h */,
+				01EB82F213A591D8003EDE60 /* atlas_CDOCModule.m */,
+				01EB82F313A591D8003EDE60 /* atlas_CDOCProperty.h */,
+				01EB82F413A591D8003EDE60 /* atlas_CDOCProperty.m */,
+				01EB82F513A591D8003EDE60 /* atlas_CDOCProtocol.h */,
+				01EB82F613A591D8003EDE60 /* atlas_CDOCProtocol.m */,
+				01EB82F713A591D8003EDE60 /* atlas_CDOCSymtab.h */,
+				01EB82F813A591D8003EDE60 /* atlas_CDOCSymtab.m */,
+			);
+			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		01EB836A13A59414003EDE60 /* Type Parsing/Lexing */ = {
+			isa = PBXGroup;
+			children = (
+				01EB829713A591D7003EDE60 /* atlas_CDBalanceFormatter.h */,
+				01EB829813A591D7003EDE60 /* atlas_CDBalanceFormatter.m */,
+				01EB82DF13A591D8003EDE60 /* atlas_CDMethodType.h */,
+				01EB82E013A591D8003EDE60 /* atlas_CDMethodType.m */,
+				01EB831013A591D8003EDE60 /* atlas_CDType.h */,
+				01EB831113A591D8003EDE60 /* atlas_CDType.m */,
+				01EB831413A591D8003EDE60 /* atlas_CDTypeFormatter.h */,
+				01EB831513A591D8003EDE60 /* atlas_CDTypeFormatter.m */,
+				01EB831613A591D8003EDE60 /* atlas_CDTypeLexer.h */,
+				01EB831713A591D8003EDE60 /* atlas_CDTypeLexer.m */,
+				01EB831813A591D8003EDE60 /* atlas_CDTypeName.h */,
+				01EB831913A591D8003EDE60 /* atlas_CDTypeName.m */,
+				01EB831A13A591D8003EDE60 /* atlas_CDTypeParser.h */,
+				01EB831B13A591D8003EDE60 /* atlas_CDTypeParser.m */,
+			);
+			name = "Type Parsing/Lexing";
+			sourceTree = "<group>";
+		};
+		01FB214E222A86950012A5D3 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				01FB2150222A86C40012A5D3 /* blowfish.c */,
+				01FB214F222A86C40012A5D3 /* blowfish.h */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		013D1F0F13A5AE5A00BF0A67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0132DD4521816C0A009CE078 /* atlas_CDLCBuildVersion.h in Headers */,
+				0D288C10187BC2EE0026E2A0 /* atlas_CDOCClassReference.h in Headers */,
+				0168C98713E4AB3200926EC3 /* atlas_CDLCFunctionStarts.h in Headers */,
+				018BFD4214F65DB600190F07 /* atlas_CDExtensions.h in Headers */,
+				01FB2151222A86C40012A5D3 /* blowfish.h in Headers */,
+				0179B9E614F2025E00EC98F7 /* atlas_CDLCMain.h in Headers */,
+				0179B9EB14F204AA00EC98F7 /* atlas_CDLCSourceVersion.h in Headers */,
+				0179B9F714F20E9800EC98F7 /* atlas_CDLCDataInCode.h in Headers */,
+				0194945C1673F8F400A29005 /* atlas_CDProtocolUniquer.h in Headers */,
+				C270B5C816C54B0C006CA75D /* atlas_ULEB128.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		013D1EFA13A5A0F100BF0A67 /* deprotect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013D1F0713A5A0F200BF0A67 /* Build configuration list for PBXNativeTarget "deprotect" */;
+			buildPhases = (
+				013D1EF713A5A0F100BF0A67 /* Sources */,
+				013D1EF813A5A0F100BF0A67 /* Frameworks */,
+				013D1EF913A5A0F100BF0A67 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0106C81E1412D05F00B29890 /* PBXTargetDependency */,
+			);
+			name = deprotect;
+			productName = deprotect;
+			productReference = 013D1EFB13A5A0F100BF0A67 /* deprotect */;
+			productType = "com.apple.product-type.tool";
+		};
+		013D1F1013A5AE5A00BF0A67 /* ObjCAtlasCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013D1F1613A5AE5A00BF0A67 /* Build configuration list for PBXNativeTarget "ObjCAtlasCore" */;
+			buildPhases = (
+				013D1F0D13A5AE5A00BF0A67 /* Sources */,
+				013D1F0E13A5AE5A00BF0A67 /* Frameworks */,
+				013D1F0F13A5AE5A00BF0A67 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjCAtlasCore;
+			productName = ObjCAtlasCore;
+			productReference = 013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0165B8B01827137D00CC647F /* ObjCAtlasChecks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0165B8BF1827137D00CC647F /* Build configuration list for PBXNativeTarget "ObjCAtlasChecks" */;
+			buildPhases = (
+				0165B8AD1827137D00CC647F /* Sources */,
+				0165B8AE1827137D00CC647F /* Frameworks */,
+				0165B8AF1827137D00CC647F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0165B8BE1827137D00CC647F /* PBXTargetDependency */,
+			);
+			name = ObjCAtlasChecks;
+			productName = ObjCAtlasChecks;
+			productReference = 0165B8B11827137D00CC647F /* ObjCAtlasChecks.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01B02CFE13A5B0DC0047BC53 /* formatType */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B02D0B13A5B0DC0047BC53 /* Build configuration list for PBXNativeTarget "formatType" */;
+			buildPhases = (
+				01B02CFB13A5B0DC0047BC53 /* Sources */,
+				01B02CFC13A5B0DC0047BC53 /* Frameworks */,
+				01B02CFD13A5B0DC0047BC53 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0106C8201412D07000B29890 /* PBXTargetDependency */,
+			);
+			name = formatType;
+			productName = formatType;
+			productReference = 01B02CFF13A5B0DC0047BC53 /* formatType */;
+			productType = "com.apple.product-type.tool";
+		};
+		01EB825E13A590D9003EDE60 /* ObjCAtlas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EB826E13A590D9003EDE60 /* Build configuration list for PBXNativeTarget "ObjCAtlas" */;
+			buildPhases = (
+				01EB825B13A590D9003EDE60 /* Sources */,
+				01EB825C13A590D9003EDE60 /* Frameworks */,
+				01EB825D13A590D9003EDE60 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0158A8161412DED0003FEB91 /* PBXTargetDependency */,
+			);
+			name = "ObjCAtlas";
+			productName = "ObjCAtlas";
+			productReference = 01EB825F13A590D9003EDE60 /* ObjCAtlas */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01EB825613A590D9003EDE60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = 01EB825913A590D9003EDE60 /* Build configuration list for PBXProject "ObjCAtlas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01EB825413A590D9003EDE60;
+			productRefGroup = 01EB826013A590D9003EDE60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B02D2E13A5B5D50047BC53 /* all */,
+				013D1F1013A5AE5A00BF0A67 /* ObjCAtlasCore */,
+				01EB825E13A590D9003EDE60 /* ObjCAtlas */,
+				013D1EFA13A5A0F100BF0A67 /* deprotect */,
+				01B02CFE13A5B0DC0047BC53 /* formatType */,
+				0165B8B01827137D00CC647F /* ObjCAtlasChecks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0165B8AF1827137D00CC647F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0165B8B91827137D00CC647F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		013D1EF713A5A0F100BF0A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013D1F5813A5AF4C00BF0A67 /* atlas_deprotect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013D1F0D13A5AE5A00BF0A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013D1F1913A5AEA100BF0A67 /* atlas_CDTopoSortNode.m in Sources */,
+				013D1F1A13A5AEA100BF0A67 /* atlas_NSArray_CDExtensions.m in Sources */,
+				013D1F1B13A5AEA100BF0A67 /* atlas_NSData_CDExtensions.m in Sources */,
+				013D1F1C13A5AEA100BF0A67 /* atlas_NSError_CDExtensions.m in Sources */,
+				013D1F1D13A5AEA100BF0A67 /* atlas_NSScanner_CDExtensions.m in Sources */,
+				013D1F1E13A5AEA100BF0A67 /* atlas_NSString_CDExtensions.m in Sources */,
+				013D1F1F13A5AEA100BF0A67 /* atlas_CDDataCursor.m in Sources */,
+				013D1F2013A5AEA100BF0A67 /* atlas_CDMachOFileDataCursor.m in Sources */,
+				013D1F2113A5AEA100BF0A67 /* atlas_CDLCDyldInfo.m in Sources */,
+				013D1F2213A5AEA100BF0A67 /* atlas_CDLCDylib.m in Sources */,
+				013D1F2313A5AEA100BF0A67 /* atlas_CDLCDylinker.m in Sources */,
+				013D1F2413A5AEA100BF0A67 /* atlas_CDLCDynamicSymbolTable.m in Sources */,
+				013D1F2513A5AEA100BF0A67 /* atlas_CDLCEncryptionInfo.m in Sources */,
+				013D1F2613A5AEA100BF0A67 /* atlas_CDLCLinkeditData.m in Sources */,
+				0132DD4621816C0A009CE078 /* atlas_CDLCBuildVersion.m in Sources */,
+				013D1F2713A5AEA100BF0A67 /* atlas_CDLCPrebindChecksum.m in Sources */,
+				013D1F2813A5AEA100BF0A67 /* atlas_CDLCPreboundDylib.m in Sources */,
+				013D1F2913A5AEA100BF0A67 /* atlas_CDLCRoutines32.m in Sources */,
+				013D1F2A13A5AEA100BF0A67 /* atlas_CDLCRoutines64.m in Sources */,
+				013D1F2B13A5AEA100BF0A67 /* atlas_CDLCRunPath.m in Sources */,
+				013D1F2C13A5AEA100BF0A67 /* atlas_CDLCSegment.m in Sources */,
+				013D1F2F13A5AEA100BF0A67 /* atlas_CDLCSubClient.m in Sources */,
+				013D1F3013A5AEA100BF0A67 /* atlas_CDLCSubFramework.m in Sources */,
+				013D1F3113A5AEA100BF0A67 /* atlas_CDLCSubLibrary.m in Sources */,
+				013D1F3213A5AEA100BF0A67 /* atlas_CDLCSubUmbrella.m in Sources */,
+				013D1F3313A5AEA100BF0A67 /* atlas_CDLCSymbolTable.m in Sources */,
+				013D1F3413A5AEA100BF0A67 /* atlas_CDLCTwoLevelHints.m in Sources */,
+				013D1F3513A5AEA100BF0A67 /* atlas_CDLCUnixThread.m in Sources */,
+				013D1F3613A5AEA100BF0A67 /* atlas_CDLCUnknown.m in Sources */,
+				013D1F3713A5AEA100BF0A67 /* atlas_CDLCUUID.m in Sources */,
+				013D1F3813A5AEA100BF0A67 /* atlas_CDLCVersionMinimum.m in Sources */,
+				013D1F3913A5AEA100BF0A67 /* atlas_CDLoadCommand.m in Sources */,
+				013D1F3A13A5AEA100BF0A67 /* atlas_CDFile.m in Sources */,
+				013D1F3B13A5AEA100BF0A67 /* atlas_CDFatFile.m in Sources */,
+				013D1F3C13A5AEA100BF0A67 /* atlas_CDFatArch.m in Sources */,
+				013D1F3D13A5AEA100BF0A67 /* atlas_CDMachOFile.m in Sources */,
+				013D1F3E13A5AEA100BF0A67 /* atlas_CDSection.m in Sources */,
+				013D1F4113A5AEA100BF0A67 /* atlas_CDSymbol.m in Sources */,
+				013D1F4213A5AEA100BF0A67 /* atlas_CDRelocationInfo.m in Sources */,
+				013D1F4313A5AEA100BF0A67 /* atlas_CDObjectiveCProcessor.m in Sources */,
+				013D1F4413A5AEA100BF0A67 /* atlas_CDObjectiveC1Processor.m in Sources */,
+				013D1F4513A5AEA100BF0A67 /* atlas_CDObjectiveC2Processor.m in Sources */,
+				013D1F4613A5AEA100BF0A67 /* atlas_CDVisitorPropertyState.m in Sources */,
+				013D1F4713A5AEA100BF0A67 /* atlas_CDOCCategory.m in Sources */,
+				013D1F4813A5AEA100BF0A67 /* atlas_CDOCClass.m in Sources */,
+				013D1F4913A5AEA100BF0A67 /* atlas_CDOCInstanceVariable.m in Sources */,
+				0D288C11187BC2EE0026E2A0 /* atlas_CDOCClassReference.m in Sources */,
+				013D1F4A13A5AEA100BF0A67 /* atlas_CDOCMethod.m in Sources */,
+				013D1F4B13A5AEA100BF0A67 /* atlas_CDOCModule.m in Sources */,
+				013D1F4C13A5AEA100BF0A67 /* atlas_CDOCProperty.m in Sources */,
+				013D1F4D13A5AEA100BF0A67 /* atlas_CDOCProtocol.m in Sources */,
+				01FB2152222A86C40012A5D3 /* blowfish.c in Sources */,
+				013D1F4E13A5AEA100BF0A67 /* atlas_CDOCSymtab.m in Sources */,
+				013D1F4F13A5AEA100BF0A67 /* atlas_CDBalanceFormatter.m in Sources */,
+				013D1F5013A5AEA100BF0A67 /* atlas_CDMethodType.m in Sources */,
+				013D1F5113A5AEA100BF0A67 /* atlas_CDType.m in Sources */,
+				013D1F5213A5AEA100BF0A67 /* atlas_CDTypeFormatter.m in Sources */,
+				013D1F5313A5AEA100BF0A67 /* atlas_CDTypeLexer.m in Sources */,
+				013D1F5413A5AEA100BF0A67 /* atlas_CDTypeName.m in Sources */,
+				013D1F5513A5AEA100BF0A67 /* atlas_CDTypeParser.m in Sources */,
+				0168C98813E4AB3200926EC3 /* atlas_CDLCFunctionStarts.m in Sources */,
+				0179B9E714F2025E00EC98F7 /* atlas_CDLCMain.m in Sources */,
+				0179B9EC14F204AA00EC98F7 /* atlas_CDLCSourceVersion.m in Sources */,
+				0179B9F814F20E9800EC98F7 /* atlas_CDLCDataInCode.m in Sources */,
+				0194945D1673F8F400A29005 /* atlas_CDProtocolUniquer.m in Sources */,
+				C270B5C616C54AD6006CA75D /* atlas_ULEB128.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0165B8AD1827137D00CC647F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0165B8D81827198900CC647F /* atlas_TestBlockSignature.m in Sources */,
+				0165B8DD1827198900CC647F /* atlas_TestFatFile_Intel32_64.m in Sources */,
+				0165B8DB1827198900CC647F /* atlas_TestFatFile_armv7_v7s.m in Sources */,
+				0165B8DA1827198900CC647F /* atlas_TestCDArchUses64BitABI.m in Sources */,
+				0165B8DC1827198900CC647F /* atlas_TestFatFile_Intel32_64_lib64.m in Sources */,
+				0165B8D91827198900CC647F /* atlas_TestCDArchFromName.m in Sources */,
+				0165B8C31827182000CC647F /* atlas_TestCDNameForCPUType.m in Sources */,
+				0165B8E01827198900CC647F /* atlas_TestThinFile_Intel64.m in Sources */,
+				0165B8DF1827198900CC647F /* atlas_TestThinFile_Intel64_lib64.m in Sources */,
+				0165B8DE1827198900CC647F /* atlas_TestFatFile_Intel64_32.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B02CFB13A5B0DC0047BC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B02D0E13A5B0FB0047BC53 /* atlas_formatType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EB825B13A590D9003EDE60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B02D2013A5B4D70047BC53 /* atlas_CDClassDump.m in Sources */,
+				01B02D2113A5B4D70047BC53 /* atlas_CDStructureTable.m in Sources */,
+				01B02D2213A5B4D70047BC53 /* atlas_CDTypeController.m in Sources */,
+				01B02D2313A5B4D70047BC53 /* atlas_CDStructureInfo.m in Sources */,
+				01B02D2513A5B4D70047BC53 /* atlas_CDClassDumpVisitor.m in Sources */,
+				01B02D2613A5B4D70047BC53 /* atlas_CDFindMethodVisitor.m in Sources */,
+				01B02D2713A5B4D70047BC53 /* atlas_CDVisitor.m in Sources */,
+				01B02D2813A5B4D70047BC53 /* atlas_CDClassFrameworkVisitor.m in Sources */,
+				01B02D2913A5B4D70047BC53 /* atlas_CDMultiFileVisitor.m in Sources */,
+				01B02D2A13A5B4D70047BC53 /* atlas_CDTextClassDumpVisitor.m in Sources */,
+				01B02D2B13A5B4D70047BC53 /* atlas_CDSearchPathState.m in Sources */,
+				01B02D1113A5B1460047BC53 /* atlas_class_dump.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0106C81E1412D05F00B29890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013D1F1013A5AE5A00BF0A67 /* ObjCAtlasCore */;
+			targetProxy = 0106C81D1412D05F00B29890 /* PBXContainerItemProxy */;
+		};
+		0106C8201412D07000B29890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013D1F1013A5AE5A00BF0A67 /* ObjCAtlasCore */;
+			targetProxy = 0106C81F1412D07000B29890 /* PBXContainerItemProxy */;
+		};
+		0106C8221412D07C00B29890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013D1F1013A5AE5A00BF0A67 /* ObjCAtlasCore */;
+			targetProxy = 0106C8211412D07C00B29890 /* PBXContainerItemProxy */;
+		};
+		0158A8161412DED0003FEB91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013D1F1013A5AE5A00BF0A67 /* ObjCAtlasCore */;
+			targetProxy = 0158A8151412DED0003FEB91 /* PBXContainerItemProxy */;
+		};
+		0165B8BE1827137D00CC647F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B02D2E13A5B5D50047BC53 /* all */;
+			targetProxy = 0165B8BD1827137D00CC647F /* PBXContainerItemProxy */;
+		};
+		01B02D3313A5B5E20047BC53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EB825E13A590D9003EDE60 /* ObjCAtlas */;
+			targetProxy = 01B02D3213A5B5E20047BC53 /* PBXContainerItemProxy */;
+		};
+		01B02D3513A5B5E20047BC53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013D1EFA13A5A0F100BF0A67 /* deprotect */;
+			targetProxy = 01B02D3413A5B5E20047BC53 /* PBXContainerItemProxy */;
+		};
+		01B02D3913A5B5E20047BC53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B02CFE13A5B0DC0047BC53 /* formatType */;
+			targetProxy = 01B02D3813A5B5E20047BC53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0165B8B71827137D00CC647F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0165B8B81827137D00CC647F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		013D1F0513A5A0F100BF0A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_deprotect_Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		013D1F0613A5A0F100BF0A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_deprotect_Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		013D1F1713A5AE5A00BF0A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_MachObjC_Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		013D1F1813A5AE5A00BF0A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_MachObjC_Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0165B8C01827137D00CC647F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Checks/atlas_UnitTests_Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Checks/UnitTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenygard.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0165B8C11827137D00CC647F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Checks/atlas_UnitTests_Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Checks/UnitTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-sectcreate",
+					__TEXT,
+					"___info_plist",
+					Info.plist,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenygard.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		01B02D0913A5B0DC0047BC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_formatType_Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01B02D0A13A5B0DC0047BC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_formatType_Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		01B02D3013A5B5D50047BC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01B02D3113A5B5D50047BC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		01EB826C13A590D9003EDE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = (
+					"-fdiagnostics-show-option",
+					"-Wno-semicolon-before-method-body",
+					"-Wno-c11-extensions",
+					"-Wno-overriding-method-mismatch",
+					"-Wno-unused-macros",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-direct-ivar-access",
+					"-Wno-arc-repeated-use-of-weak",
+				);
+			};
+			name = Debug;
+		};
+		01EB826D13A590D9003EDE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = (
+					"-fdiagnostics-show-option",
+					"-Wno-semicolon-before-method-body",
+					"-Wno-c11-extensions",
+					"-Wno-overriding-method-mismatch",
+					"-Wno-unused-macros",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-direct-ivar-access",
+					"-Wno-arc-repeated-use-of-weak",
+				);
+			};
+			name = Release;
+		};
+		01EB826F13A590D9003EDE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_class_dump_Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01EB827013A590D9003EDE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+                OTHER_CFLAGS = "$(inherited) -DPLATFORM_IOSMAC=6";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atlas_class_dump_Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-sectcreate",
+					__TEXT,
+					"___info_plist",
+					Info.plist,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		013D1F0713A5A0F200BF0A67 /* Build configuration list for PBXNativeTarget "deprotect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013D1F0513A5A0F100BF0A67 /* Debug */,
+				013D1F0613A5A0F100BF0A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		013D1F1613A5AE5A00BF0A67 /* Build configuration list for PBXNativeTarget "ObjCAtlasCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013D1F1713A5AE5A00BF0A67 /* Debug */,
+				013D1F1813A5AE5A00BF0A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0165B8BF1827137D00CC647F /* Build configuration list for PBXNativeTarget "ObjCAtlasChecks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0165B8C01827137D00CC647F /* Debug */,
+				0165B8C11827137D00CC647F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B02D0B13A5B0DC0047BC53 /* Build configuration list for PBXNativeTarget "formatType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B02D0913A5B0DC0047BC53 /* Debug */,
+				01B02D0A13A5B0DC0047BC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B02D2F13A5B5D50047BC53 /* Build configuration list for PBXAggregateTarget "all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B02D3013A5B5D50047BC53 /* Debug */,
+				01B02D3113A5B5D50047BC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EB825913A590D9003EDE60 /* Build configuration list for PBXProject "ObjCAtlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EB826C13A590D9003EDE60 /* Debug */,
+				01EB826D13A590D9003EDE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EB826E13A590D9003EDE60 /* Build configuration list for PBXNativeTarget "ObjCAtlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EB826F13A590D9003EDE60 /* Debug */,
+				01EB827013A590D9003EDE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01EB825613A590D9003EDE60 /* Project object */;
+}

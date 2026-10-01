@@ -1,0 +1,1212 @@
+{
+  "project": "ObjCAtlas",
+  "algorithm": "sha256",
+  "scope": "All public files except this self-describing manifest.",
+  "files": {
+    ".github/workflows/contracts.yml": {
+      "sha256": "c55b6edb07e728e04ca822606fe7e8601886b685a5f583afc488b2f57cc60201",
+      "bytes": 576,
+      "mode": "0o644"
+    },
+    ".gitignore": {
+      "sha256": "06cf10cbcb3f920c9d9772196fae1be60f09b2e33a7775b11fc97932646b93ea",
+      "bytes": 83,
+      "mode": "0o644"
+    },
+    "CDUnitTests-Info.plist": {
+      "sha256": "985db4149d44a9065edbddc510c387369dcc55630121fe1c30649a31963fa52c",
+      "bytes": 623,
+      "mode": "0o644"
+    },
+    "CHANGELOG.md": {
+      "sha256": "7ff8b18b740afcd657f1b1d28d1f99fb3969a9de27bed859adfbf3a9b3e2956a",
+      "bytes": 22963,
+      "mode": "0o644"
+    },
+    "Checks/UnitTests-Info.plist": {
+      "sha256": "fdf0cc0f89dd4bc9e238c4f0e0ca05f398a89ac27e6f701d93fbe982b286ca2b",
+      "bytes": 674,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestBlockSignature.m": {
+      "sha256": "cdc24ba5be97b2cba8ba4c16b92963c52a04c8ec273120eb39da26ee83c67233",
+      "bytes": 3593,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestCDArchFromName.m": {
+      "sha256": "3254f8924de4ddf85aaeeddfb1dba9bb35753b52733680cc3380f470ebcc1a0c",
+      "bytes": 2491,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestCDArchUses64BitABI.m": {
+      "sha256": "7772cb2e75e5df2eb3c6d8b3762610dc400bbb1ba06f9f4a6816f948485985e9",
+      "bytes": 1357,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestCDNameForCPUType.m": {
+      "sha256": "549d4b21bb969282349f435f9cb0d9b402c197812f51700af97e1fc72cc31f59",
+      "bytes": 1902,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestFatFile_Intel32_64.m": {
+      "sha256": "0f0b3ff09764879a7a582efee772a7b4842c9cbaf73b20a44289eababefdf475",
+      "bytes": 3502,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestFatFile_Intel32_64_lib64.m": {
+      "sha256": "56349c46fb4af2ef19bc010d16a76b8532c4dc2a70b7a49ec4cb5ef3caf5e73f",
+      "bytes": 3645,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestFatFile_Intel64_32.m": {
+      "sha256": "2c009343aab7fba19eed1ae3072343bba3119d7a8837a9f1011cdd879a6d1f2b",
+      "bytes": 3530,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestFatFile_armv7_v7s.m": {
+      "sha256": "db678c24f6d7a2b137168b232498f006a5e7634c910c04e8c06582d9b9e9ed07",
+      "bytes": 2354,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestThinFile_Intel64.m": {
+      "sha256": "a3c84b96f3753cd5d958af574f6fe2381677b96a97ce707f7422209933762568",
+      "bytes": 2050,
+      "mode": "0o644"
+    },
+    "Checks/atlas_TestThinFile_Intel64_lib64.m": {
+      "sha256": "b7122a45071b0399fbc4f74b88f6e5ff52b077ac1c3d3a25a1db9b02e97446ff",
+      "bytes": 2250,
+      "mode": "0o644"
+    },
+    "Checks/atlas_UnitTests_Prefix.pch": {
+      "sha256": "d68c3773ffcff85f41cade88fdef7f13af4533253326ca0ee36464781e554cf6",
+      "bytes": 172,
+      "mode": "0o644"
+    },
+    "Checks/en.lproj/InfoPlist.strings": {
+      "sha256": "feb5e820d68ed31f871d2bdaf8d14935ed343a7a875ddd774d5556da8dfd951a",
+      "bytes": 45,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDBalanceFormatter.h": {
+      "sha256": "b22c676eaeeaefa5c1660caf195a8bbfa011ea0b78717ea9b38dceb402ee3a44",
+      "bytes": 411,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDBalanceFormatter.m": {
+      "sha256": "945c2cde72cfc575c10ebea670e1316ef52068cd0e21e0d7b21bf8d0cae3b4a9",
+      "bytes": 3636,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDClassDump.h": {
+      "sha256": "d278b9b272709cd65ea0169454ac3d05137c0364124da686edf9d4ebb4e91f20",
+      "bytes": 2106,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDClassDump.m": {
+      "sha256": "aa9e83add54f3077baf818cddd800bdb36335eb02b25d3f202c9ea01de9b543d",
+      "bytes": 12399,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDClassDumpVisitor.h": {
+      "sha256": "9289b2b30c1fb65275b447c206a28ea098dcaa8f50257e6ba07423dad3e2b2e1",
+      "bytes": 285,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDClassDumpVisitor.m": {
+      "sha256": "ddafff950f5956c825dda1cee40a7d59f7d375a1fce70d687767f86ae08787eb",
+      "bytes": 7512,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDClassFrameworkVisitor.h": {
+      "sha256": "6b61b24c3626faf5cd1e6a3c62c1a0fe4c1d481dda30aeacc73cf8dd6759a9f9",
+      "bytes": 1220,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDClassFrameworkVisitor.m": {
+      "sha256": "ce23743259f9cec153aead8bfb370bc926263d0db885972b915cd09ddbf7ff75",
+      "bytes": 4009,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDDataCursor.h": {
+      "sha256": "90c57f5623c05eba753bbc4deece2ba491c3efcac99fa340bb69cc27a20b1420",
+      "bytes": 1183,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDDataCursor.m": {
+      "sha256": "d7cd8d4d5bccb05d4db81f0f09b1cb24f68f664826770664f61ac47e39218d1b",
+      "bytes": 7593,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDExtensions.h": {
+      "sha256": "8a3500fecb6845fe86811b318c7a5c2098b3b43afe519026d37cc4eec1dfb3a8",
+      "bytes": 436,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFatArch.h": {
+      "sha256": "15dd20607c2a276d17dd3578fc81365978abaaf6b072cefb455618fbe9f3e89d",
+      "bytes": 1175,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFatArch.m": {
+      "sha256": "e7100e6cce21fc975eef05919aebfb085e3f482afedfb635aa98463e2eb279e4",
+      "bytes": 3764,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFatFile.h": {
+      "sha256": "c8aebde24388a8942392246119a63c84dc326750263eb31c98b97a26ad5abf08",
+      "bytes": 507,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFatFile.m": {
+      "sha256": "3627cd409294c9d7f89fe6f8bd4998f6c749683c385fc65ec8e16df6a4ab90da",
+      "bytes": 5182,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFile.h": {
+      "sha256": "8a542ce90643b23e0267c8187031392d22b271d31da0fbfe11cf4d479e8b36f8",
+      "bytes": 1516,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFile.m": {
+      "sha256": "9c002dbf8b74230c08455ad7052c5e1eb83f03d495897d3077221ad54bf056c8",
+      "bytes": 6273,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFindMethodVisitor.h": {
+      "sha256": "b697ede594e48616bb03392b1ce09c28ae2d364aabd367191e5d1cd4e206b710",
+      "bytes": 482,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDFindMethodVisitor.m": {
+      "sha256": "50e2d8339ca3903e63b2865e30c197fe8f84b3ebd006e11cae38e4e0f50298a3",
+      "bytes": 5127,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCBuildVersion.h": {
+      "sha256": "61c43b3c6635e483056f0f93520913a2d77ad9df7e8a0bd6b21e58fadbea37d4",
+      "bytes": 393,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCBuildVersion.m": {
+      "sha256": "7d0e7b56b63b6c44692aa2ef5c5d964199ed8589e2ece385de37c37296a334ed",
+      "bytes": 4346,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDataInCode.h": {
+      "sha256": "bc941bf2970148a3fd5425713c3fb0fd0d126143e4dd1ee70a2284276e0f7fa1",
+      "bytes": 269,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDataInCode.m": {
+      "sha256": "b72f2b7f36ac9b15aee693bfb4c4d4be358afa4b2a382d63eca416bbf3066583",
+      "bytes": 467,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDyldInfo.h": {
+      "sha256": "3e5a32ead7a50b3126b4087e25863d23288281f6f8574c1d497dc3b6a1e4f140",
+      "bytes": 330,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDyldInfo.m": {
+      "sha256": "2456550f73ac1c0829b89f6fc8f29e289413e2e65c435d2d7b117ac0ec826641",
+      "bytes": 23272,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDylib.h": {
+      "sha256": "fa385be1adde116af48e7da1857adf61d291c77809225a2cca339e950d8b45a2",
+      "bytes": 639,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDylib.m": {
+      "sha256": "0a13c9fe2b84731a1013caafbe729ad7a5467e7e1bda891865ccc9dc80ddf50a",
+      "bytes": 2711,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDylinker.h": {
+      "sha256": "66d222182cda9a6559921267c97d37848693d39956635e78db8971abb954a77c",
+      "bytes": 299,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDylinker.m": {
+      "sha256": "e0b04b22c14786500c0df3c4f653d5408b693c1be06b3fead0261480d96b4f14",
+      "bytes": 1292,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDynamicSymbolTable.h": {
+      "sha256": "e0d9f9395fa8dca28ebcbc7431d0a03ab5c22fb626a15ad1fc59143bd9ef649e",
+      "bytes": 420,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCDynamicSymbolTable.m": {
+      "sha256": "dd70c9e85864809690171d21d41c40566a9339b547db5fce041e77f6d954bcf3",
+      "bytes": 6967,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCEncryptionInfo.h": {
+      "sha256": "7000c334b9082b132536898128106db5f09b6b2e0f576d82467cbe7243130826",
+      "bytes": 496,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCEncryptionInfo.m": {
+      "sha256": "090c904496b7c7e0d52f34653ab64dd418ac508f8ac5c47956d297694ac98e7c",
+      "bytes": 1598,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCFunctionStarts.h": {
+      "sha256": "bbada95796e2a5ce44eac9559ced87279d7d90f68c74eeab0fea9f77d57db265",
+      "bytes": 337,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCFunctionStarts.m": {
+      "sha256": "98a1e0763f914352c016a2ef510ac819ab9c6717da9ae88f5dfecf6cd2ffd3ef",
+      "bytes": 1283,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCLinkeditData.h": {
+      "sha256": "30fa0039439a80917d45076db39d3d8c84a16a9a8d41686ec4d2b231c6259cda",
+      "bytes": 326,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCLinkeditData.m": {
+      "sha256": "c930e61fba88eb2f899c56b51f81822bfd7675f16c667d412994be18ce335a81",
+      "bytes": 1458,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCMain.h": {
+      "sha256": "ac15eed69c539537a320cc38a3c90378beefa6a55f9dd9704b862f11f21faf68",
+      "bytes": 257,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCMain.m": {
+      "sha256": "b201be2087d1b39c9e017ea7f337b424a51a53a6c8c84c519fdcffa697a7f967",
+      "bytes": 935,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCPrebindChecksum.h": {
+      "sha256": "92c4a133bf97263cd167a1b72abadc89ddccf374e1f29dc89f0d810806234a15",
+      "bytes": 323,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCPrebindChecksum.m": {
+      "sha256": "3cfcbe017faa9297c12cd36614432682d4254ab251ddba91f011d023d465a6fc",
+      "bytes": 984,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCPreboundDylib.h": {
+      "sha256": "7dba4cec82fadb6711c722c19a08d9742c33848d0f80aa7a7a2b800e1aec473b",
+      "bytes": 266,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCPreboundDylib.m": {
+      "sha256": "fc90efee3e28daac31fdc3c5caeaeb571b37c467b8c6e89c0b4b8f2655a04627",
+      "bytes": 1490,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCRoutines32.h": {
+      "sha256": "c8e3017cf49169510c8b3eb26d46a0a60dc1fe60045f33119fd6b21e3ee4468d",
+      "bytes": 263,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCRoutines32.m": {
+      "sha256": "3a34a152dd348964a3795dcab7ae22541f95f7c2248aba16429f2ea04a9393b7",
+      "bytes": 1409,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCRoutines64.h": {
+      "sha256": "7dc5e0f18aae3d22524188804c0ce27d08fcabd5185751140aaf7b627b34e861",
+      "bytes": 263,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCRoutines64.m": {
+      "sha256": "492e1692694de5a49aa664d15c52e119ccb8c9d4af38e5576d827a6a830841bb",
+      "bytes": 1412,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCRunPath.h": {
+      "sha256": "7aebb72a778038cdf45df380fc5efe876874851f4e713fce8f9f687f14efa35c",
+      "bytes": 363,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCRunPath.m": {
+      "sha256": "db6e0a5b6afb858a527b47000a6e2da2ef7483117d213e296992644c044dd71b",
+      "bytes": 2301,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSegment.h": {
+      "sha256": "a7be9b85e8ac6df04533450fd9130d535c1b86e69aecfe51af40545ab1a8ddbf",
+      "bytes": 1853,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSegment.m": {
+      "sha256": "5d6fdc9b5dfc79fb49d7be1a932360a0b48eeec58c879746cabf29b9adc7daf1",
+      "bytes": 15413,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSourceVersion.h": {
+      "sha256": "b79a9b1a78ac1c67434329bfc1498766c415defc24233afd24d540b0dd630390",
+      "bytes": 336,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSourceVersion.m": {
+      "sha256": "7f7dc59870ccf9f8f09822d4b9ef417ce4dc62361e28f0cba87605e0e51f642b",
+      "bytes": 1782,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubClient.h": {
+      "sha256": "c14da2aae256aac37c6ddfb011339854834d03b24af61da39b400c8a1bba3be2",
+      "bytes": 300,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubClient.m": {
+      "sha256": "822381842114bb20f41dd3667ca36e6eb4aed4ff32e5dbb6148f9527c9e8952f",
+      "bytes": 1289,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubFramework.h": {
+      "sha256": "4bf56551cbdab9c1651ecc0c9f6ca3611f721bf9c280f4b568642ac9e3b820b5",
+      "bytes": 303,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubFramework.m": {
+      "sha256": "81914947c0e8c6acd09b361f7bf196482220acaa2b3a07c3fe0c2eda71847772",
+      "bytes": 1298,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubLibrary.h": {
+      "sha256": "276222e0bdd76ca771479f7b0f94cc2ceb57439f64a6335854dfe0896a459665",
+      "bytes": 301,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubLibrary.m": {
+      "sha256": "893ab096f6f38403546110390458d877f0a121d284189d223481b0a38e4a270d",
+      "bytes": 1166,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubUmbrella.h": {
+      "sha256": "3f63949804f01c4bfc3901f357a3b50cd687027106917f7c2c1eac89e34f8577",
+      "bytes": 302,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSubUmbrella.m": {
+      "sha256": "6cfddedadd0f378afd70232ae3f4c2fa9b87538aaad8da217ea8e9da716c7e41",
+      "bytes": 1169,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSymbolTable.h": {
+      "sha256": "134b4e6f6dc840a7ea0d8dd9e1579431b0ec3804dda08b4e8ccf44079836dcb5",
+      "bytes": 816,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCSymbolTable.m": {
+      "sha256": "426f3cc426f445ed9088bd5932b031fbe4bed7f3bb7c595538d6470ae6390a12",
+      "bytes": 8797,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCTwoLevelHints.h": {
+      "sha256": "ea43b5cb58e0cf157f4247c5f9bc81b9754b2e5743d7fce1fe0fd9cb263c21bf",
+      "bytes": 266,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCTwoLevelHints.m": {
+      "sha256": "8156aca7a11d2d52b441bbec8c626a92270b94d199cddbccf820b75719a920d9",
+      "bytes": 944,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCUUID.h": {
+      "sha256": "9b554141068064dbad7ac4a853dd546684d20a61071225c67bb984b99c19b3ac",
+      "bytes": 304,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCUUID.m": {
+      "sha256": "7944db41f0572fe4c444adbed118bf8c2c9fe1b8b8c2c7b43251cffcd705156b",
+      "bytes": 1610,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCUnixThread.h": {
+      "sha256": "ed202c925adf2dd9ff2d26553e31b4096448fdac7fa97e41512fa5e09c903faf",
+      "bytes": 263,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCUnixThread.m": {
+      "sha256": "52d3e7f9e68599b7a70df40b61fa1ac78a2a81c9a2d6698c15bb38bf43916d88",
+      "bytes": 1261,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCUnknown.h": {
+      "sha256": "2d12805328e97cde1cec83ea146c36ea66d98bc959e118af3e9f9592ba21ac45",
+      "bytes": 260,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCUnknown.m": {
+      "sha256": "fc6ba4377679acb3427bb9c7af88b730be3be04fb6e61595274c2dab62ba1dc4",
+      "bytes": 1341,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCVersionMinimum.h": {
+      "sha256": "dbd77379eed2739a31623bf98a21d5deeca8e4f7e055eefd5f33f606a2c44d2f",
+      "bytes": 404,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLCVersionMinimum.m": {
+      "sha256": "7af6cd16219122534e41169d1890abe3462f45209d562fc4a50d95640a0ac7b0",
+      "bytes": 2007,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLoadCommand.h": {
+      "sha256": "dca66b4aa3193040a8698074b5bfe12d4ad1986371939ff76ec1489fbe72be85",
+      "bytes": 1151,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDLoadCommand.m": {
+      "sha256": "5ce6785bf50f6f0ff1953134f433088ee0eb11b96ec9a8a0c4c6da64a6983a61",
+      "bytes": 10874,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMachOFile.h": {
+      "sha256": "33ebf7e0a80b24045cdb56a4a7dd6f4454b07b1fa539594a714c9dbae4f05a72",
+      "bytes": 3756,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMachOFile.m": {
+      "sha256": "796ff1a86d2f43c9505b1325959b2511c4bba22874fff1028a18a0613dcba70a",
+      "bytes": 27076,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMachOFileDataCursor.h": {
+      "sha256": "c19a65157c11131f19a1b2429d7de0f1cd278e903344ac32f71d4e114b49c402",
+      "bytes": 1025,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMachOFileDataCursor.m": {
+      "sha256": "e5dce704c10c549939a4d68fe820612f4fbab5bf798cd82429198033cf912db8",
+      "bytes": 3076,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMethodType.h": {
+      "sha256": "062ad99a963d7ab0139c0cdd69332ab3a412f3e75f209b4ba4039caeb1dd7105",
+      "bytes": 419,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMethodType.m": {
+      "sha256": "35bef490b0ce46407415cfba6085c5d84493067f8d95e6c2784001bdfbf1c7ff",
+      "bytes": 890,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMultiFileVisitor.h": {
+      "sha256": "372a11bcfa560ac5e0e39b39689bfbb77171220787aa002737e0b54ae0555d74",
+      "bytes": 544,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDMultiFileVisitor.m": {
+      "sha256": "ec4eae62c5af82d6ad84fe6e123161ba28dfa56cacf102b9bb5d7cb8a5f8efa3",
+      "bytes": 14981,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCCategory.h": {
+      "sha256": "0e977bbc4b4772bc6e69101227165068b16612c435899b4d1f7a7cf5f03f332b",
+      "bytes": 542,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCCategory.m": {
+      "sha256": "a53c717c020106b130f5a01c3179d668d485e41ead15f96f3a7a54d9fd46cf9c",
+      "bytes": 2199,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCClass.h": {
+      "sha256": "19465c52a7c4e602bee1a74a364cba47d1a18c3ee26c3d5868d2ce6e656147f5",
+      "bytes": 629,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCClass.m": {
+      "sha256": "13fce6e2f051f508892e9a5aa139ac9d1f787124a85833953a3eb85f3a7e43fc",
+      "bytes": 3390,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCClassReference.h": {
+      "sha256": "baa0286276d070d901682003bc20ef6bde3100b2c703abe449b7b8e66fb26c07",
+      "bytes": 1192,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCClassReference.m": {
+      "sha256": "ce79587ce88767c31db094977e4de013eb16e184e55457840d6edabd565b8633",
+      "bytes": 1308,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCInstanceVariable.h": {
+      "sha256": "ba9a8f1b0e701e78b0bcc8bdf36113c05caa30691f20face078f4a50857b3486",
+      "bytes": 1024,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCInstanceVariable.m": {
+      "sha256": "256722fc7054b7f51ea3431fe1c7ef8dd77cb4e6960ee6174a7c333954176c60",
+      "bytes": 3394,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCMethod.h": {
+      "sha256": "895fd6de020e3de2cecc3691cfd2b063ab4515ff46e5d57c8a01b99055dc937f",
+      "bytes": 877,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCMethod.m": {
+      "sha256": "ddf603716574c634749ffa0ed3f980d687011f475f3789af5d09af1a62931810",
+      "bytes": 3566,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCModule.h": {
+      "sha256": "fc950df2d627011ec9a0bb048d74234a48f3f026d81c193e2885c5bc7529ca24",
+      "bytes": 404,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCModule.m": {
+      "sha256": "b5de9aa4ce9dfe4e7e6f7bc28be8b329d3e96b12f24754332f93842f199cd072",
+      "bytes": 1090,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCProperty.h": {
+      "sha256": "f930fe4e164b683ed54b85d594cd99ee983794200a02d60e29ce883b8ec15d33",
+      "bytes": 1087,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCProperty.m": {
+      "sha256": "2c5fc6ee1479ca70d56bd33287fc7bc2cb3e09827fab916f824d05ed53493fe2",
+      "bytes": 5408,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCProtocol.h": {
+      "sha256": "1d21ee83b2b84c9d81496279d8fd58fe8ef2170b53f1765f517985e6037ef34e",
+      "bytes": 2231,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCProtocol.m": {
+      "sha256": "712782260a95a0659d78e475997cf8347cf3a1fb0ee8104a2eda2fe5830f9136",
+      "bytes": 13720,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCSymtab.h": {
+      "sha256": "310eacc8a2f15885d78011e077b14d6706821e4c81da1874c8b956e5e3d05f76",
+      "bytes": 492,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDOCSymtab.m": {
+      "sha256": "56a2f0b3cf0260d229ff4ec41df7263227df8e2b5dc07feea1f3950ffb075b6a",
+      "bytes": 1189,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDObjectiveC1Processor.h": {
+      "sha256": "51d89c7dd17bce3611e7804f9e6d7bcdcc2f870a8d59d47aa2f15823664e409e",
+      "bytes": 287,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDObjectiveC1Processor.m": {
+      "sha256": "680eec60a54b0ad056a1aed07879b1ecf0b93fe6346438180575c5e26bea082b",
+      "bytes": 22548,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDObjectiveC2Processor.h": {
+      "sha256": "ccde73cebacb6a1614739008e1188865e241ad7b0d7d2e5b9001aae1048355e4",
+      "bytes": 287,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDObjectiveC2Processor.m": {
+      "sha256": "9e86104fa7d95806dbd0cf4c8d6ae447bd74fa0a4c943794167f64cd3e640a92",
+      "bytes": 27906,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDObjectiveCProcessor.h": {
+      "sha256": "1035dd7df553989f313a15e076680dde59a54025e5fcec2a99667d119645f239",
+      "bytes": 1543,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDObjectiveCProcessor.m": {
+      "sha256": "ec2625ed498d5757bf8e7b9f89cad3eea7cfa798b033d916a846314a1693e3ac",
+      "bytes": 7145,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDProtocolUniquer.h": {
+      "sha256": "c7240efee7cf5b92f1a970bcfbd84c907d7ea3d2c48f2a8ee9f16e3ddb6bb356",
+      "bytes": 628,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDProtocolUniquer.m": {
+      "sha256": "f0b513f182067a197cdbf9f830cb06503fc5d04de9d27b690c5b650b8fe40770",
+      "bytes": 3989,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDRelocationInfo.h": {
+      "sha256": "a09e7b08a537d5b5f9e7457502d070954e10a93ee4df7bda9970e814929fa613",
+      "bytes": 767,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDRelocationInfo.m": {
+      "sha256": "3e72ff92746276a37891c17e34aac2f1310c0db884fdab8232116c43b945ec06",
+      "bytes": 1132,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDSearchPathState.h": {
+      "sha256": "e3eb66bc138c2a51d314476569997b36178ea6771692fb5ea95968bfaf3fd49c",
+      "bytes": 402,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDSearchPathState.m": {
+      "sha256": "39c24010e25b328afa67e532cb279ab8409ab420e09465a0a3989c2fccafeafd",
+      "bytes": 1423,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDSection.h": {
+      "sha256": "c90f683317d46ca20bdfe792dfab89142be137eb00220afeb0f734f20afc69b6",
+      "bytes": 875,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDSection.m": {
+      "sha256": "856af9b5a94c95e8383704048688011ceb2a81881e19652c0d95627de26042aa",
+      "bytes": 3837,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDStructureInfo.h": {
+      "sha256": "6538fbfe0c7925f97e0c134eb9da29fa73ac30df105c7fb418e7aa16f6fbdd06",
+      "bytes": 909,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDStructureInfo.m": {
+      "sha256": "92e5b0c322ce88d91371be9e1bf7324d2b68d6a50c3ff5720e76d974ae22c6b8",
+      "bytes": 4481,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDStructureTable.h": {
+      "sha256": "21e5c4e6e830c7bb08898332d04deef362cd9a7e16316a6e36567ae6e0226645",
+      "bytes": 2469,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDStructureTable.m": {
+      "sha256": "ee058cd248bc2f5de7edd24ceff583cd706a7070cffc1eaa461f8e4f5c6eab6a",
+      "bytes": 48501,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDSymbol.h": {
+      "sha256": "17a63863997cdc3e6e659ff44a5a25418ab817dffdd29b4ec771903e552a5079",
+      "bytes": 2078,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDSymbol.m": {
+      "sha256": "78bcc1815b7ff5b41357bfde01a085bfa94de5e152c905c71223e3f4c101c2b4",
+      "bytes": 8202,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTextClassDumpVisitor.h": {
+      "sha256": "9089747640178c01e22bd13dcb20f7d93a169cd6fd268d1e5ef3665a662d4dc2",
+      "bytes": 485,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTextClassDumpVisitor.m": {
+      "sha256": "561e14f1850d4cab40ec1bf4edc89d6543a7dead65cd9ba88862961cbd253a93",
+      "bytes": 11645,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTopoSortNode.h": {
+      "sha256": "4998d795d3f9c07f98352beaee9aeada66b22f20461731a86b7bcd91e6905bd1",
+      "bytes": 1177,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTopoSortNode.m": {
+      "sha256": "55aaa3cd6caa514864e0ce739a4e4e92cd9894087c26f3ad9bca48bf2a9ddb5b",
+      "bytes": 2896,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTopologicalSortProtocol.h": {
+      "sha256": "fd15aedafec8ce6da6b655e3431ee12866b3549f8d3434a1bb963bdd339656be",
+      "bytes": 448,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDType.h": {
+      "sha256": "2dbc8b535f676bfc38da9fa3cd4681fea88579d63a522d51a0666a1be340fc47",
+      "bytes": 3156,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDType.m": {
+      "sha256": "096da6e34394efdac44ad233413a695d032c57665181a7cba863957e80d89cab",
+      "bytes": 40631,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeController.h": {
+      "sha256": "8f562d97f3cb39e68e4d4ef2709ab0d83b6917642bd800640021cf5a73266bde",
+      "bytes": 2873,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeController.m": {
+      "sha256": "4c32d24c1f8a3baa571565b866153f6561d2f5a72802676fc5bc8317ff1e0723",
+      "bytes": 15799,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeFormatter.h": {
+      "sha256": "2d417f31a61ac087beb3e7a5e2b3029bbdf8b720eb7c6cafc55b8224d47508c3",
+      "bytes": 990,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeFormatter.m": {
+      "sha256": "473fe531f39e472e869d0ac3c5332d00dd5e7f52fba3705cb91b88a13949be19",
+      "bytes": 11541,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeLexer.h": {
+      "sha256": "834546ce3a5e918a597cc9486f5f4e40f14fc8ce3525aa48798e8c4676908929",
+      "bytes": 1275,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeLexer.m": {
+      "sha256": "40540dfe7a4a453eb2ea04b672d7deb782e98327fb94970e0bcb442cae913524",
+      "bytes": 6005,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeName.h": {
+      "sha256": "3371704ecd530b1ba705adc41fa31107f98e8e65165b3f914707edadfd010116",
+      "bytes": 422,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeName.m": {
+      "sha256": "434386002086470967d221b5eb9d5827441379e810dfcff3307c8212aed9459d",
+      "bytes": 1982,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeParser.h": {
+      "sha256": "93b211fcce9e0d24814686bf49b2440eeb65ecd6e2d91569cee8531ff54fd1c0",
+      "bytes": 880,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDTypeParser.m": {
+      "sha256": "9df9fa3bcb6003386e439c1fa8cbde496a8ca5b4d09c579a1afcaabeb7d8630b",
+      "bytes": 21087,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDVisitor.h": {
+      "sha256": "d50d2a17c1361734dbd90b1db17774003371e559f6696a79e69ac917db7c9f4f",
+      "bytes": 2496,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDVisitor.m": {
+      "sha256": "2ec08b03cb1e6e4da1be3e165c40f492dd9746967098fe79f8ab5e73e921e8e6",
+      "bytes": 3019,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDVisitorPropertyState.h": {
+      "sha256": "3cc978453f3c897b30e9e5d8ef75cb5ff629628c75fe1a894d9c6ed5bfb0f574",
+      "bytes": 589,
+      "mode": "0o644"
+    },
+    "Core/atlas_CDVisitorPropertyState.m": {
+      "sha256": "60bcf247de33ab7b04c16b95df46ee913ee0e8cd5c87ae6e43c16734090d7de5",
+      "bytes": 2097,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSArray_CDExtensions.h": {
+      "sha256": "22ded11637048f0a888e36379b77e9922f023f2d8e59c9d0bfc9fb47bd243da9",
+      "bytes": 408,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSArray_CDExtensions.m": {
+      "sha256": "f5b7c452fc082be4c0a5046fdb3cb4900e7772818529cd0d81b5747abea87520",
+      "bytes": 1805,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSData_CDExtensions.h": {
+      "sha256": "93569ec2c07ccd71968b8dbc350870ccafd3f80669347132f3eb05c79ba1d149",
+      "bytes": 269,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSData_CDExtensions.m": {
+      "sha256": "460608963628c1c98f5ae28af09548937c4a4167d6e74da462af688b3f8d74dd",
+      "bytes": 896,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSError_CDExtensions.h": {
+      "sha256": "94778e2dd0edfef49529dcc239eff355de1e0cb48d20cb07ff7d21d3e6e9f9f6",
+      "bytes": 257,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSError_CDExtensions.m": {
+      "sha256": "003408286c863e0e4640b2eca263f8e8f4ad6fcfa9ea5c389f8f65cc6a5ffe55",
+      "bytes": 337,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSScanner_CDExtensions.h": {
+      "sha256": "f796e07c89e7179f95c7ba1a8719523bc319bc77a7e583c589bf26f3f6365149",
+      "bytes": 826,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSScanner_CDExtensions.m": {
+      "sha256": "a56792156bef6697944795fe71c09384309d3775f3d764e49e25613089121eab",
+      "bytes": 5416,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSString_CDExtensions.h": {
+      "sha256": "ace033cf4af4350f8ca0514a4681b3d721962940dae9effd7b2413efbe6275a2",
+      "bytes": 1017,
+      "mode": "0o644"
+    },
+    "Core/atlas_NSString_CDExtensions.m": {
+      "sha256": "36e3eeb035a640c8872f041c981d1a9045e73ea5eee98c5ebb300d56f13debfd",
+      "bytes": 3811,
+      "mode": "0o644"
+    },
+    "Core/atlas_ULEB128.h": {
+      "sha256": "72e2e130a1d93997ad7238c2bd454df5d3664bbe5c720f30cc306c44a98bef2c",
+      "bytes": 1486,
+      "mode": "0o644"
+    },
+    "Core/atlas_ULEB128.m": {
+      "sha256": "1e6d597dfcca40258c6879bbdacb4b1fa23d298a009f176a000da6244d6a601f",
+      "bytes": 2535,
+      "mode": "0o644"
+    },
+    "Core/atlas_cd_objc2.h": {
+      "sha256": "1aecd203329ee8c5603b36fdf47883f08cef66273c61e0559aec853776b3a92e",
+      "bytes": 2033,
+      "mode": "0o644"
+    },
+    "Fixtures/atlas_doTests.py": {
+      "sha256": "89d646b6b2447687bbea08802f9e9fb339e29c36f0a3dd0437f0f40510aeea18",
+      "bytes": 10777,
+      "mode": "0o755"
+    },
+    "Fixtures/showdiff": {
+      "sha256": "1bdb1846872628985acd14580f25f2bb23ae4019ab70c770514d35762dad146b",
+      "bytes": 149,
+      "mode": "0o755"
+    },
+    "Info.plist": {
+      "sha256": "87a1ed6bb0acfec2941ad85f15a77038e080db3d09e0d38317cc0f813abe612f",
+      "bytes": 443,
+      "mode": "0o644"
+    },
+    "LICENSE": {
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+      "bytes": 17984,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_AllTests.h": {
+      "sha256": "d13e41dae7bca5cd9fe6cac1cfc9875d7592f2d9ef825714931713d77050952c",
+      "bytes": 148,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_AllTests.m": {
+      "sha256": "88a90f677627fd0d340061b57ae633f4387cd55495b4828553faa0cdb3e8d51e",
+      "bytes": 3891,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDPathUnitTest.h": {
+      "sha256": "3768ad4099c00e3082af942447c304000347f4511f9459806a041ea88c0b39bc",
+      "bytes": 371,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDPathUnitTest.m": {
+      "sha256": "5b02717454d2b75548a39b43484a373a99dc81f25b02cd982e31ee41b6e4664d",
+      "bytes": 2493,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDStructHandlingUnitTest.h": {
+      "sha256": "3aeed9fe8d40a64a4719c40e1426aa31fa7c4f985e4045810e34ac39c3d0a92f",
+      "bytes": 697,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDStructHandlingUnitTest.m": {
+      "sha256": "217ad3f73bce3d0934a7cd0f5879ade54bde2f8002e017fa74996b315ad4ac9b",
+      "bytes": 8156,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDTypeFormatterUnitTest.h": {
+      "sha256": "c2f7ac14ecfd46ba9c322dc87f9d4ecc6a3880a7ebebdf3023878e8261913d28",
+      "bytes": 616,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDTypeFormatterUnitTest.m": {
+      "sha256": "c510af4d6efa8285233a83a026f0d1ae6899070accb97b3026d1f185a553c646",
+      "bytes": 18303,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDTypeLexerUnitTest.h": {
+      "sha256": "823e663e500e843e3112d09702cfbe5393118f0ba4a9981613bf035b2dfac556",
+      "bytes": 900,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDTypeLexerUnitTest.m": {
+      "sha256": "20a31a785bcdd6ccbc3d785ac482f75bbcab9ef6f0ec9a96ed1fc2f295e2269a",
+      "bytes": 5944,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDTypeParserUnitTest.h": {
+      "sha256": "ba00f98a4704171bddf4314905bdf87dfbb65671c9fefba1395eba5034adac0d",
+      "bytes": 644,
+      "mode": "0o644"
+    },
+    "LegacyChecks/atlas_CDTypeParserUnitTest.m": {
+      "sha256": "07126dbe2946dbda9ec054a2468f23ff5dc7925893e3b0ff76091b755ac5b7f5",
+      "bytes": 4238,
+      "mode": "0o644"
+    },
+    "LegacyChecks/method-001.txt": {
+      "sha256": "508134a0db629c7fb67b60df0142e1db8e9e3dcf593e83a32b33e7ba3d8908aa",
+      "bytes": 1655,
+      "mode": "0o644"
+    },
+    "LegacyChecks/otest-all": {
+      "sha256": "1e4cd49d944771ca42246643577287ec14d72915d3b5e6f2918822b7513fb18d",
+      "bytes": 148,
+      "mode": "0o755"
+    },
+    "LegacyChecks/shud01-in.txt": {
+      "sha256": "2b0c4c234ef87056d5c7a6c7f56195db246aa6e912c86ea7f086e8b81463491e",
+      "bytes": 72,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud01-out.txt": {
+      "sha256": "066d612f054c4abdf89a65012bd97f213d18faa2ec130cb838ad587c978774c7",
+      "bytes": 83,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud02-in.txt": {
+      "sha256": "1008ca0e23281fb4adb31e88e113ab39db434cbc3e511389cfcc8bfcb21d3824",
+      "bytes": 166,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud02-out.txt": {
+      "sha256": "bad2639ae7e61c0eac067cf4a9101822d0b8b57af3bdab3a84974af78457c50b",
+      "bytes": 124,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud04-in.txt": {
+      "sha256": "93bc74c86ff2a28992ad3a164f5ab1526909eb650c65fbd9a66f695aac1b8351",
+      "bytes": 203,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud04-out.txt": {
+      "sha256": "c4c34b904905dbb20d55739ad1cf46a7bff382d71c38b766824cbdd9b04085b2",
+      "bytes": 173,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud05-in.txt": {
+      "sha256": "b3a265e8517d2f5caa90c32f9b97b364f28d07d4a38fdd82c44bcc06a7173b19",
+      "bytes": 39,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud05-out.txt": {
+      "sha256": "9e2d5deb3254d950856e044f8a07e78dd0d5748a8165d994c76a1165678a75b6",
+      "bytes": 127,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud06-in.txt": {
+      "sha256": "a822c72029cb74b10e9234acb9684d28eaf09e90f352f13e03e9a6e425ac4f7c",
+      "bytes": 84,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud06-out.txt": {
+      "sha256": "4b21a0e2a61447b0daf4b213c4ff449cc1048d36e1ff1c2e6464f6b48e654fbf",
+      "bytes": 151,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud07-in.txt": {
+      "sha256": "dacc5d521ab6a1ea8d372c143b72a7cf1aeea6ad5ef0d9d63172b0c0df202583",
+      "bytes": 90,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud07-out.txt": {
+      "sha256": "4b21a0e2a61447b0daf4b213c4ff449cc1048d36e1ff1c2e6464f6b48e654fbf",
+      "bytes": 151,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud08-in.txt": {
+      "sha256": "75234ff3f60898ef7c7f83da290e7ae31c789f0ea23b9d9d2c1d004da4d4a2c7",
+      "bytes": 103,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud08-out.txt": {
+      "sha256": "8e09323f510940f2d40b63fa19a19d1b373f4f528fcdc3170f50c7d78cc9badb",
+      "bytes": 215,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud09-in.txt": {
+      "sha256": "56a6cf59a9e915dc0d521f54584a6f318754695d9f126cc25f6af94291d6c1c7",
+      "bytes": 357,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud09-out.txt": {
+      "sha256": "23571372ddd0310e010e08c3e3117d9e459b4fbad27075e74eeb5df29329c899",
+      "bytes": 461,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud10-in.txt": {
+      "sha256": "ce4fa39fb5fefcdd2d9157453464f192981cf287fbc2a03b7c35e248ec0b6192",
+      "bytes": 30,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud10-out.txt": {
+      "sha256": "6ce3fca348212affb62ebc8a251971a2d78f641bd74e48937e6c0e68ee9dbc4f",
+      "bytes": 128,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud11-in.txt": {
+      "sha256": "78d38bd96c529457afd32ea3ebdc72b7655aa08a2433062ac20e8d5401bc3130",
+      "bytes": 49,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud11-out.txt": {
+      "sha256": "b55e709bdcd01d536eddfe8cb4c7272ac2cb88051dc4f360f587ea3cd4572c4b",
+      "bytes": 174,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud13-in.txt": {
+      "sha256": "0ec07adccb286ed852c7bd8ee93af53a8f2d9879312ec4fbedbabea8d608749c",
+      "bytes": 851,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud13-out.txt": {
+      "sha256": "d8df52192a6915c31a6f406c51b00b43e6c77d314ec5f5c0d1dfa7391424a7c2",
+      "bytes": 1279,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud14-in.txt": {
+      "sha256": "03f2575d9569ec20505b19cdf92a0a150f6b761670465306d44c7dbe13f64c86",
+      "bytes": 160,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud14-out.txt": {
+      "sha256": "f01b29b5899c4d65d2d47b233c6838ee91e7cffa27280fffd19995d68c92a1c5",
+      "bytes": 368,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud15-in.txt": {
+      "sha256": "d8568c4676174ec597b184fdf9682a51406f40a7858d9ec59ee62b8249c7663c",
+      "bytes": 168,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud15-out.txt": {
+      "sha256": "99952941cff0d83692d0e79ce8985aa9fd07db799bd8027c7293c897381c95bc",
+      "bytes": 392,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud16-in.txt": {
+      "sha256": "70e9ad3e949cf4f084185af10c4385f4a61ac40486bac3f542abf08edfb4f68f",
+      "bytes": 316,
+      "mode": "0o644"
+    },
+    "LegacyChecks/shud16-out.txt": {
+      "sha256": "dba7373cfe83a69da697092a0ce6f0b6a148bec88a8f5838477f98ef1adcd867",
+      "bytes": 75,
+      "mode": "0o644"
+    },
+    "LegacyChecks/var-001.txt": {
+      "sha256": "0753e59d5861db2955bd4ac4de7315e2f52c47cb011eeb767bdb96ae4b4c9201",
+      "bytes": 532,
+      "mode": "0o644"
+    },
+    "LegacyChecks/var-002.txt": {
+      "sha256": "a0b825863cf17eeea6bce4fbdb4341263d1ab7931cf09dfb6f4e8b4e549e516d",
+      "bytes": 271,
+      "mode": "0o644"
+    },
+    "LegacyChecks/var-003.txt": {
+      "sha256": "da4abf7b556512fb8e8a03cde46e3379818c4e84c86a12e94845b556210aad44",
+      "bytes": 2166,
+      "mode": "0o644"
+    },
+    "LegacyChecks/var-004.txt": {
+      "sha256": "d95b0f91734aea51a3e0b29f26f1a56efc349f2310c8a27809a469f6918780ed",
+      "bytes": 384,
+      "mode": "0o644"
+    },
+    "LegacyChecks/var-005.txt": {
+      "sha256": "6da566d0a939ebff2b5119635f5b1c7a59c14f186c2dbbdc7f49858c0c4d72dd",
+      "bytes": 117,
+      "mode": "0o644"
+    },
+    "ORIGIN.md": {
+      "sha256": "422bcee907ca4e52b55884c6432b93772b53ddaae42a24b2a46c7a24aeb018c7",
+      "bytes": 1892,
+      "mode": "0o644"
+    },
+    "ObjCAtlas.xcodeproj/project.pbxproj": {
+      "sha256": "f66c237fa559542c95dc284e24e30dabc921f7cbca547df90a57cff8ce3e5c8e",
+      "bytes": 106156,
+      "mode": "0o644"
+    },
+    "ObjCAtlas.xcodeproj/project.xcworkspace/contents.xcworkspacedata": {
+      "sha256": "b8744125f754d3e7aaf0b0998af1bc04f51d2c7647659d8081db85e1ab650624",
+      "bytes": 155,
+      "mode": "0o644"
+    },
+    "README.md": {
+      "sha256": "fad987701d1d8d39ba429ce29a850e69770fb53277c254f8074beafe98c1da4a",
+      "bytes": 2250,
+      "mode": "0o644"
+    },
+    "RENAME_MAP.json": {
+      "sha256": "8c372663fcdcfe43fbc60b412a27aa7a1f5550a52c30f9b332b6953134433544",
+      "bytes": 1161904,
+      "mode": "0o644"
+    },
+    "ThirdParty/blowfish.c": {
+      "sha256": "182969bde93966ac7d857642609cfdff6d30251215ffca81c8d04c5f56bbbeaa",
+      "bytes": 20406,
+      "mode": "0o644"
+    },
+    "ThirdParty/blowfish.h": {
+      "sha256": "02d52abf38dd96e19c54695e2704699ff707200c0d67375ea895050764bd9c02",
+      "bytes": 1148,
+      "mode": "0o644"
+    },
+    "UPSTREAM_GUIDE.md": {
+      "sha256": "61b5df666a04b853d0d75dc46d359086d771f9b1e0ee467e12bf01fb19ecec06",
+      "bytes": 3563,
+      "mode": "0o644"
+    },
+    "VALIDATION.md": {
+      "sha256": "1cbe0cd2a73533bada864a1877f413dac6276925b7e9ac4bd3963d5b7bd98fd6",
+      "bytes": 2224,
+      "mode": "0o644"
+    },
+    "atlas_MachObjC_Prefix.pch": {
+      "sha256": "dec820bb09437c6178e8b7fdbe755f0dd25fbf2e2a65ff463834efcfff5baddb",
+      "bytes": 242,
+      "mode": "0o644"
+    },
+    "atlas_class_dump.m": {
+      "sha256": "b3e6eaa5a87df489eb2022b37fa0bb3b7c45b77d99d64851d96ee77943fb2ac0",
+      "bytes": 17272,
+      "mode": "0o644"
+    },
+    "atlas_class_dump_Prefix.pch": {
+      "sha256": "b8685630bfe41c69bcf922c87354b6aa872ee523511ed6efed577624bfaf8536",
+      "bytes": 241,
+      "mode": "0o644"
+    },
+    "atlas_deprotect.m": {
+      "sha256": "50e8e2df6264bb7afa3b11cfbf6750c30a0365d02c795237875b71e040f0f7e6",
+      "bytes": 7132,
+      "mode": "0o644"
+    },
+    "atlas_deprotect_Prefix.pch": {
+      "sha256": "76babb1c1bacd0499ccc1ae368d1cf2166729e1a2f731c5dba3877f0661ce837",
+      "bytes": 194,
+      "mode": "0o644"
+    },
+    "atlas_formatType.m": {
+      "sha256": "ad7d2721e5e8c52525490bcd8680dd339e9ccc25cb34c27572a756323ebf6aa9",
+      "bytes": 5684,
+      "mode": "0o644"
+    },
+    "atlas_formatType_Prefix.pch": {
+      "sha256": "b8be249ee0cd20a8b15dcd4572174bd1c872c92185c30475d3ca06bdddc847c4",
+      "bytes": 196,
+      "mode": "0o644"
+    },
+    "keys.txt": {
+      "sha256": "2f34e2509c0706a382fdf0ae3f01f0d4819e07ffef29b779126e7824d6576a81",
+      "bytes": 168,
+      "mode": "0o644"
+    },
+    "verification/atlas_contract.py": {
+      "sha256": "a5162fed483ecbfe5279e2776b53f3eb84828be7a904c5f95de7935e7b2e6758",
+      "bytes": 12907,
+      "mode": "0o644"
+    }
+  }
+}
