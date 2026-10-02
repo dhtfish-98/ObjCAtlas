@@ -17,3 +17,7 @@ Only executable/project branding, compile dates and NSLog timestamps/process IDs
 - The archived SenTestingKit runner is not executed; both current XCTest suites ran 39 tests with zero failures. Full real application Xcode/Pods/CoreData/dSYM integration and device runtime remain unverified.
 - The hosted CI workflow has been authored but has not yet run on GitHub at this local handoff.
 - Passing these finite checks is not a proof of every input or complete feature equivalence.
+
+## 2026-10-02 capability review
+
+The current runtime entry points, file/process/network capabilities and attribution were reviewed. See DEFENSIVE_SCOPE.md for the exact paths and remaining limitations. This documentation update does not claim another execution of the historical full test suite, a rewrite of every upstream algorithm, or CVP eligibility. GitHub CI for the new commit is separate evidence.
