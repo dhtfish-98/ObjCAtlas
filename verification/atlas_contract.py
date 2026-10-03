@@ -3,7 +3,7 @@
 import argparse, hashlib, json, os, pathlib, re, shutil, subprocess, tempfile
 P=pathlib.Path
 ROOT=P(__file__).resolve().parents[1]
-PROJECT=ROOT.name
+PROJECT=json.loads((ROOT/'构建配置.json').read_text())['project'] if (ROOT/'构建配置.json').is_file() else ROOT.name
 OLD='class-dump' if PROJECT=='ObjCAtlas' else 'ios-class-guard'
 PREFIX='atlas' if PROJECT=='ObjCAtlas' else 'rampart'
 MAP=json.loads((ROOT/'RENAME_MAP.json').read_text())
