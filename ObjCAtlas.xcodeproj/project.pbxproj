@@ -224,7 +224,7 @@
 		011E484E1604DF3700722F8D /* atlas_TestCDNameForCPUType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = atlas_TestCDNameForCPUType.m; sourceTree = "<group>"; };
 		0132DD4321816C09009CE078 /* atlas_CDLCBuildVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atlas_CDLCBuildVersion.h; path = Core/atlas_CDLCBuildVersion.h; sourceTree = "<group>"; };
 		0132DD4421816C09009CE078 /* atlas_CDLCBuildVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atlas_CDLCBuildVersion.m; path = Core/atlas_CDLCBuildVersion.m; sourceTree = "<group>"; };
-		0133F1771EE784DA0086686F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0133F1771EE784DA0086686F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "项目文档/README.md"; sourceTree = "<group>"; };
 		013D1EFB13A5A0F100BF0A67 /* deprotect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = deprotect; sourceTree = BUILT_PRODUCTS_DIR; };
 		013D1F0913A5A11100BF0A67 /* atlas_deprotect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atlas_deprotect.m; sourceTree = SOURCE_ROOT; };
 		013D1F1113A5AE5A00BF0A67 /* libObjCAtlasCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjCAtlasCore.a; sourceTree = BUILT_PRODUCTS_DIR; };

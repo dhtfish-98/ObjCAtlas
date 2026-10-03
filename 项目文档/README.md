@@ -1,8 +1,10 @@
+> 目录已整理：文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --build`；如需使用本文原有源码命令，先运行 `python3 构建.py --stage --ci`，再进入 `Build/源码`。暂存会恢复原输入路径。现有版本和历史验证记录按各自提交理解。
+
 # ObjCAtlas
 
-防御用途、实际能力及本轮验证范围见 [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md)。
+防御用途、实际能力及本轮验证范围见 [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>)。
 
-ObjCAtlas is a Objective-C derivative of [nygard/class-dump](https://github.com/nygard/class-dump) with renamed owned source files and symbols. It preserves the upstream feature set within the tested contracts. See [source/license record](ORIGIN.md), [verification record](VALIDATION.md) and [complete mapping](RENAME_MAP.json).
+ObjCAtlas is a Objective-C derivative of [nygard/class-dump](https://github.com/nygard/class-dump) with renamed owned source files and symbols. It preserves the upstream feature set within the tested contracts. See [source/license record](<ORIGIN.md>), [verification record](<VALIDATION.md>) and [complete mapping](<../RENAME_MAP.json>).
 
 `Core` owns binary loading, data cursors, Objective-C metadata, type parsing and formatting. The renamed top-level entry point owns command parsing. `Checks`/`LegacyChecks` preserve the historical test corpus. External/vendor source is kept separately with its notices.
 

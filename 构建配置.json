@@ -1,0 +1,45 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "ObjCAtlas",
+  "author": "dhtfish98",
+  "kind": "manual",
+  "base_public_commit": "c28c9e05b73a1b0ad12e77ce34bcae4bc29963c5",
+  "restored_inputs": [
+    {
+      "original": "CHANGELOG.md",
+      "stored": "项目文档/CHANGELOG.md",
+      "sha256": "7ff8b18b740afcd657f1b1d28d1f99fb3969a9de27bed859adfbf3a9b3e2956a"
+    },
+    {
+      "original": "DEFENSIVE_SCOPE.md",
+      "stored": "项目文档/DEFENSIVE_SCOPE.md",
+      "sha256": "9b9215b1b261a4b0557446e5e2bcca50d38af358e4de244e786e91dca97674c4"
+    },
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "422bcee907ca4e52b55884c6432b93772b53ddaae42a24b2a46c7a24aeb018c7"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "4d9119f554371dae067059bc6b8acca3e552a392b7713d42b789082b7a361be5"
+    },
+    {
+      "original": "UPSTREAM_GUIDE.md",
+      "stored": "项目文档/UPSTREAM_GUIDE.md",
+      "sha256": "61b5df666a04b853d0d75dc46d359086d771f9b1e0ee467e12bf01fb19ecec06"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "32ded16ce9e4a5c3fd89c49a9f3045d4f97d08fd9316e1e4f82372d7136a6796"
+    }
+  ],
+  "platform_entries": []
+}
