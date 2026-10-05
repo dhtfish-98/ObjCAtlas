@@ -6,6 +6,8 @@ Both original and modified XCTest suites executed 39 tests with zero failures. B
 
 The local report contains **21 passed contract checks**. Executed local build/test logs and original-baseline evidence are retained outside this public repository. Source and build bundles are created only after final file contents are frozen. Independent consumers link/import the renamed API from a separate project.
 
+The public main commit `329fc1ab2c3518bd506b0040616943ba278c9950` completed [GitHub Actions run 37192416648](https://github.com/dhtfish-98/ObjCAtlas/actions/runs/37192416648) successfully. Its uploaded `contract.json` records 21 passing checks, including 39 original and 39 derivative XCTest cases. This is evidence for that exact commit; subsequent commits and releases require their own CI and package checks.
+
 ## Compatibility/normalization
 
 The minimum deployment target was raised to macOS13 for the installed toolchain; both baseline/new builds used that target. SDK27 no longer provides PLATFORM_IOSMAC, so both baseline and new builds define it as6, the PLATFORM_MACCATALYST value. Legacy SenTestingKit sources use a declaration-only parsing shim during name transformation; this is not a runtime substitute or a test pass. The original `var-004.txt` formatter fixture itself aborts with NSInvalidArgumentException on a deliberately invalid template. Both variants match stdout, signal and exception class/reason; ASLR stacks and NSLog time/PID are excluded only for that known upstream abort.
@@ -15,7 +17,8 @@ Only executable/project branding, compile dates and NSLog timestamps/process IDs
 ## OPEN
 
 - The archived SenTestingKit runner is not executed; both current XCTest suites ran 39 tests with zero failures. Full real application Xcode/Pods/CoreData/dSYM integration and device runtime remain unverified.
-- The hosted CI workflow has been authored but has not yet run on GitHub at this local handoff.
+- The earlier local handoff predated hosted CI. Run 37192416648 now verifies the exact public commit named above; it does not by itself validate later source packages, device behavior, or application integration.
+- The previously interrupted deep source/security audit remains OPEN. The finite contracts do not replace its malformed-input and full-source review.
 - Passing these finite checks is not a proof of every input or complete feature equivalence.
 
 ## 2026-10-02 capability review

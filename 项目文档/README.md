@@ -1,6 +1,8 @@
-> 目录已整理：文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --build`；如需使用本文原有源码命令，先运行 `python3 构建.py --stage --ci`，再进入 `Build/源码`。暂存会恢复原输入路径。现有版本和历史验证记录按各自提交理解。
+> 文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --stage --ci`，再进入 `Build/源码` 按下方命令编译。暂存会恢复原输入路径；ObjCAtlas 的构建适配类型为 `manual`。现有版本和历史验证记录按各自提交理解。
 
 # ObjCAtlas
+
+维护源码版本：**v1.0.1**。维护者为 **dhtfish98**；本项目仍是保留原作者及 GPL 许可的上游衍生作品。
 
 防御用途、实际能力及本轮验证范围见 [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>)。
 
@@ -12,10 +14,12 @@ The command-line options, type-encoding grammar and Mach-O layouts remain compat
 
 ## Build
 
-On macOS with the command-line tools (Rust stable is also needed for ArchiveLens):
+On macOS with Xcode command-line tools, stage the source and restore the project inputs first:
 
 ```sh
-xcodebuild -project ObjCAtlas.xcodeproj -target ObjCAtlas -configuration Release SYMROOT="$PWD/build" MACOSX_DEPLOYMENT_TARGET=13.0 CODE_SIGNING_ALLOWED=NO
+python3 构建.py --stage --ci
+cd Build/源码
+xcodebuild -project ObjCAtlas.xcodeproj -target ObjCAtlas -configuration Release SYMROOT="$PWD/../输出/ObjCAtlas/Products" OBJROOT="$PWD/../输出/ObjCAtlas/Intermediates" MACOSX_DEPLOYMENT_TARGET=13.0 CODE_SIGNING_ALLOWED=NO
 ```
 
 ## Test and independently consume
