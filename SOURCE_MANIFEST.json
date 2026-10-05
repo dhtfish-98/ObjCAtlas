@@ -19,12 +19,12 @@
     "CDUnitTests-Info.plist": {
       "bytes": 630,
       "mode": "0o644",
-      "sha256": "61fd9453dfa2c5dc35e509c457ff85fef5863698eb1834eccefb3b98a5a837d7"
+      "sha256": "a4f00a4e7585acde1ea65664e41c7a460bd7ca0c733f28b52376fb005959f141"
     },
     "Checks/UnitTests-Info.plist": {
       "bytes": 676,
       "mode": "0o644",
-      "sha256": "6db2b2646e9af57f8fcca1c2b3066e0bcfe4831d77ad6f43719abeadec8b1774"
+      "sha256": "3d5b6891ade95dced89b40d51d5f3ef21716a27783001993984e4e88e1751971"
     },
     "Checks/atlas_TestBlockSignature.m": {
       "bytes": 3593,
@@ -874,7 +874,7 @@
     "Info.plist": {
       "bytes": 559,
       "mode": "0o644",
-      "sha256": "0f1198e6a7519115738df6d896581d86a241f27194c8ab3c8894e49563595a07"
+      "sha256": "e02d4ade2f82c8538ae38c852789bef9566020b5878566c8d09229ecf46fd0b8"
     },
     "LegacyChecks/atlas_AllTests.h": {
       "bytes": 148,
@@ -1204,7 +1204,7 @@
     "构建配置.json": {
       "bytes": 1461,
       "mode": "0o644",
-      "sha256": "deb6579c65106832d67c822497f6b7a2f5705649c090bdc888cbc0c27b713711"
+      "sha256": "2c8c9623132ab3054fdd453402ce21147793d9901eecf5c8f29f519f04d447be"
     },
     "项目文档/BOUNDS_VALIDATION_20261005.json": {
       "bytes": 2131,
@@ -1237,9 +1237,9 @@
       "sha256": "6930d2c919fcf8dea6a173f03496917306faed4883420776639072d80c53aeaa"
     },
     "项目文档/README.md": {
-      "bytes": 3182,
+      "bytes": 3305,
       "mode": "0o644",
-      "sha256": "8dd143e1be4f264035fd0f9498091961deb87ae8eb6054769001aec18cd2bb7b"
+      "sha256": "76cf595ed7df155d718509cdb9a1d0c2a3c0e8c1f93ca58a7fb03af4b2c01845"
     },
     "项目文档/UPSTREAM_GUIDE.md": {
       "bytes": 3563,
