@@ -1,0 +1,25 @@
+{
+  "contract_checks_passed": 22,
+  "contract_report_sha256": "8119cfddc92d7012dfd294a6743f3e211574d3a4026cac1829e020aaf10531a1",
+  "guard_page_cursor_check": "PASS",
+  "maintained_xctest_passed": 39,
+  "open": [
+    "debug_rebase_and_export_trie_paths",
+    "other load commands and resource exhaustion",
+    "full real application/device integration",
+    "full source security audit",
+    "exact public CI and downloadable Release assets"
+  ],
+  "original_xctest_passed": 39,
+  "pinned_upstream_commit": "2c82b4ff12b2ea5d1ac23e49281d496997370841",
+  "schema": "objc-atlas-v1.0.4-bounds-validation.v1",
+  "scope": "Local macOS/Xcode checks against fixed original; does not prove arbitrary malformed input safety or full-source security audit.",
+  "synthetic_macho_cases": 20,
+  "targeted_changes": [
+    "symbol_table_file_and_string_ranges",
+    "fat_architecture_slice_range",
+    "dyld_bind_file_span_and_symbol_termination"
+  ],
+  "validated_at_utc": "2026-10-05T19:19:21.677611+00:00",
+  "version": "v1.0.4"
+}

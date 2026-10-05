@@ -6,10 +6,24 @@
 #import "atlas_CDLCSymbolTable.h"
 
 #include <mach-o/nlist.h>
+#include <string.h>
 #import "atlas_CDMachOFile.h"
 #import "atlas_CDSymbol.h"
 #import "atlas_CDLCSegment.h"
 #import "atlas_CDLCDylib.h"
+
+static NSString *atlas_boundedSymbolName(const char *atlas_strtab, NSUInteger atlas_strsize, uint32_t atlas_index)
+{
+    if (atlas_index >= atlas_strsize) {
+        [NSException raise:NSRangeException format:@"Symbol name index exceeds the string table."];
+    }
+    const char *atlas_start = atlas_strtab + atlas_index;
+    const char *atlas_end = memchr(atlas_start, 0, atlas_strsize - atlas_index);
+    if (atlas_end == NULL) {
+        [NSException raise:NSRangeException format:@"Unterminated symbol name in the string table."];
+    }
+    return [[NSString alloc] initWithBytes:atlas_start length:(NSUInteger)(atlas_end - atlas_start) encoding:NSASCIIStringEncoding];
+}
 
 @implementation ObjCAtlasLCSymbolTable
 {
@@ -89,6 +103,14 @@
 
 - (void)atlas_loadSymbols;
 {
+    NSUInteger atlas_dataLength = self.atlas_machOFile.data.length;
+    NSUInteger atlas_entrySize = [self.atlas_machOFile atlas_uses64BitABI] ? sizeof(struct nlist_64) : sizeof(struct nlist);
+    if (atlas__symtabCommand.symoff > atlas_dataLength
+        || atlas__symtabCommand.nsyms > (atlas_dataLength - atlas__symtabCommand.symoff) / atlas_entrySize
+        || atlas__symtabCommand.stroff > atlas_dataLength
+        || atlas__symtabCommand.strsize > atlas_dataLength - atlas__symtabCommand.stroff) {
+        [NSException raise:NSRangeException format:@"Symbol or string table exceeds file data."];
+    }
     for (ObjCAtlasLoadCommand *atlas_loadCommand in [self.atlas_machOFile atlas_loadCommands]) {
         if ([atlas_loadCommand isKindOfClass:[ObjCAtlasLCSegment class]]) {
             ObjCAtlasLCSegment *atlas_segment = (ObjCAtlasLCSegment *)atlas_loadCommand;
@@ -111,7 +133,7 @@
     //NSLog(@"stroff=  %lu", symtabCommand.stroff);
     //NSLog(@"strsize= %lu", symtabCommand.strsize);
 
-    const char *atlas_strtab = (char *)[self.atlas_machOFile.data bytes] + atlas__symtabCommand.stroff;
+    const char *atlas_strtab = atlas__symtabCommand.strsize == 0 ? NULL : (const char *)[self.atlas_machOFile.data bytes] + atlas__symtabCommand.stroff;
     
     void (^atlas_addSymbol)(NSString *, ObjCAtlasSymbol *) = ^(NSString *atlas_name, ObjCAtlasSymbol *atlas_symbol) {
         [atlas_symbols addObject:atlas_symbol];
@@ -142,8 +164,7 @@
                   index, nlist.n_un.n_strx, nlist.n_type, nlist.n_sect, nlist.n_desc, nlist.n_value, strtab + nlist.n_un.n_strx);
 #endif
 
-            const char *atlas_ptr = atlas_strtab + atlas_nlist.n_un.n_strx;
-            NSString *atlas_str = [[NSString alloc] initWithBytes:atlas_ptr length:strlen(atlas_ptr) encoding:NSASCIIStringEncoding];
+            NSString *atlas_str = atlas_boundedSymbolName(atlas_strtab, atlas__symtabCommand.strsize, atlas_nlist.n_un.n_strx);
 
             ObjCAtlasSymbol *atlas_symbol = [[ObjCAtlasSymbol alloc] initAtlasWithName:atlas_str atlas_machOFile:self.atlas_machOFile atlas_nlist32:atlas_nlist];
             atlas_addSymbol(atlas_str, atlas_symbol);
@@ -165,8 +186,7 @@
             NSLog(@"%5u: %08x           %02x    %02x  %04x  %016x - %s",
                   index, nlist.n_un.n_strx, nlist.n_type, nlist.n_sect, nlist.n_desc, nlist.n_value, strtab + nlist.n_un.n_strx);
 #endif
-            const char *atlas_ptr = atlas_strtab + atlas_nlist.n_un.n_strx;
-            NSString *atlas_str = [[NSString alloc] initWithBytes:atlas_ptr length:strlen(atlas_ptr) encoding:NSASCIIStringEncoding];
+            NSString *atlas_str = atlas_boundedSymbolName(atlas_strtab, atlas__symtabCommand.strsize, atlas_nlist.n_un.n_strx);
 
             ObjCAtlasSymbol *atlas_symbol = [[ObjCAtlasSymbol alloc] initAtlasWithName:atlas_str atlas_machOFile:self.atlas_machOFile atlas_nlist64:atlas_nlist];
             atlas_addSymbol(atlas_str, atlas_symbol);

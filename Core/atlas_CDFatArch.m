@@ -111,7 +111,12 @@
 - (ObjCAtlasMachOFile *)atlas_machOFile;
 {
     if (atlas__machOFile == nil) {
-        NSData *atlas_data = [NSData dataWithBytesNoCopy:((uint8_t *)[self.atlas_fatFile.data bytes] + self.atlas_offset) length:self.atlas_size freeWhenDone:NO];
+        NSData *atlas_fatData = self.atlas_fatFile.data;
+        if (self.atlas_size == 0 || self.atlas_offset > atlas_fatData.length
+            || self.atlas_size > atlas_fatData.length - self.atlas_offset) {
+            [NSException raise:NSRangeException format:@"Fat architecture slice exceeds file data."];
+        }
+        NSData *atlas_data = [NSData dataWithBytesNoCopy:((uint8_t *)[atlas_fatData bytes] + self.atlas_offset) length:self.atlas_size freeWhenDone:NO];
         atlas__machOFile = [[ObjCAtlasMachOFile alloc] initAtlasWithData:atlas_data atlas_filename:self.atlas_fatFile.filename atlas_searchPathState:self.atlas_fatFile.atlas_searchPathState];
     }
 

@@ -123,7 +123,7 @@ def main():
             sdk=checked(['xcrun','--show-sdk-path']).decode().strip()
             checked(['clang','-fobjc-arc','-fblocks','-framework','Foundation','-framework','AppKit','-framework','CoreData','-lxml2','-ObjC','-isysroot',sdk,'-I'+sdk+'/usr/include/libxml2','-DPLATFORM_IOSMAC=6','-include',ROOT/'atlas_MachObjC_Prefix.pch','-I'+str(ROOT/'Core'),ROOT/'verification/atlas_macho_bounds.m',newout/'Release/libObjCAtlasCore.a','-o',bounded])
             checked([bounded])
-            report['checks'].append({'name':'synthetic-macho-bounds','status':'PASS','cases':9})
+            report['checks'].append({'name':'synthetic-macho-bounds','status':'PASS','cases':20})
         fixture=work/'fixture.m';fixture.write_text(FIXTURE);binary=work/'fixture'
         checked(['clang','-fobjc-arc','-framework','Foundation',fixture,'-o',binary])
         broken=work/'malformed';broken.write_bytes(b'not a macho');missing=work/'missing'

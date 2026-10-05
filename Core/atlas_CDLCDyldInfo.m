@@ -9,6 +9,7 @@
 
 #import "atlas_CDLCSegment.h"
 #import "atlas_ULEB128.h"
+#include <string.h>
 
 static BOOL atlas_debugBindOps = NO;
 static BOOL atlas_debugExportedSymbols = NO;
@@ -258,8 +259,10 @@ static NSString *atlas_CDBindTypeDescription(uint8_t atlas_type)
         NSLog(@"----------------------------------------------------------------------");
         NSLog(@"bind_off: %u, bind_size: %u", atlas__dyldInfoCommand.bind_off, atlas__dyldInfoCommand.bind_size);
     }
-    const uint8_t *atlas_start = (uint8_t *)[self.atlas_machOFile.data bytes] + atlas__dyldInfoCommand.bind_off;
-    const uint8_t *atlas_end = atlas_start + atlas__dyldInfoCommand.bind_size;
+    NSData *atlas_bindData = [self.atlas_machOFile atlas_dataAtOffset:atlas__dyldInfoCommand.bind_off length:atlas__dyldInfoCommand.bind_size];
+    if (atlas_bindData.length == 0) return;
+    const uint8_t *atlas_start = atlas_bindData.bytes;
+    const uint8_t *atlas_end = atlas_start + atlas_bindData.length;
 
     [self atlas_logBindOps:atlas_start atlas_end:atlas_end atlas_isLazy:NO];
 }
@@ -270,8 +273,10 @@ static NSString *atlas_CDBindTypeDescription(uint8_t atlas_type)
         NSLog(@"----------------------------------------------------------------------");
         NSLog(@"weak_bind_off: %u, weak_bind_size: %u", atlas__dyldInfoCommand.weak_bind_off, atlas__dyldInfoCommand.weak_bind_size);
     }
-    const uint8_t *atlas_start = (uint8_t *)[self.atlas_machOFile.data bytes] + atlas__dyldInfoCommand.weak_bind_off;
-    const uint8_t *atlas_end = atlas_start + atlas__dyldInfoCommand.weak_bind_size;
+    NSData *atlas_bindData = [self.atlas_machOFile atlas_dataAtOffset:atlas__dyldInfoCommand.weak_bind_off length:atlas__dyldInfoCommand.weak_bind_size];
+    if (atlas_bindData.length == 0) return;
+    const uint8_t *atlas_start = atlas_bindData.bytes;
+    const uint8_t *atlas_end = atlas_start + atlas_bindData.length;
 
     [self atlas_logBindOps:atlas_start atlas_end:atlas_end atlas_isLazy:NO];
 }
@@ -282,8 +287,10 @@ static NSString *atlas_CDBindTypeDescription(uint8_t atlas_type)
         NSLog(@"----------------------------------------------------------------------");
         NSLog(@"lazy_bind_off: %u, lazy_bind_size: %u", atlas__dyldInfoCommand.lazy_bind_off, atlas__dyldInfoCommand.lazy_bind_size);
     }
-    const uint8_t *atlas_start = (uint8_t *)[self.atlas_machOFile.data bytes] + atlas__dyldInfoCommand.lazy_bind_off;
-    const uint8_t *atlas_end = atlas_start + atlas__dyldInfoCommand.lazy_bind_size;
+    NSData *atlas_bindData = [self.atlas_machOFile atlas_dataAtOffset:atlas__dyldInfoCommand.lazy_bind_off length:atlas__dyldInfoCommand.lazy_bind_size];
+    if (atlas_bindData.length == 0) return;
+    const uint8_t *atlas_start = atlas_bindData.bytes;
+    const uint8_t *atlas_end = atlas_start + atlas_bindData.length;
 
     [self atlas_logBindOps:atlas_start atlas_end:atlas_end atlas_isLazy:YES];
 }
@@ -343,13 +350,17 @@ static NSString *atlas_CDBindTypeDescription(uint8_t atlas_type)
             }
                 
             case BIND_OPCODE_SET_SYMBOL_TRAILING_FLAGS_IMM:
+                if (atlas_ptr >= atlas_end) {
+                    [NSException raise:NSRangeException format:@"Missing bind symbol name."];
+                }
                 atlas_symbolName = (const char *)atlas_ptr;
                 atlas_symbolFlags = atlas_immediate;
+                const uint8_t *atlas_terminator = memchr(atlas_ptr, 0, atlas_end - atlas_ptr);
+                if (atlas_terminator == NULL) {
+                    [NSException raise:NSRangeException format:@"Unterminated bind symbol name."];
+                }
                 if (atlas_debugBindOps) NSLog(@"BIND_OPCODE: SET_SYMBOL_TRAILING_FLAGS_IMM,  flags: %02x, str = %s", atlas_symbolFlags, atlas_symbolName);
-                while (*atlas_ptr != 0)
-                    atlas_ptr++;
-                
-                atlas_ptr++; // skip the trailing zero
+                atlas_ptr = atlas_terminator + 1; // skip the trailing zero
                 
                 break;
                 
@@ -435,8 +446,14 @@ static NSString *atlas_CDBindTypeDescription(uint8_t atlas_type)
           address, type, flags, addend, libraryOrdinal, symbolName);
 #endif
 
+    if (atlas_symbolName == NULL) {
+        [NSException raise:NSRangeException format:@"Bind operation has no symbol name."];
+    }
     NSNumber *atlas_key = [NSNumber numberWithUnsignedInteger:atlas_address]; // I don't think 32-bit will dump 64-bit stuff.
     NSString *atlas_str = [[NSString alloc] initWithUTF8String:atlas_symbolName];
+    if (atlas_str == nil) {
+        [NSException raise:NSRangeException format:@"Bind symbol name is not valid UTF-8."];
+    }
     atlas__symbolNamesByAddress[atlas_key] = atlas_str;
 }
 
