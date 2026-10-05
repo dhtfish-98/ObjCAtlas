@@ -43,7 +43,7 @@
 
 - (void)atlas_advanceByLength:(NSUInteger)atlas_length;
 {
-    if (atlas__offset + atlas_length <= [atlas__data length]) {
+    if (atlas_length <= [self atlas_remaining]) {
         atlas__offset += atlas_length;
     } else {
         [NSException raise:NSRangeException format:@"Trying to advance past end of data."];
@@ -61,8 +61,8 @@
 {
     uint8_t atlas_result;
 
-    if (atlas__offset + sizeof(atlas_result) <= [atlas__data length]) {
-        atlas_result = OSReadLittleInt16([atlas__data bytes], atlas__offset) & 0xFF;
+    if (sizeof(atlas_result) <= [self atlas_remaining]) {
+        atlas_result = ((const uint8_t *)[atlas__data bytes])[atlas__offset];
         atlas__offset += sizeof(atlas_result);
     } else {
         [NSException raise:NSRangeException format:@"Trying to read past end in %s", atlas___cmd];
@@ -76,7 +76,7 @@
 {
     uint16_t atlas_result;
 
-    if (atlas__offset + sizeof(atlas_result) <= [atlas__data length]) {
+    if (sizeof(atlas_result) <= [self atlas_remaining]) {
         atlas_result = OSReadLittleInt16([atlas__data bytes], atlas__offset);
         atlas__offset += sizeof(atlas_result);
     } else {
@@ -91,7 +91,7 @@
 {
     uint32_t atlas_result;
 
-    if (atlas__offset + sizeof(atlas_result) <= [atlas__data length]) {
+    if (sizeof(atlas_result) <= [self atlas_remaining]) {
         atlas_result = OSReadLittleInt32([atlas__data bytes], atlas__offset);
         atlas__offset += sizeof(atlas_result);
     } else {
@@ -106,7 +106,7 @@
 {
     uint64_t atlas_result;
 
-    if (atlas__offset + sizeof(atlas_result) <= [atlas__data length]) {
+    if (sizeof(atlas_result) <= [self atlas_remaining]) {
 //        uint8_t *ptr = [_data bytes] + _offset;
 //        NSLog(@"%016llx: %02x %02x %02x %02x %02x %02x %02x %02x", _offset, ptr[0], ptr[1], ptr[2], ptr[3], ptr[4], ptr[5], ptr[6], ptr[7]);
         atlas_result = OSReadLittleInt64([atlas__data bytes], atlas__offset);
@@ -123,7 +123,7 @@
 {
     uint16_t atlas_result;
 
-    if (atlas__offset + sizeof(atlas_result) <= [atlas__data length]) {
+    if (sizeof(atlas_result) <= [self atlas_remaining]) {
         atlas_result = OSReadBigInt16([atlas__data bytes], atlas__offset);
         atlas__offset += sizeof(atlas_result);
     } else {
@@ -138,7 +138,7 @@
 {
     uint32_t atlas_result;
 
-    if (atlas__offset + sizeof(atlas_result) <= [atlas__data length]) {
+    if (sizeof(atlas_result) <= [self atlas_remaining]) {
         atlas_result = OSReadBigInt32([atlas__data bytes], atlas__offset);
         atlas__offset += sizeof(atlas_result);
     } else {
@@ -153,7 +153,7 @@
 {
     uint64_t atlas_result;
 
-    if (atlas__offset + sizeof(atlas_result) <= [atlas__data length]) {
+    if (sizeof(atlas_result) <= [self atlas_remaining]) {
         atlas_result = OSReadBigInt64([atlas__data bytes], atlas__offset);
         atlas__offset += sizeof(atlas_result);
     } else {
@@ -196,7 +196,7 @@
 
 - (void)atlas_appendBytesOfLength:(NSUInteger)atlas_length atlas_intoData:(NSMutableData *)atlas_data;
 {
-    if (atlas__offset + atlas_length <= [atlas__data length]) {
+    if (atlas_length <= [self atlas_remaining]) {
         [atlas_data appendBytes:(uint8_t *)[atlas__data bytes] + atlas__offset length:atlas_length];
         atlas__offset += atlas_length;
     } else {
@@ -206,7 +206,7 @@
 
 - (void)atlas_readBytesOfLength:(NSUInteger)atlas_length atlas_intoBuffer:(void *)atlas_buf;
 {
-    if (atlas__offset + atlas_length <= [atlas__data length]) {
+    if (atlas_length <= [self atlas_remaining]) {
         memcpy(atlas_buf, (uint8_t *)[atlas__data bytes] + atlas__offset, atlas_length);
         atlas__offset += atlas_length;
     } else {
@@ -221,30 +221,33 @@
 
 - (NSString *)atlas_readCString;
 {
-    return [self atlas_readStringOfLength:strlen((const char *)[atlas__data bytes] + atlas__offset) atlas_encoding:NSASCIIStringEncoding];
+    NSUInteger atlas_remaining = [self atlas_remaining];
+    if (atlas_remaining == 0) {
+        [NSException raise:NSRangeException format:@"Unterminated string in %s", atlas___cmd];
+    }
+    const char *atlas_start = (const char *)[atlas__data bytes] + atlas__offset;
+    const char *atlas_end = memchr(atlas_start, '\0', atlas_remaining);
+    if (atlas_end == NULL) {
+        [NSException raise:NSRangeException format:@"Unterminated string in %s", atlas___cmd];
+    }
+    return [self atlas_readStringOfLength:(NSUInteger)(atlas_end - atlas_start) atlas_encoding:NSASCIIStringEncoding];
 }
 
 - (NSString *)atlas_readStringOfLength:(NSUInteger)atlas_length atlas_encoding:(NSStringEncoding)atlas_encoding;
 {
-    if (atlas__offset + atlas_length <= [atlas__data length]) {
+    if (atlas_length <= [self atlas_remaining]) {
         NSString *atlas_str;
+        if (atlas_length == 0) {
+            return @"";
+        }
 
         if (atlas_encoding == NSASCIIStringEncoding) {
-            char *atlas_buf;
-
             // Jump through some hoops if the length is padded with zero bytes, as in the case of 10.5's Property List Editor and iSync Plug-in Maker.
-            atlas_buf = malloc(atlas_length + 1);
-            if (atlas_buf == NULL) {
-                NSLog(@"Error: malloc() failed.");
-                return nil;
-            }
-
-            strncpy(atlas_buf, (const char *)[atlas__data bytes] + atlas__offset, atlas_length);
-            atlas_buf[atlas_length] = 0;
-
-            atlas_str = [[NSString alloc] initWithBytes:atlas_buf length:strlen(atlas_buf) encoding:atlas_encoding];
+            const char *atlas_start = (const char *)[atlas__data bytes] + atlas__offset;
+            const char *atlas_end = memchr(atlas_start, '\0', atlas_length);
+            NSUInteger atlas_stringLength = atlas_end == NULL ? atlas_length : (NSUInteger)(atlas_end - atlas_start);
+            atlas_str = [[NSString alloc] initWithBytes:atlas_start length:atlas_stringLength encoding:atlas_encoding];
             atlas__offset += atlas_length;
-            free(atlas_buf);
             return atlas_str;
         } else {
             atlas_str = [[NSString alloc] initWithBytes:(uint8_t *)[atlas__data bytes] + atlas__offset length:atlas_length encoding:atlas_encoding];

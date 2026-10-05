@@ -1,0 +1,108 @@
+{
+  "project": "ObjCAtlas",
+  "checks": [
+    {
+      "name": "synthetic-macho-bounds",
+      "status": "PASS",
+      "cases": 9
+    },
+    {
+      "name": "cli-0",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-1",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-2",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-3",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-4",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-5",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-6",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-7",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-8",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-9",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-10",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-11",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-12",
+      "status": "PASS"
+    },
+    {
+      "name": "cli-13",
+      "status": "PASS"
+    },
+    {
+      "name": "independent-static-library",
+      "status": "PASS",
+      "type_encodings": 20,
+      "xml_fixtures": 0,
+      "output_sha256": "214eb3d54aa1a1244b94829d8c2d4ef059fce00f75dbaede45ce93a681369489"
+    },
+    {
+      "name": "old-auxiliary-builds",
+      "status": "PASS",
+      "tools": 2
+    },
+    {
+      "name": "new-auxiliary-builds",
+      "status": "PASS",
+      "tools": 2
+    },
+    {
+      "name": "formatter-existing-corpus",
+      "status": "PASS",
+      "files": 20,
+      "upstream_known_abort_fixture": "var-004.txt",
+      "comparison": "exit/stdout/stderr; on the known upstream abort compare exception class/reason, omit ASLR stack and NSLog PID/time"
+    },
+    {
+      "name": "deprotect-cli-help",
+      "status": "PASS"
+    },
+    {
+      "name": "original-xctest",
+      "status": "PASS",
+      "tests": 39
+    },
+    {
+      "name": "new-xctest",
+      "status": "PASS",
+      "tests": 39
+    }
+  ],
+  "open": [
+    "The archived SenTestingKit runner is not executed; the current XCTest suite is run. Full real application Xcode/Pods/CoreData/dSYM integration and device runtime remain unverified."
+  ],
+  "passed": 22
+}

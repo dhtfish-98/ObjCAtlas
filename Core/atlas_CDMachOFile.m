@@ -366,17 +366,30 @@ static NSString *atlas_CDMachOFileMagicNumberDescription(uint32_t atlas_magic)
         if (atlas_d2Offset == 0)
             return nil;
 
+        if (atlas_d2Offset >= atlas_d2.length) {
+            [NSException raise:NSRangeException format:@"String address exceeds decrypted segment."];
+        }
         atlas_ptr = (uint8_t *)[atlas_d2 bytes] + atlas_d2Offset;
-        return [[NSString alloc] initWithBytes:atlas_ptr length:strlen(atlas_ptr) encoding:NSASCIIStringEncoding];
+        const void *atlas_end = memchr(atlas_ptr, 0, atlas_d2.length - atlas_d2Offset);
+        if (atlas_end == NULL) {
+            [NSException raise:NSRangeException format:@"Unterminated string in decrypted segment."];
+        }
+        return [[NSString alloc] initWithBytes:atlas_ptr length:(const uint8_t *)atlas_end - (const uint8_t *)atlas_ptr encoding:NSASCIIStringEncoding];
     }
 
     NSUInteger atlas_offset = [self atlas_dataOffsetForAddress:atlas_address];
     if (atlas_offset == 0)
         return nil;
 
+    if (atlas_offset >= self.data.length) {
+        [NSException raise:NSRangeException format:@"String address exceeds file data."];
+    }
     atlas_ptr = (uint8_t *)[self.data bytes] + atlas_offset;
-
-    return [[NSString alloc] initWithBytes:atlas_ptr length:strlen(atlas_ptr) encoding:NSASCIIStringEncoding];
+    const void *atlas_end = memchr(atlas_ptr, 0, self.data.length - atlas_offset);
+    if (atlas_end == NULL) {
+        [NSException raise:NSRangeException format:@"Unterminated string in file data."];
+    }
+    return [[NSString alloc] initWithBytes:atlas_ptr length:(const uint8_t *)atlas_end - (const uint8_t *)atlas_ptr encoding:NSASCIIStringEncoding];
 }
 
 - (NSUInteger)atlas_dataOffsetForAddress:(NSUInteger)atlas_address;
@@ -414,7 +427,18 @@ static NSString *atlas_CDMachOFileMagicNumberDescription(uint32_t atlas_magic)
 
 - (const void *)atlas_bytesAtOffset:(NSUInteger)atlas_offset;
 {
+    if (atlas_offset > self.data.length) {
+        [NSException raise:NSRangeException format:@"Offset exceeds file data."];
+    }
     return (uint8_t *)[self.data bytes] + atlas_offset;
+}
+
+- (NSData *)atlas_dataAtOffset:(NSUInteger)atlas_offset length:(NSUInteger)atlas_length;
+{
+    if (atlas_offset > self.data.length || atlas_length > self.data.length - atlas_offset) {
+        [NSException raise:NSRangeException format:@"Range exceeds file data."];
+    }
+    return [self.data subdataWithRange:NSMakeRange(atlas_offset, atlas_length)];
 }
 
 - (NSString *)atlas_importBaseName;

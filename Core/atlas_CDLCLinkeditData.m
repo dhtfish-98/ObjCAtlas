@@ -44,7 +44,7 @@
 - (NSData *)atlas_linkeditData;
 {
     if (atlas__linkeditData == NULL) {
-        atlas__linkeditData = [[NSData alloc] initWithBytes:[self.atlas_machOFile atlas_bytesAtOffset:atlas__linkeditDataCommand.dataoff] length:atlas__linkeditDataCommand.datasize];
+        atlas__linkeditData = [self.atlas_machOFile atlas_dataAtOffset:atlas__linkeditDataCommand.dataoff length:atlas__linkeditDataCommand.datasize];
     }
     
     return atlas__linkeditData;

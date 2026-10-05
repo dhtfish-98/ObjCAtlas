@@ -61,6 +61,7 @@ typedef enum : NSUInteger {
 
 - (const void *)bytes;
 - (const void *)atlas_bytesAtOffset:(NSUInteger)atlas_offset;
+- (NSData *)atlas_dataAtOffset:(NSUInteger)atlas_offset length:(NSUInteger)atlas_length;
 
 @property (nonatomic, readonly) NSString *atlas_importBaseName;
 

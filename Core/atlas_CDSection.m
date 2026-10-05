@@ -25,8 +25,8 @@
         _atlas_sectionName = [atlas_cursor atlas_readStringOfLength:16 atlas_encoding:NSASCIIStringEncoding];
         size_t atlas_sectionNameLength = [_atlas_sectionName lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
         memcpy(atlas__section.sectname, [_atlas_sectionName UTF8String], MIN(atlas_sectionNameLength, sizeof(atlas__section.sectname)));
-        size_t atlas_segmentNameLength = [_atlas_sectionName lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
         _atlas_segmentName = [atlas_cursor atlas_readStringOfLength:16 atlas_encoding:NSASCIIStringEncoding];
+        size_t atlas_segmentNameLength = [_atlas_segmentName lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
         memcpy(atlas__section.segname, [_atlas_segmentName UTF8String], MIN(atlas_segmentNameLength, sizeof(atlas__section.segname)));
         atlas__section.addr      = [atlas_cursor atlas_readPtr];
         atlas__section.size      = [atlas_cursor atlas_readPtr];
@@ -55,7 +55,7 @@
 - (NSData *)data;
 {
     if (!_data) {
-        _data = [[NSData alloc] initWithBytes:(uint8_t *)[self.atlas_segment.atlas_machOFile.data bytes] + atlas__section.offset length:atlas__section.size];
+        _data = [self.atlas_segment.atlas_machOFile atlas_dataAtOffset:atlas__section.offset length:atlas__section.size];
     }
     return _data;
 }
@@ -72,13 +72,17 @@
 
 - (BOOL)atlas_containsAddress:(NSUInteger)atlas_address;
 {
-    return (atlas_address >= atlas__section.addr) && (atlas_address < atlas__section.addr + atlas__section.size);
+    return (atlas_address >= atlas__section.addr) && (atlas_address - atlas__section.addr < atlas__section.size);
 }
 
 - (NSUInteger)atlas_fileOffsetForAddress:(NSUInteger)atlas_address;
 {
     NSParameterAssert([self atlas_containsAddress:atlas_address]);
-    return atlas__section.offset + atlas_address - atlas__section.addr;
+    NSUInteger atlas_delta = atlas_address - atlas__section.addr;
+    if (atlas_delta > NSUIntegerMax - atlas__section.offset) {
+        [NSException raise:NSRangeException format:@"Section file offset overflow."];
+    }
+    return atlas__section.offset + atlas_delta;
 }
 
 #pragma mark - Debugging

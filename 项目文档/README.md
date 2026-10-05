@@ -2,9 +2,9 @@
 
 # ObjCAtlas
 
-维护源码版本：**v1.0.2**。维护者为 **dhtfish98**；本项目仍是保留原作者及 GPL 许可的上游衍生作品。
+维护源码版本：**v1.0.3**。维护者为 **dhtfish98**；本项目仍是保留原作者及 GPL 许可的上游衍生作品。
 
-v1.0.2 仅修正 ORIGIN.md 中串入其他项目的来源文字；运行源码未改。
+v1.0.3 对游标、字符串、节和受保护段的文件范围做定点加固，并新增畸形输入边界测试。命令行的 3.5 版本号属于原上游解析内核；本仓库维护版本以 GitHub Release 和此页为准。
 
 防御用途、实际能力及本轮验证范围见 [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>)。
 
@@ -38,6 +38,6 @@ python3 verification/atlas_contract.py --upstream ../upstream
 
 The contract script builds and runs the original and derivative, generates neutral fixtures, checks outputs/files and compiles a separate consumer against the public renamed API. `.github/workflows/contracts.yml` repeats this with an upstream checkout pinned to the recorded commit.
 
-Both original and modified Release builds produced universal arm64/x86_64 executables and static libraries. 21 contract checks passed, including real compiled Objective-C Mach-O metadata, CLI/version/error cases, independent static-library consumers over 20 type encodings, both independently built helper programs, and 20 existing formatter input fixtures.
+The 2026-10-05 local validation passed 22 contract checks, 39 original and 39 derivative XCTest cases, a guard-page cursor test, and synthetic malformed Mach-O section, string, and protected-segment checks. See [validation scope](VALIDATION.md) for what remains open.
 
 Runtime/integration boundaries are listed in VALIDATION.md. Built packages are distributed with the complete corresponding source package and original notices.

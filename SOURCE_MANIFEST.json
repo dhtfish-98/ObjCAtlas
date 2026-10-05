@@ -4,8 +4,8 @@
   "scope": "All public files except this self-describing manifest.",
   "files": {
     ".github/workflows/contracts.yml": {
-      "sha256": "e4164eed21ba41d508a8e65a7bc7db06a1013e585ff49262b0657b4d08b945e8",
-      "bytes": 1927,
+      "sha256": "bcdfeef670701da8275aa05fd521300dcbc645147e2e31d8684b7dec05166e46",
+      "bytes": 1984,
       "mode": "0o644"
     },
     ".gitignore": {
@@ -19,13 +19,13 @@
       "mode": "0o644"
     },
     "CDUnitTests-Info.plist": {
-      "sha256": "985db4149d44a9065edbddc510c387369dcc55630121fe1c30649a31963fa52c",
-      "bytes": 623,
+      "sha256": "df60bfe4e7f59837248de7e3e2d3fe76d23a99b34735a7666d3e23dedbc4f106",
+      "bytes": 630,
       "mode": "0o644"
     },
     "Checks/UnitTests-Info.plist": {
-      "sha256": "fdf0cc0f89dd4bc9e238c4f0e0ca05f398a89ac27e6f701d93fbe982b286ca2b",
-      "bytes": 674,
+      "sha256": "e9211792855c19f808fd86ab23143bb11ba4aeeab9db39242104e46e378c01c4",
+      "bytes": 676,
       "mode": "0o644"
     },
     "Checks/atlas_TestBlockSignature.m": {
@@ -134,8 +134,8 @@
       "mode": "0o644"
     },
     "Core/atlas_CDDataCursor.m": {
-      "sha256": "d7cd8d4d5bccb05d4db81f0f09b1cb24f68f664826770664f61ac47e39218d1b",
-      "bytes": 7593,
+      "sha256": "ec1b1743cf0e7cf6fceb06cff5c25b0e4b7b74a19a2cc63098237611b7e86520",
+      "bytes": 7860,
       "mode": "0o644"
     },
     "Core/atlas_CDExtensions.h": {
@@ -269,8 +269,8 @@
       "mode": "0o644"
     },
     "Core/atlas_CDLCLinkeditData.m": {
-      "sha256": "c930e61fba88eb2f899c56b51f81822bfd7675f16c667d412994be18ce335a81",
-      "bytes": 1458,
+      "sha256": "232e5804fe3d20e16de31351ae16468a8f13a813563dd8cfc33c904b76c93a68",
+      "bytes": 1426,
       "mode": "0o644"
     },
     "Core/atlas_CDLCMain.h": {
@@ -339,8 +339,8 @@
       "mode": "0o644"
     },
     "Core/atlas_CDLCSegment.m": {
-      "sha256": "5d6fdc9b5dfc79fb49d7be1a932360a0b48eeec58c879746cabf29b9adc7daf1",
-      "bytes": 15413,
+      "sha256": "9f9703b669392f993ec9346031d4c1e8dc2fd1af4961f60cd9d3e5125bead7eb",
+      "bytes": 16281,
       "mode": "0o644"
     },
     "Core/atlas_CDLCSourceVersion.h": {
@@ -464,13 +464,13 @@
       "mode": "0o644"
     },
     "Core/atlas_CDMachOFile.h": {
-      "sha256": "33ebf7e0a80b24045cdb56a4a7dd6f4454b07b1fa539594a714c9dbae4f05a72",
-      "bytes": 3756,
+      "sha256": "7ef094acdb450bf40d60e31ef406d64ce783604d9f3f34f670d4fb0ba16169dd",
+      "bytes": 3845,
       "mode": "0o644"
     },
     "Core/atlas_CDMachOFile.m": {
-      "sha256": "796ff1a86d2f43c9505b1325959b2511c4bba22874fff1028a18a0613dcba70a",
-      "bytes": 27076,
+      "sha256": "112b0f64122efb0f4cd9b68d0a9f7c4f39afe822e89f0d35342a793e3275d733",
+      "bytes": 28379,
       "mode": "0o644"
     },
     "Core/atlas_CDMachOFileDataCursor.h": {
@@ -659,8 +659,8 @@
       "mode": "0o644"
     },
     "Core/atlas_CDSection.m": {
-      "sha256": "856af9b5a94c95e8383704048688011ceb2a81881e19652c0d95627de26042aa",
-      "bytes": 3837,
+      "sha256": "fb410a95daeb0b6d133bd6c8281cfb089ee9a0f11203114b0c113551d8dd155e",
+      "bytes": 3998,
       "mode": "0o644"
     },
     "Core/atlas_CDStructureInfo.h": {
@@ -874,8 +874,8 @@
       "mode": "0o755"
     },
     "Info.plist": {
-      "sha256": "87a1ed6bb0acfec2941ad85f15a77038e080db3d09e0d38317cc0f813abe612f",
-      "bytes": 443,
+      "sha256": "98fe0f82ce928ceeac8bcf86aefde54c17c43c1160a499cc8ca0bb359533cac8",
+      "bytes": 559,
       "mode": "0o644"
     },
     "LegacyChecks/atlas_AllTests.h": {
@@ -1114,8 +1114,8 @@
       "mode": "0o644"
     },
     "ObjCAtlas.xcodeproj/project.pbxproj": {
-      "sha256": "08352dad5affef0c5c2394b7afe568106119b7f31289306860e1628a11ed9916",
-      "bytes": 106171,
+      "sha256": "e7560852de1b25443d7201128cd02d23deb5ad5934dba1883e2d6db9d9500f35",
+      "bytes": 106179,
       "mode": "0o644"
     },
     "ObjCAtlas.xcodeproj/project.xcworkspace/contents.xcworkspacedata": {
@@ -1179,8 +1179,23 @@
       "mode": "0o644"
     },
     "verification/atlas_contract.py": {
-      "sha256": "34d5ca4fd578a026d0db58fc1ca8a9a062212c054d30a58b9d32c73851011169",
-      "bytes": 13014,
+      "sha256": "7663b3b29e0dfe090bd4d8eccc860b82a893a6c809ae13646b70735aac4995f0",
+      "bytes": 13753,
+      "mode": "0o644"
+    },
+    "verification/atlas_cursor_bounds.m": {
+      "sha256": "e97e2e194941c3f725a0011cc1eb024a374783a8f4c931522d3befd3b2a8617e",
+      "bytes": 2845,
+      "mode": "0o644"
+    },
+    "verification/atlas_cursor_bounds.py": {
+      "sha256": "0f40a0d9b65e7c2672a9e5af487b00353998bcf0232109c845e1ae64fed8d2a2",
+      "bytes": 742,
+      "mode": "0o644"
+    },
+    "verification/atlas_macho_bounds.m": {
+      "sha256": "69e5b6b9df0259c018ea58367824cd166383bfc173dc7b3baaed1731c0602e54",
+      "bytes": 4214,
       "mode": "0o644"
     },
     "构建.py": {
@@ -1189,8 +1204,13 @@
       "mode": "0o644"
     },
     "构建配置.json": {
-      "sha256": "e4c8deadc0835608afe39fc11ba7082501cfdfd82a871cdfa76d56ca19032c4c",
+      "sha256": "1885149e9791ab573f3762818bde59c4e1ab5f3257c5eb8899030392e49acf35",
       "bytes": 1461,
+      "mode": "0o644"
+    },
+    "项目文档/BOUNDS_VALIDATION_20261005.json": {
+      "sha256": "4e461a8e9d6784e88a0a42e8356ae18678980288a1a5db7cd847b962357f44e8",
+      "bytes": 2131,
       "mode": "0o644"
     },
     "项目文档/CHANGELOG.md": {
@@ -1199,8 +1219,8 @@
       "mode": "0o644"
     },
     "项目文档/DEFENSIVE_SCOPE.md": {
-      "sha256": "c1e8e3e42ae89c0e512ac3bee04a111720cd36b26e42c926a39a9ee8aa6d6efb",
-      "bytes": 1553,
+      "sha256": "d4117ffb1d4171ee0be4fb3b23b4ea772efc7cc0d8b6a7972a4e311379d75fbb",
+      "bytes": 1892,
       "mode": "0o644"
     },
     "项目文档/LICENSE": {
@@ -1214,8 +1234,8 @@
       "mode": "0o644"
     },
     "项目文档/README.md": {
-      "sha256": "456f8ffb31fa6c5293aaf3197cd07a88b9770fa64e0bdb2687ac2beb8ba6ec7c",
-      "bytes": 3037,
+      "sha256": "251c7414c402e4f2f6f85905b0658ec6462e14aa13348727b53cd3e138b503ec",
+      "bytes": 3092,
       "mode": "0o644"
     },
     "项目文档/UPSTREAM_GUIDE.md": {
@@ -1224,8 +1244,8 @@
       "mode": "0o644"
     },
     "项目文档/VALIDATION.md": {
-      "sha256": "9226b615119f6df3e3e2687271b2f3c5250f002a16626fa7969d2a1c8ea1201d",
-      "bytes": 3311,
+      "sha256": "3c260451d80f1efd52db16f1bf28b21bdc651dc65cbc5cd80ace81cf8e7ef2bf",
+      "bytes": 4351,
       "mode": "0o644"
     },
     "项目文档/目录与构建.md": {

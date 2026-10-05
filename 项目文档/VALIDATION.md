@@ -24,3 +24,9 @@ Only executable/project branding, compile dates and NSLog timestamps/process IDs
 ## 2026-10-02 capability review
 
 The current runtime entry points, file/process/network capabilities and attribution were reviewed. See DEFENSIVE_SCOPE.md for the exact paths and remaining limitations. This documentation update does not claim another execution of the historical full test suite, a rewrite of every upstream algorithm, or CVP eligibility. GitHub CI for the new commit is separate evidence.
+
+## 2026-10-05 local malformed-input review for v1.0.3
+
+The same pinned upstream commit and this maintenance tree passed 22 local contract checks. The original and maintained XCTest suites each passed 39 cases. The new checks exercise a byte at the edge of a protected memory page, length-overflow rejection, unterminated strings, synthetic Mach-O sections extending beyond EOF, and truncated protected segments. The local report is retained under Build; [a source-safe copy](BOUNDS_VALIDATION_20261005.json) records the check names and remaining contract limitations. The project version and bundle identifiers were updated to v1.0.3 / dhtfish98 without changing the upstream copyright or GPL terms.
+
+This is a targeted parser boundary repair. It does not complete the interrupted full-source security audit, prove arbitrary malformed-file safety, or establish an exploitable vulnerability in the upstream project. Current hosted CI and release assets must be checked against the eventual exact commit before marking publication complete.

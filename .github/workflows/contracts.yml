@@ -36,6 +36,7 @@ jobs:
           repository: nygard/class-dump
           ref: 2c82b4ff12b2ea5d1ac23e49281d496997370841
           path: 'Build/源码/.upstream'
+      - run: python3 verification/atlas_cursor_bounds.py
       - run: python3 verification/atlas_contract.py --upstream .upstream --output contract.json
       - uses: actions/upload-artifact@v4
         with:

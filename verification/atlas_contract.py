@@ -113,10 +113,17 @@ def formatter_result(result):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--upstream',required=True,type=P);parser.add_argument('--output',type=P);parser.add_argument('--original-build',type=P);parser.add_argument('--new-build',type=P);opts=parser.parse_args()
     original=opts.upstream.resolve();report={'project':PROJECT,'checks':[],'open':['The archived SenTestingKit runner is not executed; the current XCTest suite is run. Full real application Xcode/Pods/CoreData/dSYM integration and device runtime remain unverified.']}
-    with tempfile.TemporaryDirectory(prefix=PREFIX+'-contract-') as folder:
+    temporary=ROOT/'Build/临时';temporary.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=PREFIX+'-contract-',dir=temporary) as folder:
         work=P(folder);oldout=opts.original_build.resolve() if opts.original_build else work/'old-build';newout=opts.new_build.resolve() if opts.new_build else work/'new-build'
         oldbin=oldout/'Release'/OLD if opts.original_build else build(original,True,oldout)
         newbin=newout/'Release'/PROJECT if opts.new_build else build(ROOT,False,newout)
+        if PROJECT=='ObjCAtlas':
+            bounded=work/'atlas-macho-bounds'
+            sdk=checked(['xcrun','--show-sdk-path']).decode().strip()
+            checked(['clang','-fobjc-arc','-fblocks','-framework','Foundation','-framework','AppKit','-framework','CoreData','-lxml2','-ObjC','-isysroot',sdk,'-I'+sdk+'/usr/include/libxml2','-DPLATFORM_IOSMAC=6','-include',ROOT/'atlas_MachObjC_Prefix.pch','-I'+str(ROOT/'Core'),ROOT/'verification/atlas_macho_bounds.m',newout/'Release/libObjCAtlasCore.a','-o',bounded])
+            checked([bounded])
+            report['checks'].append({'name':'synthetic-macho-bounds','status':'PASS','cases':9})
         fixture=work/'fixture.m';fixture.write_text(FIXTURE);binary=work/'fixture'
         checked(['clang','-fobjc-arc','-framework','Foundation',fixture,'-o',binary])
         broken=work/'malformed';broken.write_bytes(b'not a macho');missing=work/'missing'

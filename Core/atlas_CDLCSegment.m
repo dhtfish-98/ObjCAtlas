@@ -147,6 +147,10 @@ NSString *atlas_CDSegmentEncryptionTypeName(atlas_CDSegmentEncryptionType atlas_
             // First three pages aren't encrypted, so we can't tell.  Let's pretent it's something we can decrypt.
             return atlas_CDSegmentEncryptionType_AES;
         } else {
+            NSData *atlas_data = self.atlas_machOFile.data;
+            if (self.atlas_fileoff > atlas_data.length || self.atlas_filesize > atlas_data.length - self.atlas_fileoff) {
+                [NSException raise:NSRangeException format:@"Protected segment exceeds file data."];
+            }
             const void *atlas_src = (uint8_t *)[self.atlas_machOFile.data bytes] + self.atlas_fileoff + 3 * PAGE_SIZE;
 
             uint32_t atlas_magic = OSReadLittleInt32(atlas_src, 0);
@@ -190,7 +194,7 @@ NSString *atlas_CDSegmentEncryptionTypeName(atlas_CDSegmentEncryptionType atlas_
 
 - (BOOL)atlas_containsAddress:(NSUInteger)atlas_address;
 {
-    return (atlas_address >= atlas__segmentCommand.vmaddr) && (atlas_address < atlas__segmentCommand.vmaddr + atlas__segmentCommand.vmsize);
+    return (atlas_address >= atlas__segmentCommand.vmaddr) && (atlas_address - atlas__segmentCommand.vmaddr < atlas__segmentCommand.vmsize);
 }
 
 - (ObjCAtlasSection *)atlas_sectionContainingAddress:(NSUInteger)atlas_address;
@@ -220,7 +224,11 @@ NSString *atlas_CDSegmentEncryptionTypeName(atlas_CDSegmentEncryptionType atlas_
 
 - (NSUInteger)atlas_segmentOffsetForAddress:(NSUInteger)atlas_address;
 {
-    return [self atlas_fileOffsetForAddress:atlas_address] - self.atlas_fileoff;
+    NSUInteger atlas_offset = [self atlas_fileOffsetForAddress:atlas_address];
+    if (atlas_offset < self.atlas_fileoff) {
+        [NSException raise:NSRangeException format:@"Address precedes segment file range."];
+    }
+    return atlas_offset - self.atlas_fileoff;
 }
 
 - (void)atlas_appendToString:(NSMutableString *)atlas_resultString atlas_verbose:(BOOL)atlas_isVerbose;
@@ -258,7 +266,13 @@ NSString *atlas_CDSegmentEncryptionTypeName(atlas_CDSegmentEncryptionType atlas_
 
     if (atlas__decryptedData == nil) {
         //NSLog(@"filesize: %08x, pagesize: %04x", [self filesize], PAGE_SIZE);
-        NSParameterAssert((self.atlas_filesize % PAGE_SIZE) == 0);
+        if ((self.atlas_filesize % PAGE_SIZE) != 0) {
+            [NSException raise:NSRangeException format:@"Protected segment has an invalid page length."];
+        }
+        NSData *atlas_data = self.atlas_machOFile.data;
+        if (self.atlas_fileoff > atlas_data.length || self.atlas_filesize > atlas_data.length - self.atlas_fileoff) {
+            [NSException raise:NSRangeException format:@"Protected segment exceeds file data."];
+        }
         atlas__decryptedData = [[NSMutableData alloc] initWithLength:self.atlas_filesize];
 
         const uint8_t *atlas_src = (uint8_t *)[self.atlas_machOFile.data bytes] + self.atlas_fileoff;
@@ -360,4 +374,3 @@ NSString *atlas_CDSegmentEncryptionTypeName(atlas_CDSegmentEncryptionType atlas_
 }
 
 @end
-
