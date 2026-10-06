@@ -19,12 +19,12 @@
     "CDUnitTests-Info.plist": {
       "bytes": 630,
       "mode": "0o644",
-      "sha256": "a4f00a4e7585acde1ea65664e41c7a460bd7ca0c733f28b52376fb005959f141"
+      "sha256": "d67bf3ed1d51283faa2b015bb7f269327a53cccee8fb970179c0cdd161ca6256"
     },
     "Checks/UnitTests-Info.plist": {
       "bytes": 676,
       "mode": "0o644",
-      "sha256": "3d5b6891ade95dced89b40d51d5f3ef21716a27783001993984e4e88e1751971"
+      "sha256": "84dc3ab1a2638875f1f97c79fdca5a32fd2be9ad6bbedc7a378277c1dae51844"
     },
     "Checks/atlas_TestBlockSignature.m": {
       "bytes": 3593,
@@ -874,7 +874,7 @@
     "Info.plist": {
       "bytes": 559,
       "mode": "0o644",
-      "sha256": "e02d4ade2f82c8538ae38c852789bef9566020b5878566c8d09229ecf46fd0b8"
+      "sha256": "852941f91ccfe3feedcc23114d68ff419c458b3eebef72b4cad3255e8586c381"
     },
     "LegacyChecks/atlas_AllTests.h": {
       "bytes": 148,
@@ -1127,9 +1127,9 @@
       "sha256": "8c372663fcdcfe43fbc60b412a27aa7a1f5550a52c30f9b332b6953134433544"
     },
     "ThirdParty/blowfish.c": {
-      "bytes": 20406,
+      "bytes": 20550,
       "mode": "0o644",
-      "sha256": "182969bde93966ac7d857642609cfdff6d30251215ffca81c8d04c5f56bbbeaa"
+      "sha256": "0e81fd5c9ab01bebc1e4662fc36d2988578de8a9e74413e738d557e72db160c4"
     },
     "ThirdParty/blowfish.h": {
       "bytes": 1148,
@@ -1197,14 +1197,14 @@
       "sha256": "783c5445b4f0f546df70eedb521ae48329db72d25d0d9d909aacb1b45c83c087"
     },
     "构建.py": {
-      "bytes": 6787,
+      "bytes": 7270,
       "mode": "0o644",
-      "sha256": "248c7594ad67a2d9380273b1dd68986253a2d9bac75595f1f6e3647720335c8e"
+      "sha256": "ba355569c35607ddb869a62b4b1236c6ebc9265b2f09af62b6de27a6cf3326f3"
     },
     "构建配置.json": {
       "bytes": 1461,
       "mode": "0o644",
-      "sha256": "2c8c9623132ab3054fdd453402ce21147793d9901eecf5c8f29f519f04d447be"
+      "sha256": "62f07d86a6e297161486aae7d5e86c765b3ce1bc4f7e5e3a965b72c283e6acb7"
     },
     "项目文档/BOUNDS_VALIDATION_20261005.json": {
       "bytes": 2131,
@@ -1231,15 +1231,25 @@
       "mode": "0o644",
       "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
     },
-    "项目文档/ORIGIN.md": {
-      "bytes": 1748,
+    "项目文档/NOTICE.md": {
+      "bytes": 1633,
       "mode": "0o644",
-      "sha256": "6930d2c919fcf8dea6a173f03496917306faed4883420776639072d80c53aeaa"
+      "sha256": "f0dccd96fe7b40d42cd8af8b88ddc5e0b6285a4ca2c768f24bbfb3ec2ccfe334"
+    },
+    "项目文档/ORIGIN.md": {
+      "bytes": 2009,
+      "mode": "0o644",
+      "sha256": "d5e5a711bdd1639784ff7dd6bd5e59e3e5be649f0e85a90691d517f9293827d5"
     },
     "项目文档/README.md": {
-      "bytes": 3305,
+      "bytes": 3620,
       "mode": "0o644",
-      "sha256": "76cf595ed7df155d718509cdb9a1d0c2a3c0e8c1f93ca58a7fb03af4b2c01845"
+      "sha256": "e279b20295cace0ee03fcd022a62bba588d3ddc9f5a848da2b5f77d272840469"
+    },
+    "项目文档/RELEASE_NOTES_V1_0_6.md": {
+      "bytes": 1141,
+      "mode": "0o644",
+      "sha256": "81cdf9eb4f195ec1f4c927ea800947a73187346693407bd0c768387b410d5cec"
     },
     "项目文档/UPSTREAM_GUIDE.md": {
       "bytes": 3563,
@@ -1247,14 +1257,19 @@
       "sha256": "61b5df666a04b853d0d75dc46d359086d771f9b1e0ee467e12bf01fb19ecec06"
     },
     "项目文档/VALIDATION.md": {
-      "bytes": 5393,
+      "bytes": 6489,
       "mode": "0o644",
-      "sha256": "433bc5afc2a640bbb0a65f666404e7e81de2770a54bce465a934c12cb585f0c8"
+      "sha256": "2b87e2033729430a7cca926473ebb279698628c8f072d74624f6f2aec60b9c71"
     },
     "项目文档/目录与构建.md": {
-      "bytes": 816,
+      "bytes": 902,
       "mode": "0o644",
-      "sha256": "3f7599e7a43cd47108377905ec46e6894317d8e574e3f865157e9fc9bc6d7c72"
+      "sha256": "96a39fa58fa652902ae04107e83bd2760cbbe63f43fc11c92b0c1669f053ca4a"
+    },
+    "项目文档/第三方许可/LGPL-2.1.txt": {
+      "bytes": 26001,
+      "mode": "0o644",
+      "sha256": "5749785c8bdefafcb5d798270ed0a967036fe2ca63dcedade1627565dfef81d2"
     }
   },
   "project": "ObjCAtlas",

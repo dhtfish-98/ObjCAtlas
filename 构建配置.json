@@ -3,7 +3,7 @@
   "project": "ObjCAtlas",
   "author": "dhtfish98",
   "kind": "manual",
-  "base_public_commit": "f6428385e46684208fcaf5acadb6079ca428bd47",
+  "base_public_commit": "154039391f61a71b33f41cd443b274c6eaecfe57",
   "restored_inputs": [
     {
       "original": "CHANGELOG.md",
@@ -23,12 +23,12 @@
     {
       "original": "ORIGIN.md",
       "stored": "项目文档/ORIGIN.md",
-      "sha256": "6930d2c919fcf8dea6a173f03496917306faed4883420776639072d80c53aeaa"
+      "sha256": "d5e5a711bdd1639784ff7dd6bd5e59e3e5be649f0e85a90691d517f9293827d5"
     },
     {
       "original": "README.md",
       "stored": "项目文档/README.md",
-      "sha256": "76cf595ed7df155d718509cdb9a1d0c2a3c0e8c1f93ca58a7fb03af4b2c01845"
+      "sha256": "e279b20295cace0ee03fcd022a62bba588d3ddc9f5a848da2b5f77d272840469"
     },
     {
       "original": "UPSTREAM_GUIDE.md",
@@ -38,7 +38,7 @@
     {
       "original": "VALIDATION.md",
       "stored": "项目文档/VALIDATION.md",
-      "sha256": "433bc5afc2a640bbb0a65f666404e7e81de2770a54bce465a934c12cb585f0c8"
+      "sha256": "2b87e2033729430a7cca926473ebb279698628c8f072d74624f6f2aec60b9c71"
     }
   ],
   "platform_entries": []

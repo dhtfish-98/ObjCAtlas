@@ -2,9 +2,9 @@
 
 # ObjCAtlas
 
-维护源码版本：**v1.0.5**。维护者为 **dhtfish98**；本项目仍是保留原作者及 GPL 许可的上游衍生作品。
+维护源码版本：**v1.0.6**。维护者为 **dhtfish98**；本项目仍是保留原作者与 GPL 许可的上游衍生作品，`ThirdParty/blowfish.c/.h` 另保留 Paul Kocher 的 LGPL-2.1-or-later 条款。权利对应关系见 [NOTICE.md](NOTICE.md)。
 
-v1.0.5 更正 GitHub 提交与标签的归属元数据，并同步项目版本号；运行时代码和上游权利不变。v1.0.4 在此前边界修复基础上，为符号表、fat 架构切片和常用 dyld bind 信息添加文件范围与字符串终止检查。命令行的 3.5 版本号属于原上游解析内核；本仓库维护版本以 GitHub Release 和此页为准。
+v1.0.6 补入 Blowfish 所需的 LGPL 2.1 全文和第三方权利说明，更新文档、维护版本与构建清单，并让暂存步骤只复制清单中哈希匹配的公开输入；未改解析运行时代码。发行状态与公开资产以对应 GitHub Release 和精确提交为准，见 [v1.0.6 发行说明](RELEASE_NOTES_V1_0_6.md)。v1.0.5 更正 GitHub 提交与标签的归属元数据；v1.0.4 为符号表、fat 架构切片和常用 dyld bind 信息添加文件范围与字符串终止检查。命令行的 3.5 版本号属于原上游解析内核。
 
 防御用途、实际能力及本轮验证范围见 [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>)。
 

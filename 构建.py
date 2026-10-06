@@ -15,9 +15,6 @@ import sys
 import uuid
 
 
-EXCLUDED = {"Build", "node_modules", "__pycache__", ".pytest_cache", ".ruff_cache", ".mypy_cache", ".venv", ".tox", ".nox", "CMakeFiles"}
-
-
 def relative(value):
     if not value or value.startswith("/") or "\\" in value or "\0" in value or any(p in {"", ".", "..", ".git"} for p in value.split("/")):
         raise ValueError("Invalid input path")
@@ -35,16 +32,25 @@ def stage(root, directory, configuration):
     if directory.exists() or directory.is_symlink():
         raise ValueError("Stage already exists; use --build for a new independent output")
     directory.mkdir(parents=True)
-    for base, dirs, files in os.walk(root, followlinks=False):
-        path = Path(base)
-        dirs[:] = [n for n in dirs if n not in EXCLUDED and not n.endswith((".egg-info", ".dist-info"))]
-        # A private copy of metadata keeps git-based package checks bound to HEAD.
-        # It is staging input under ignored Build, never part of a release upload.
-        for name in files:
-            source = path / name
-            if name.endswith((".pyc", ".pyo")) or name == ".DS_Store":
-                continue
-            copy_regular(source, directory / source.relative_to(root))
+    manifest_path = root / "SOURCE_MANIFEST.json"
+    if manifest_path.is_symlink() or not manifest_path.is_file():
+        raise ValueError("Missing regular source manifest")
+    manifest = json.loads(manifest_path.read_text())
+    files = manifest.get("files")
+    if manifest.get("algorithm") != "sha256" or manifest.get("project") != configuration["project"] or not isinstance(files, dict):
+        raise ValueError("Invalid source manifest")
+    copy_regular(manifest_path, directory / "SOURCE_MANIFEST.json")
+    for name, entry in sorted(files.items()):
+        path = relative(name)
+        if path.parts[0] == "Build" and name != "Build/.gitignore":
+            raise ValueError("Generated Build content cannot be staged")
+        source = root / path
+        if source.is_symlink() or not source.is_file() or not source.resolve().is_relative_to(root):
+            raise ValueError("Missing regular source input: " + name)
+        data = source.read_bytes()
+        if not isinstance(entry, dict) or entry.get("bytes") != len(data) or entry.get("sha256") != hashlib.sha256(data).hexdigest():
+            raise ValueError("Source input changed: " + name)
+        copy_regular(source, directory / path)
     for item in configuration["restored_inputs"]:
         original = relative(item["original"])
         saved = root / relative(item["stored"])
